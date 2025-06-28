@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}Perguntas e Respostas{% endblock %}
+
+{% block content %}
+  <h1>Perguntas e Respostas</h1>
+  <form method="post">
+    {% csrf_token %}
+    {% for pergunta in perguntas %}
+      <h2>{{ pergunta.texto_formatado|safe }}</h2>
+      {% if pergunta.imagem %}
+        <img src="{{ pergunta.imagem.url }}" alt="Imagem da pergunta">
+        <br>
+        <br>
+      {% endif %}
+      {% for resposta in pergunta.resposta_set.all %}
+        <label>
+          <input type="checkbox" name="{{ pergunta.id }}" id="resposta-{{ pergunta.id }}-{{ resposta.id }}" value="{{ resposta.id }}">
+          {% if resposta.correta %}
+            <span class="resposta-label correta"
+                  id="resposta-label-{{ pergunta.id }}-{{resposta.id }}">{{resposta.texto_formatado|safe }}</span>
+          {% else %}
+            <span class="resposta-label"
+                  id="resposta-label-{{ pergunta.id }}-{{resposta.id }}">{{resposta.texto_formatado|safe }}</span>
+          {% endif %}
+        </label>
+        <br>
+      {% endfor %}
+      <hr>
+    {% endfor %}
+    <button type="submit" id="enviar-respostas">Enviar Respostas</button>
+    <button type="button" id="limpar-respostas">Limpar</button>
+  </form>
+
+  <script>
+  const enviarRespostasBtn = document.getElementById('enviar-respostas');
+  enviarRespostasBtn.addEventListener('click', validarRespostas);
+
+  const limparRespostasBtn = document.getElementById('limpar-respostas');
+  limparRespostasBtn.addEventListener('click', limparRespostas);
+
+  function validarRespostas(event) {
+    event.preventDefault();
+
+    const respostasMarcadas = document.querySelectorAll('input[type="checkbox"]:checked');
+    const respostasCorretas = document.querySelectorAll('.resposta-label.correta');
+
+    respostasMarcadas.forEach(resposta => {
+      const respostaLabel = document.getElementById(`resposta-label-${resposta.name}-${resposta.value}`);
+      respostaLabel.style.color = 'red';
+    });
+
+    respostasCorretas.forEach(respostaCorreta => {
+      respostaCorreta.style.color = 'green';
+    });
+
+    const perguntasRespondidas = respostasMarcadas.length + respostasCorretas.length;
+    const perguntasCorretas = respostasCorretas.length;
+
+    alert(`Você acertou ${perguntasCorretas} de um total de ${perguntasRespondidas} perguntas.`);
+  }
+
+  function limparRespostas(event) {
+    const respostas = document.querySelectorAll('input[type="checkbox"]');
+    respostas.forEach(resposta => {
+      resposta.checked = false;
+      const respostaLabel = document.getElementById(`resposta-label-${resposta.name}-${resposta.value}`);
+      respostaLabel.style.color = '';
+    });
+  }
+</script>
+
+{% endblock %}

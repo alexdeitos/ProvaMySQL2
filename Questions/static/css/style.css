@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color:#d3d3d3;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav {
+  display: none;
+}
+
+.show-nav {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 50px;
+  background-color:fff;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form h2 {
+  font-size: 20px; /* Increase the font size for questions */
+  margin-bottom: 10px;
+}
+
+h2{
+    background-color:fff;
+}
+
+form img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0px;
+  background-color:#a9a9a9;
+}
+
+form span.resposta-label {
+  margin-left: 10px;
+  font-size: 15px; /* Set font size for answers */
+  line-height: 1.5; /* Adjust line height for answers */
+  padding: -5px;
+}
+
+form label span {
+  margin-bottom: 0;
+}
+
+form button {
+  font-size: 18px;
+  padding: 15px 0; /* Adjust padding for vertical spacing */
+  width: 100%; /* Make the button occupy the full width of the container */
+  box-sizing: border-box; /* Include padding in button width */
+}
+
+footer p{
+  margin: 0 auto ;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    font-size:30px;
+  }
+
+  nav ul li {
+    margin: 30px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
+
+/* Restante das regras CSS... */
+
+/* Ajuste para perguntas com mais de 30 palavras */
+.fonte-pequena {
+  font-size: 12px;
+  line-height: 1.5; /* Remove o espaçamento entre linhas */
+}
+
+/* Ajuste geral para respostas */
+form label span.resposta-label {
+  margin-left: 10px;
+  font-size: 15px; /* Tamanho de fonte padrão para respostas */
+  line-height: 1.5; /* Remove o espaçamento entre linhas */
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+  /* Restante das regras CSS... */
+
+  /* Ajuste para perguntas com mais de 30 palavras em telas menores */
+  .fonte-pequena {
+    font-size: 13px;
+  }
+}
+
+/* Existing CSS code */
+
+/* Add a media query for screen widths up to 600px */
+@media (max-width: 600px) {
+  /* Increase font size by 1px */
+  h2 {
+    font-size: 21px;
+  }
+
+  /* Increase font size for answers by 1px */
+  span.resposta-label {
+    font-size: 16px;
+  }
+
+  /* Increase button size for better usability on mobile devices */
+  form button {
+    font-size: 18px;
+    padding: 15px 0; /* Adjust padding for vertical spacing */
+    width: 100%; /* Make the button occupy the full width of the container */
+    box-sizing: border-box; /* Include padding in button width */
+  }
+  /* Increase font size for navigation links */
+  nav ul li a {
+    font-size: 30px;
+  }
+
+  /* Rest of the existing mobile styling */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 30px 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+}

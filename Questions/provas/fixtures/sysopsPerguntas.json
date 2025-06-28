@@ -1,0 +1,128 @@
+[
+  {
+      "model": "provas.pergunta",
+      "pk": 2,
+      "fields": {
+          "prova": 4,
+          "texto": "A SysOps administrator is troubleshooting an AWS CloudFormation template whereby multiple Amazon EC2 instances are being created. The template is working in us-east-1, but it is failing in us-west-2 with the error code:\nAMI [ami-12345678] does not exist\nHow should the Administrator ensure that the AWS CloudFormation template is working in every region?",
+          "imagem": null
+      }
+  },
+  {
+      "model": "provas.resposta",
+      "pk": 5,
+      "fields": {
+          "pergunta": 2,
+          "texto": "A. Copy the source region's Amazon Machine Image (AMI) to the destination region and assign it the same ID.",
+          "correta": false
+      }
+  },
+  {
+      "model": "provas.resposta",
+      "pk": 6,
+      "fields": {
+          "pergunta": 2,
+          "texto": "B. Edit the AWS CloudFormation template to specify the region code as part of the fully qualified AMI ID.",
+          "correta": false
+      }
+  },
+  {
+      "model": "provas.resposta",
+      "pk": 7,
+      "fields": {
+          "pergunta": 2,
+          "texto": "C. Edit the AWS CloudFormation template to offer a drop-down list of all AMIs to the user by using the AWS::EC2::AMI::ImageID control.",
+          "correta": false
+      }
+  },
+  {
+      "model": "provas.resposta",
+      "pk": 8,
+      "fields": {
+          "pergunta": 2,
+          "texto": "D. Modify the AWS CloudFormation template by including the AMI IDs in the Mappings section. Refer to the proper mapping within the template for the proper AMI ID.",
+          "correta": true
+      }
+  },
+  {
+      "model": "provas.pergunta",
+      "pk": 3,
+      "fields": {
+          "prova": 4,
+          "texto": "A SysOps administrator is provisioning an Amazon Elastic File System (Amazon EFS) file system to provide shared storage across multiple Amazon EC2 instances. The instances all exist in the same VPC across multiple Availability Zones. There are two instances in each Availability Zone. The SysOps administrator must make the file system accessible to each instance with the lowest possible latency.\nWhich solution will meet these requirements?",
+          "imagem": null
+      }
+  },
+  {
+      "model": "provas.resposta",
+      "pk": 9,
+      "fields": {
+          "pergunta": 3,
+          "texto": "A. Create a mount target for the EFS file system in the VPC. Use the mount target to mount the file system on each of the instances.",
+          "correta": false
+      }
+  },
+  {
+      "model": "provas.resposta",
+      "pk": 10,
+      "fields": {
+          "pergunta": 3,
+          "texto": "B. Create a mount target for the EFS file system in one Availability Zone of the VPC. Use the mount target to mount the file system on the instances in that Availability Zone. Share the directory with the other instances.",
+          "correta": false
+      }
+  },
+  {
+      "model": "provas.resposta",
+      "pk": 11,
+      "fields": {
+          "pergunta": 3,
+          "texto": "C. Create a mount target for each instance. Use each mount target to mount the EFS file system on each respective instance.",
+          "correta": false
+      }
+  },
+  {
+      "model": "provas.resposta",
+      "pk": 12,
+      "fields": {
+          "pergunta": 3,
+          "texto": "D. Create a mount target in each Availability Zone of the VPC. Use the mount target to mount the EFS file system on the instances in the respective Availability Zone.",
+          "correta": true
+      }
+  },
+  {
+      "model": "provas.pergunta",
+      "pk": 4,
+      "fields": {
+          "prova": 4,
+          "texto": "A SysOps administrator has successfully deployed a VPC with an AWS CloudFormation template. The SysOps administrator wants to deploy the same template across multiple accounts that are managed through AWS Organizations.\nWhich solution will meet this requirement with the LEAST operational overhead?",
+          "imagem": null
+      }
+  },
+  {
+      "model": "provas.resposta",
+      "pk": 13,
+      "fields": {
+          "pergunta": 4,
+          "texto": "A. Assume the OrganizationAccountAccessRole IAM role from the management account. Deploy the template in each of the accounts.",
+          "correta": false
+      }
+  },
+  {
+      "model": "provas.resposta",
+      "pk": 14,
+      "fields": {
+          "pergunta": 4,
+          "texto": "B. Create an AWS Lambda function to assume a role in each account. Deploy the template by using the AWS CloudFormation CreateStack API call.",
+          "correta": false
+      }
+  },
+  {
+      "model": "provas.resposta",
+      "pk": 15,
+      "fields": {
+          "pergunta": 4,
+          "texto": "C. Create an AWS Lambda function to query for a list of accounts. Deploy the template by using the AWS CloudFormation CreateStack API call.",
+          "correta": false
+      }
+  }
+]

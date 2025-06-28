@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Resultados da Prova{% endblock %}
+{% block content %}
+    <h1>Resultados da Prova</h1>
+
+    <!-- Iterar sobre todas as perguntas -->
+    {% for pergunta in perguntas %}
+        <h2>{{ pergunta.texto_formatado|safe }}</h2>
+        <!-- Iterar sobre as respostas da pergunta -->
+        {% for resposta in pergunta.resposta_set.all %}
+            <div>
+                {% if resposta.id in corretas %}
+                    <span style="color: blue;">{{ resposta.texto_formatado|safe }}</span>
+                {% elif resposta.id in incorretas %}
+                    <span style="color: red;">{{ resposta.texto_formatado|safe }}</span>
+                {% else %}
+                    {{ resposta.texto_formatado|safe }}
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% endfor %}
+    
+    <!-- Exibir resumo dos resultados -->
+    <p>Corretas: {{ corretas }}</p>
+    <p>Incorretas: {{ incorretas }}</p>
+    <p>Não Respondidas: {{ nao_respondidas }}</p>
+{% endblock %}
