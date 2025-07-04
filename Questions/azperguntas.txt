@@ -1,0 +1,334 @@
+Pergunta 1
+An IT administrator has the requirement to control access to a specific app resource using multi-factor authentication. What Azure service satisfies this requirement?
+a) Azure Function
+b) Azure Authentication
+c) Microsoft Entra ID
+d) Azure Authorization
+c
+Pergunta 2
+Which major cloud provider offers the most international locations for customers to provision virtual machines and other servers?
+a) Amazon AWS
+b) Microsoft Azure
+c) Google Cloud Platform
+b
+Pergunta 3
+What is the name of the group of services inside Azure that hosts the Apache Hadoop big data analysis tools?
+a) HDInsight
+b) Azure Data Factory
+c) Azure Kubernetes Services
+d) Azure Hadoop Services
+a
+Pergunta 4
+In the context of Azure's high availability solutions, what is the primary purpose of Azure Availability Zones?
+a)They serve as a folder structure in Azure used for organizing resources such as databases, virtual machines, and virtual networks.
+b)They allow manual selection of data centers for virtual machine placement to achieve superior availability compared to other options.
+c)They represent certain server racks within individual data centers, specifically designed by Azure for higher uptime.
+d)They are synonymous with an Azure region.
+b
+Pergunta 5
+True or false: you can create your own policies if built-in Azure Policy is not sufficient to your needs
+a)TRUE
+b)FALSE
+a
+Pergunta 6
+What is Azure's preferred Identity/authentication service?
+a) Facebook Connect
+b) Microsoft Entra ID (formerly Azure Active Directory)
+c) Live Connect
+d) Network Security Group
+b
+Pergunta 7
+What is the name of Azure's hosted SQL database service?
+a) Azure SQL Database
+b) SQL Server in a VM
+c) Cosmos DB
+d) Table Storage
+a 
+Pergunta 8
+You are planning to deploy a critical application on Azure and want to ensure high availability and reliability for your services. Which of the following statements about Azure Service Level Agreements (SLAs) is correct and should be considered when designing your solution?
+a) SLAs vary by service and can include guarantees for uptime, performance, and connectivity.
+b) Azure provides a 100% SLA for all services.
+c) You do not need to consider SLAs when designing your solution, as Azure automatically ensures the highest availability.
+d) The SLA guarantees that the service will be available 99.9% of the time for all Azure services.
+a
+Pergunta 9
+You are explaining the different cloud deployment models to a colleague. Which of the following statements correctly describes the difference between a public cloud and a private cloud?
+a) A public cloud is owned and operated by a single organization for exclusive use, while a private cloud is available to the general public or a large industry group and is owned by a cloud service provider.
+b) Both public and private clouds are available to the general public and are owned by a cloud service provider.
+c) Both public and private clouds are owned and operated by a single organization for exclusive use.
+d) A public cloud is available to the general public or a large industry group and is owned by a cloud service provider, while a private cloud is owned and operated by a single organization for exclusive use.
+d
+Pergunta 10
+True or False: Azure has the responsibility to manage the hardware in the Infrastructure as a Service model
+a) TRUE
+b) FALSE
+a
+Pergunta 11
+Can you give someone else access to your Azure subscription without giving them your user name and password?
+a) NO
+b) YES
+b
+Pergunta 12
+a) Your organization has implemented an Azure Policy that restricts the type of Virtual Machine instances you can use. How can you create a VM that is blocked by the policy?
+b) Subscription Owners (Administrators) can create resources regardless of what the policy restricts
+c) Use an account that has Contributor or above permissions to the resource group
+d) The only way is to remove the policy, create the resource and add the policy back
+d
+Pergunta 13
+When establishing a Site-to-Site VPN connection with Azure, what kind of network device needs to be present or installed in your company's on-premises network infrastructure?
+a) An Azure Virtual Network
+b) An Application Gateway
+c) A dedicated virtual machine
+d) A compatible VPN Gateway device
+d
+Pergunta 14
+Which of the following is a feature of the cool access tier for Azure Storage?
+a) Most expensive option when it comes to bandwidth cost to access your files
+b) Much cheaper to store your files than the hot access tier
+c) Significant delays in accessing your data, up to several hours
+d) Cheapest option when it comes to bandwidth costs to access your files
+b
+Pergunta 15
+You are exploring new features on Azure and come across a service that is in private preview mode. Which of the following statements about services in private preview mode is true?
+a) Access to services in private preview mode is limited and usually requires approval from Microsoft or an invitation.
+b) Services in private preview mode are generally available (GA) and can be used in production environments.
+c) All Azure customers automatically have access to services in private preview mode.
+d) Services in private preview mode have the same level of support and SLA guarantees as generally available services.
+a
+Pergunta 16
+What is the basic way of protecting an Azure Virtual Network subnet?
+a) Network Security Group
+b) Azure DDos Standard protection
+c) Azure Firewall
+d) Application Gateway with WAF
+a
+Pergunta 17
+In Microsoft Azure, which tool or service allows for the organization and management of multiple subscriptions within hierarchical structures?
+a) Resource Groups
+b) Microsoft Entra ID
+c) Management Groups
+d) RBAC (Role-Based Access Control)
+c
+Pergunta 18
+What is the MAIN management tool used for managing Azure resources with a graphical user interface?
+a) Azure Portal
+b) Azure Storage Explorer
+c) PowerShell
+d) Remote Desktop Protocol (RDP)
+a
+Pergunta 19
+Which tool within Azure helps you to track your compliance with various international standards and government laws?
+a) Purview Compliance Manager
+b) Azure Government Services
+c) Service Trust Portal
+d) Microsoft Privacy Statement
+a
+Pergunta 20
+In the context of cloud computing, how is the benefit of 'agility' best described?
+a) It refers to the system's ability to easily scale up when it reaches full capacity.
+b) It refers to the ability to quickly respond to and drive changes in the market.
+c) It refers to the ability to rapidly provision new resources.
+d) It refers to the ability to swiftly recover from a large-scale regional failure.
+b
+Pergunta 21
+Who is responsible for the security of the physical servers in an Azure data center?
+a) Azure is responsible for securing the physical data centers
+b) I am responsible for securing the physical data centers
+a
+Pergunta 22
+Within the landscape of cloud service models, how would Microsoft's Outlook 365 be best categorized?
+a) Platform as a Service (PaaS)
+b) Infrastructure as a Service (IaaS)
+c) Software as a Service (SaaS)
+c
+Pergunta 23
+What is a DDoS attack?
+a) An attempt to read the contents of a web page from another website, thereby stealing the user's private information
+b) An attempt to guess a user's password through brute force methods
+c) An attempt to send SQL commands to the server in a way that it will execute them against the database
+d) A denial of service attack that sends so much traffic to a network that it cannot respond fast enough; legitimate users become unable to use the service
+d
+Pergunta 24
+Logic apps, functions, and service fabric are all examples of what model of compute within Azure?
+a) SaaS model
+b) IaaS model
+c) App Services Model
+d) Serverless model
+d
+Pergunta 25
+Azure Services can go through several phases in a Service Lifecycle. What are the three phases called?
+a) Announced, Coming Soon, and Live
+b) Private Preview, Public Preview, and General Availability
+c) Development phase, QA phase, and Live phase
+d) Preview Phase, General Availability Phase, and Unpublished
+b
+Pergunta 26
+Which feature of Microsoft Entra ID (formerly Azure Active Directory) will require users to have their mobile phone in order to be able to log in?
+a) Advanced Threat Protection (ATP)
+b) Multi-Factor Authentication
+c) Microsoft Defender for Cloud
+d) Azure Information Protection (AIP)
+b
+Pergunta 27
+In the context of cloud computing and Azure services, how would you define 'compute resources'?
+a) They are resources that execute tasks requiring CPU cycles.
+b) They encompass Virtual Machines, Storage Accounts, and Virtual Networks.
+c) They include all resources listed in the Azure Marketplace.
+d) They refer exclusively to Virtual Machines.
+a
+Pergunta 28
+Which Azure Service contains pre-built machine learning models that you can use in your own code, using an API?
+a) Azure Functions
+b) App Services
+c) Azure AI Services (formerly Cognitive Services)
+d) Azure Policy
+c
+Pergunta 29
+What feature within Azure will make recommendations to you about reducing cost on your account?
+a) Azure Service Health
+b) Microsoft Defender for Cloud
+c) Azure Dashboard
+d) Azure Advisor
+d
+Pergunta 30
+Which of the following Azure features is most likely to deliver the most immediate savings when it comes to reducing Azure costs?
+a) Using Azure Policy to restrict the user of expensive VM SKUs
+b) Changing your storage accounts from globally redundant (GRS) to locally redundant (LRS)
+c) Using Azure Reserved Instances for most of your virtual machines
+d) Auto shutdown of development and QA servers over night and on weekends
+c
+Pergunta 31
+Which Azure website tool is available for you to estimate the future costs of your Azure products and services by adding products to a shopping basket and helping you calculate the costs?
+a) Azure Pricing Calculator
+b) Microsoft Docs
+c) Azure Advisor
+a
+Pergunta 32
+Which of the following characteristics of a cloud-based system primarily contributes to its elasticity?
+a) The system's ability to recover automatically after a crash.
+b) The system's ability to dynamically increase and decrease capacity based on real-time demand.
+c) The system's ability to maintain availability while updates are being implemented.
+d) The system's ability to withstand denial-of-service attacks.
+b
+Pergunta 33
+What is Single Sign-On?
+a) When an application outsources (federates) it's identity service to a third-party platform
+b) The ability to use an existing user id and password to sign in other applications, and not have to create/memorize a new one.
+c) When you sign in to an application, it remembers who you are the next time you go there.
+b
+Pergunta 34
+Which ways does the Azure Resource Manager model provide to deploy resources?
+Seleção correta
+Powershell
+Seleção correta
+REST API / SDK
+Seleção correta
+Azure Portal
+Seleção correta
+CLI
+Pergunta 35
+Which Azure service is meant to be a security dashboard that contains all the security and threat protection in one place?
+a) Azure Portal Dashboard
+b) Azure Monitor
+c) Azure Key Vault
+d) Microsoft Defender for Cloud
+d
+Pergunta 36
+Who is responsible for the security of your Azure Storage account access keys?
+a) Azure is responsible for securing the access keys
+b) I am responsible for securing the access keys
+b
+Pergunta 37
+What is the default amount of credits that you are given when you first create an Azure Free account?
+a) Azure does not give you any free credits when you create a free account
+b) The default is US$200
+c) You can create 1 Linux VM, 1 Windows VM, and a number of other free services for the first year.
+d) You are given $50 per month, for one year towards Azure services
+b
+Pergunta 38
+If you wanted to simply use Azure as an extension of your own datacenter, not primarily hosting anything there but using it for extra storage or taking advantage of some services, what hosting model is that called?
+a) Private cloud
+b) Hybrid cloud
+c) Public cloud
+b
+Pergunta 39
+Which feature within Azure collects all of the logs from various resources into a central dashboard, where you can run queries, view graphs, and create alerts on certain events?
+a) Azure Monitor
+b) Azure Portal Dashboard
+c) Microsoft Defender for Cloud
+d) Storage Account or Event Hub
+a
+Pergunta 40
+You have decided to subscribe to Azure DDoS Protection at the IP Protection Tier. This provides advanced protection to defend against DDoS attacks. What type of DDoS attack does DDoS Protection NOT protect against?
+a) Transport (L4) level attacks
+b) Application (L7) level attacks
+c) Network (L3) level attacks
+b
+Pergunta 41
+What type of container is used to collect log and metric data from various Azure Resources?
+a) Managed Storage
+b) Log Analytics Workspace
+c) Append Blob Storage
+d) Azure Monitor account
+b
+Pergunta 42
+Which Azure feature is specifically designed to help companies get their in-house developed code from the code repository, through automated unit testing, and onto Azure using a service called Pipelines?
+a) Virtual Machines
+b) Azure Monitor
+c) GitHub
+d) Azure DevOps
+d
+Pergunta 43
+In the context of Azure's Service Level Agreement (SLA) for virtual machines, which of the following deployment strategies would offer the highest level of availability?
+a) Deploying two or more virtual machines within an availability set.
+b) Deploying a single virtual machine.
+c) Deploying two or more virtual machines within the same data center.
+d) Deploying two or more virtual machines across different availability zones within the same region.
+d
+Pergunta 44
+Which of the following is something that Azure Cognitive Services API can currently do?
+a) Recognize text in an image
+b) Speak text in an extremely realistic way
+c) Translate text from one language to another
+d) All of these! Azure can do it all!
+e) Create text from audio
+d
+Pergunta 45
+In Microsoft Azure, what is the maximum number of virtual machines that can be included in a single Virtual Machine Scale Set, as per Azure's standard guidelines and capabilities?
+a) 500
+b) 1000
+c) Unlimited
+d) 10000
+b
+Pergunta 46
+In the context of cloud computing, a virtual machine (VM) is primarily associated with which type of cloud hosting model?
+a) Platform as a Service (PaaS)
+b) Infrastructure as a Service (IaaS)
+c) Software as a Service (SaaS)
+b
+Pergunta 47
+What is a primary benefit of opting for a consumption-based pricing model over a time-based pricing model in cloud services?
+a) Significant cost savings when the resources aren't needed for constant use.
+b) It always being cheaper to pay for consumption rather than paying hourly.
+c) The ability to easily predict the future cost of the service.
+d) A simpler and easier-to-understand pricing model.
+a
+Pergunta 48
+True or false: You cannot have more than one Azure subscription per company
+a) TRUE
+b) FALSE
+b
+Pergunta 49
+Which of the following characteristics is essential for a system to be considered highly available in a cloud computing environment?
+a) It's impossible to create a highly available system.
+b) The system must be designed for resilience, with no single points of failure.
+c) The system must operate on a minimum of two virtual machines.
+d) The system must maintain 100% availability at all times.
+b
+Pergunta 50
+Which of the following best describes the primary benefit of a Content Delivery Network (CDN) in a cloud computing context?
+a) It mitigates server load for static, unchanging files like images, videos, and PDFs by distributing them across a network of servers.
+b) For a nominal fee, Azure will manage your virtual machine, perform OS updates, and ensure optimal performance.
+c) It enables temporary session information storage for web visitors, such as their login ID or name.
+d) It provides fast and inexpensive data retrieval for later use.
+a

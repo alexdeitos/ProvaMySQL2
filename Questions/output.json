@@ -1,0 +1,2036 @@
+[
+  {
+    "model": "provas.pergunta",
+    "pk": 1,
+    "fields": {
+      "prova": 4,
+      "texto": "An IT administrator has the requirement to control access to a specific app resource using multi-factor authentication. What Azure service satisfies this requirement?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 2,
+    "fields": {
+      "pergunta": 1,
+      "texto": "a) Azure Function",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 3,
+    "fields": {
+      "pergunta": 1,
+      "texto": "b) Azure Authentication",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 4,
+    "fields": {
+      "pergunta": 1,
+      "texto": "c) Microsoft Entra ID",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 5,
+    "fields": {
+      "pergunta": 1,
+      "texto": "d) Azure Authorization",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 6,
+    "fields": {
+      "prova": 4,
+      "texto": "Which major cloud provider offers the most international locations for customers to provision virtual machines and other servers?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 7,
+    "fields": {
+      "pergunta": 6,
+      "texto": "a) Amazon AWS",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 8,
+    "fields": {
+      "pergunta": 6,
+      "texto": "b) Microsoft Azure",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 9,
+    "fields": {
+      "pergunta": 6,
+      "texto": "c) Google Cloud Platform",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 10,
+    "fields": {
+      "prova": 4,
+      "texto": "What is the name of the group of services inside Azure that hosts the Apache Hadoop big data analysis tools?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 11,
+    "fields": {
+      "pergunta": 10,
+      "texto": "a) HDInsight",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 12,
+    "fields": {
+      "pergunta": 10,
+      "texto": "b) Azure Data Factory",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 13,
+    "fields": {
+      "pergunta": 10,
+      "texto": "c) Azure Kubernetes Services",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 14,
+    "fields": {
+      "pergunta": 10,
+      "texto": "d) Azure Hadoop Services",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 15,
+    "fields": {
+      "prova": 4,
+      "texto": "In the context of Azure's high availability solutions, what is the primary purpose of Azure Availability Zones?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 16,
+    "fields": {
+      "pergunta": 15,
+      "texto": "a)They serve as a folder structure in Azure used for organizing resources such as databases, virtual machines, and virtual networks.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 17,
+    "fields": {
+      "pergunta": 15,
+      "texto": "b)They allow manual selection of data centers for virtual machine placement to achieve superior availability compared to other options.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 18,
+    "fields": {
+      "pergunta": 15,
+      "texto": "c)They represent certain server racks within individual data centers, specifically designed by Azure for higher uptime.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 19,
+    "fields": {
+      "pergunta": 15,
+      "texto": "d)They are synonymous with an Azure region.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 20,
+    "fields": {
+      "prova": 4,
+      "texto": "True or false: you can create your own policies if built-in Azure Policy is not sufficient to your needs",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 21,
+    "fields": {
+      "pergunta": 20,
+      "texto": "a)TRUE",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 22,
+    "fields": {
+      "pergunta": 20,
+      "texto": "b)FALSE",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 23,
+    "fields": {
+      "prova": 4,
+      "texto": "What is Azure's preferred Identity/authentication service?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 24,
+    "fields": {
+      "pergunta": 23,
+      "texto": "a) Facebook Connect",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 25,
+    "fields": {
+      "pergunta": 23,
+      "texto": "b) Microsoft Entra ID (formerly Azure Active Directory)",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 26,
+    "fields": {
+      "pergunta": 23,
+      "texto": "c) Live Connect",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 27,
+    "fields": {
+      "pergunta": 23,
+      "texto": "d) Network Security Group",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 28,
+    "fields": {
+      "prova": 4,
+      "texto": "What is the name of Azure's hosted SQL database service?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 29,
+    "fields": {
+      "pergunta": 28,
+      "texto": "a) Azure SQL Database",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 30,
+    "fields": {
+      "pergunta": 28,
+      "texto": "b) SQL Server in a VM",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 31,
+    "fields": {
+      "pergunta": 28,
+      "texto": "c) Cosmos DB",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 32,
+    "fields": {
+      "pergunta": 28,
+      "texto": "d) Table Storage",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 33,
+    "fields": {
+      "prova": 4,
+      "texto": "You are planning to deploy a critical application on Azure and want to ensure high availability and reliability for your services. Which of the following statements about Azure Service Level Agreements (SLAs) is correct and should be considered when designing your solution?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 34,
+    "fields": {
+      "pergunta": 33,
+      "texto": "a) SLAs vary by service and can include guarantees for uptime, performance, and connectivity.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 35,
+    "fields": {
+      "pergunta": 33,
+      "texto": "b) Azure provides a 100% SLA for all services.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 36,
+    "fields": {
+      "pergunta": 33,
+      "texto": "c) You do not need to consider SLAs when designing your solution, as Azure automatically ensures the highest availability.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 37,
+    "fields": {
+      "pergunta": 33,
+      "texto": "d) The SLA guarantees that the service will be available 99.9% of the time for all Azure services.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 38,
+    "fields": {
+      "prova": 4,
+      "texto": "You are explaining the different cloud deployment models to a colleague. Which of the following statements correctly describes the difference between a public cloud and a private cloud?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 39,
+    "fields": {
+      "pergunta": 38,
+      "texto": "a) A public cloud is owned and operated by a single organization for exclusive use, while a private cloud is available to the general public or a large industry group and is owned by a cloud service provider.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 40,
+    "fields": {
+      "pergunta": 38,
+      "texto": "b) Both public and private clouds are available to the general public and are owned by a cloud service provider.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 41,
+    "fields": {
+      "pergunta": 38,
+      "texto": "c) Both public and private clouds are owned and operated by a single organization for exclusive use.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 42,
+    "fields": {
+      "pergunta": 38,
+      "texto": "d) A public cloud is available to the general public or a large industry group and is owned by a cloud service provider, while a private cloud is owned and operated by a single organization for exclusive use.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 43,
+    "fields": {
+      "prova": 4,
+      "texto": "True or False: Azure has the responsibility to manage the hardware in the Infrastructure as a Service model",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 44,
+    "fields": {
+      "pergunta": 43,
+      "texto": "a) TRUE",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 45,
+    "fields": {
+      "pergunta": 43,
+      "texto": "b) FALSE",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 46,
+    "fields": {
+      "prova": 4,
+      "texto": "Can you give someone else access to your Azure subscription without giving them your user name and password?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 47,
+    "fields": {
+      "pergunta": 46,
+      "texto": "a) NO",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 48,
+    "fields": {
+      "pergunta": 46,
+      "texto": "b) YES",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 49,
+    "fields": {
+      "prova": 4,
+      "texto": "a) Your organization has implemented an Azure Policy that restricts the type of Virtual Machine instances you can use. How can you create a VM that is blocked by the policy?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 50,
+    "fields": {
+      "pergunta": 49,
+      "texto": "b) Subscription Owners (Administrators) can create resources regardless of what the policy restricts",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 51,
+    "fields": {
+      "pergunta": 49,
+      "texto": "c) Use an account that has Contributor or above permissions to the resource group",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 52,
+    "fields": {
+      "pergunta": 49,
+      "texto": "d) The only way is to remove the policy, create the resource and add the policy back",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 53,
+    "fields": {
+      "prova": 4,
+      "texto": "When establishing a Site-to-Site VPN connection with Azure, what kind of network device needs to be present or installed in your company's on-premises network infrastructure?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 54,
+    "fields": {
+      "pergunta": 53,
+      "texto": "a) An Azure Virtual Network",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 55,
+    "fields": {
+      "pergunta": 53,
+      "texto": "b) An Application Gateway",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 56,
+    "fields": {
+      "pergunta": 53,
+      "texto": "c) A dedicated virtual machine",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 57,
+    "fields": {
+      "pergunta": 53,
+      "texto": "d) A compatible VPN Gateway device",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 58,
+    "fields": {
+      "prova": 4,
+      "texto": "Which of the following is a feature of the cool access tier for Azure Storage?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 59,
+    "fields": {
+      "pergunta": 58,
+      "texto": "a) Most expensive option when it comes to bandwidth cost to access your files",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 60,
+    "fields": {
+      "pergunta": 58,
+      "texto": "b) Much cheaper to store your files than the hot access tier",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 61,
+    "fields": {
+      "pergunta": 58,
+      "texto": "c) Significant delays in accessing your data, up to several hours",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 62,
+    "fields": {
+      "pergunta": 58,
+      "texto": "d) Cheapest option when it comes to bandwidth costs to access your files",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 63,
+    "fields": {
+      "prova": 4,
+      "texto": "You are exploring new features on Azure and come across a service that is in private preview mode. Which of the following statements about services in private preview mode is true?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 64,
+    "fields": {
+      "pergunta": 63,
+      "texto": "a) Access to services in private preview mode is limited and usually requires approval from Microsoft or an invitation.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 65,
+    "fields": {
+      "pergunta": 63,
+      "texto": "b) Services in private preview mode are generally available (GA) and can be used in production environments.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 66,
+    "fields": {
+      "pergunta": 63,
+      "texto": "c) All Azure customers automatically have access to services in private preview mode.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 67,
+    "fields": {
+      "pergunta": 63,
+      "texto": "d) Services in private preview mode have the same level of support and SLA guarantees as generally available services.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 68,
+    "fields": {
+      "prova": 4,
+      "texto": "What is the basic way of protecting an Azure Virtual Network subnet?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 69,
+    "fields": {
+      "pergunta": 68,
+      "texto": "a) Network Security Group",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 70,
+    "fields": {
+      "pergunta": 68,
+      "texto": "b) Azure DDos Standard protection",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 71,
+    "fields": {
+      "pergunta": 68,
+      "texto": "c) Azure Firewall",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 72,
+    "fields": {
+      "pergunta": 68,
+      "texto": "d) Application Gateway with WAF",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 73,
+    "fields": {
+      "prova": 4,
+      "texto": "In Microsoft Azure, which tool or service allows for the organization and management of multiple subscriptions within hierarchical structures?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 74,
+    "fields": {
+      "pergunta": 73,
+      "texto": "a) Resource Groups",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 75,
+    "fields": {
+      "pergunta": 73,
+      "texto": "b) Microsoft Entra ID",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 76,
+    "fields": {
+      "pergunta": 73,
+      "texto": "c) Management Groups",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 77,
+    "fields": {
+      "pergunta": 73,
+      "texto": "d) RBAC (Role-Based Access Control)",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 78,
+    "fields": {
+      "prova": 4,
+      "texto": "What is the MAIN management tool used for managing Azure resources with a graphical user interface?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 79,
+    "fields": {
+      "pergunta": 78,
+      "texto": "a) Azure Portal",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 80,
+    "fields": {
+      "pergunta": 78,
+      "texto": "b) Azure Storage Explorer",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 81,
+    "fields": {
+      "pergunta": 78,
+      "texto": "c) PowerShell",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 82,
+    "fields": {
+      "pergunta": 78,
+      "texto": "d) Remote Desktop Protocol (RDP)",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 83,
+    "fields": {
+      "prova": 4,
+      "texto": "Which tool within Azure helps you to track your compliance with various international standards and government laws?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 84,
+    "fields": {
+      "pergunta": 83,
+      "texto": "a) Purview Compliance Manager",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 85,
+    "fields": {
+      "pergunta": 83,
+      "texto": "b) Azure Government Services",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 86,
+    "fields": {
+      "pergunta": 83,
+      "texto": "c) Service Trust Portal",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 87,
+    "fields": {
+      "pergunta": 83,
+      "texto": "d) Microsoft Privacy Statement",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 88,
+    "fields": {
+      "prova": 4,
+      "texto": "In the context of cloud computing, how is the benefit of 'agility' best described?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 89,
+    "fields": {
+      "pergunta": 88,
+      "texto": "a) It refers to the system's ability to easily scale up when it reaches full capacity.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 90,
+    "fields": {
+      "pergunta": 88,
+      "texto": "b) It refers to the ability to quickly respond to and drive changes in the market.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 91,
+    "fields": {
+      "pergunta": 88,
+      "texto": "c) It refers to the ability to rapidly provision new resources.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 92,
+    "fields": {
+      "pergunta": 88,
+      "texto": "d) It refers to the ability to swiftly recover from a large-scale regional failure.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 93,
+    "fields": {
+      "prova": 4,
+      "texto": "Who is responsible for the security of the physical servers in an Azure data center?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 94,
+    "fields": {
+      "pergunta": 93,
+      "texto": "a) Azure is responsible for securing the physical data centers",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 95,
+    "fields": {
+      "pergunta": 93,
+      "texto": "b) I am responsible for securing the physical data centers",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 96,
+    "fields": {
+      "prova": 4,
+      "texto": "Within the landscape of cloud service models, how would Microsoft's Outlook 365 be best categorized?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 97,
+    "fields": {
+      "pergunta": 96,
+      "texto": "a) Platform as a Service (PaaS)",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 98,
+    "fields": {
+      "pergunta": 96,
+      "texto": "b) Infrastructure as a Service (IaaS)",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 99,
+    "fields": {
+      "pergunta": 96,
+      "texto": "c) Software as a Service (SaaS)",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 100,
+    "fields": {
+      "prova": 4,
+      "texto": "What is a DDoS attack?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 101,
+    "fields": {
+      "pergunta": 100,
+      "texto": "a) An attempt to read the contents of a web page from another website, thereby stealing the user's private information",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 102,
+    "fields": {
+      "pergunta": 100,
+      "texto": "b) An attempt to guess a user's password through brute force methods",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 103,
+    "fields": {
+      "pergunta": 100,
+      "texto": "c) An attempt to send SQL commands to the server in a way that it will execute them against the database",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 104,
+    "fields": {
+      "pergunta": 100,
+      "texto": "d) A denial of service attack that sends so much traffic to a network that it cannot respond fast enough; legitimate users become unable to use the service",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 105,
+    "fields": {
+      "prova": 4,
+      "texto": "Logic apps, functions, and service fabric are all examples of what model of compute within Azure?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 106,
+    "fields": {
+      "pergunta": 105,
+      "texto": "a) SaaS model",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 107,
+    "fields": {
+      "pergunta": 105,
+      "texto": "b) IaaS model",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 108,
+    "fields": {
+      "pergunta": 105,
+      "texto": "c) App Services Model",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 109,
+    "fields": {
+      "pergunta": 105,
+      "texto": "d) Serverless model",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 110,
+    "fields": {
+      "prova": 4,
+      "texto": "Azure Services can go through several phases in a Service Lifecycle. What are the three phases called?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 111,
+    "fields": {
+      "pergunta": 110,
+      "texto": "a) Announced, Coming Soon, and Live",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 112,
+    "fields": {
+      "pergunta": 110,
+      "texto": "b) Private Preview, Public Preview, and General Availability",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 113,
+    "fields": {
+      "pergunta": 110,
+      "texto": "c) Development phase, QA phase, and Live phase",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 114,
+    "fields": {
+      "pergunta": 110,
+      "texto": "d) Preview Phase, General Availability Phase, and Unpublished",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 115,
+    "fields": {
+      "prova": 4,
+      "texto": "Which feature of Microsoft Entra ID (formerly Azure Active Directory) will require users to have their mobile phone in order to be able to log in?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 116,
+    "fields": {
+      "pergunta": 115,
+      "texto": "a) Advanced Threat Protection (ATP)",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 117,
+    "fields": {
+      "pergunta": 115,
+      "texto": "b) Multi-Factor Authentication",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 118,
+    "fields": {
+      "pergunta": 115,
+      "texto": "c) Microsoft Defender for Cloud",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 119,
+    "fields": {
+      "pergunta": 115,
+      "texto": "d) Azure Information Protection (AIP)",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 120,
+    "fields": {
+      "prova": 4,
+      "texto": "In the context of cloud computing and Azure services, how would you define 'compute resources'?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 121,
+    "fields": {
+      "pergunta": 120,
+      "texto": "a) They are resources that execute tasks requiring CPU cycles.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 122,
+    "fields": {
+      "pergunta": 120,
+      "texto": "b) They encompass Virtual Machines, Storage Accounts, and Virtual Networks.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 123,
+    "fields": {
+      "pergunta": 120,
+      "texto": "c) They include all resources listed in the Azure Marketplace.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 124,
+    "fields": {
+      "pergunta": 120,
+      "texto": "d) They refer exclusively to Virtual Machines.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 125,
+    "fields": {
+      "prova": 4,
+      "texto": "Which Azure Service contains pre-built machine learning models that you can use in your own code, using an API?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 126,
+    "fields": {
+      "pergunta": 125,
+      "texto": "a) Azure Functions",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 127,
+    "fields": {
+      "pergunta": 125,
+      "texto": "b) App Services",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 128,
+    "fields": {
+      "pergunta": 125,
+      "texto": "c) Azure AI Services (formerly Cognitive Services)",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 129,
+    "fields": {
+      "pergunta": 125,
+      "texto": "d) Azure Policy",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 130,
+    "fields": {
+      "prova": 4,
+      "texto": "What feature within Azure will make recommendations to you about reducing cost on your account?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 131,
+    "fields": {
+      "pergunta": 130,
+      "texto": "a) Azure Service Health",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 132,
+    "fields": {
+      "pergunta": 130,
+      "texto": "b) Microsoft Defender for Cloud",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 133,
+    "fields": {
+      "pergunta": 130,
+      "texto": "c) Azure Dashboard",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 134,
+    "fields": {
+      "pergunta": 130,
+      "texto": "d) Azure Advisor",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 135,
+    "fields": {
+      "prova": 4,
+      "texto": "Which of the following Azure features is most likely to deliver the most immediate savings when it comes to reducing Azure costs?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 136,
+    "fields": {
+      "pergunta": 135,
+      "texto": "a) Using Azure Policy to restrict the user of expensive VM SKUs",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 137,
+    "fields": {
+      "pergunta": 135,
+      "texto": "b) Changing your storage accounts from globally redundant (GRS) to locally redundant (LRS)",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 138,
+    "fields": {
+      "pergunta": 135,
+      "texto": "c) Using Azure Reserved Instances for most of your virtual machines",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 139,
+    "fields": {
+      "pergunta": 135,
+      "texto": "d) Auto shutdown of development and QA servers over night and on weekends",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 140,
+    "fields": {
+      "prova": 4,
+      "texto": "Which Azure website tool is available for you to estimate the future costs of your Azure products and services by adding products to a shopping basket and helping you calculate the costs?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 141,
+    "fields": {
+      "pergunta": 140,
+      "texto": "a) Azure Pricing Calculator",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 142,
+    "fields": {
+      "pergunta": 140,
+      "texto": "b) Microsoft Docs",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 143,
+    "fields": {
+      "pergunta": 140,
+      "texto": "c) Azure Advisor",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 144,
+    "fields": {
+      "prova": 4,
+      "texto": "Which of the following characteristics of a cloud-based system primarily contributes to its elasticity?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 145,
+    "fields": {
+      "pergunta": 144,
+      "texto": "a) The system's ability to recover automatically after a crash.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 146,
+    "fields": {
+      "pergunta": 144,
+      "texto": "b) The system's ability to dynamically increase and decrease capacity based on real-time demand.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 147,
+    "fields": {
+      "pergunta": 144,
+      "texto": "c) The system's ability to maintain availability while updates are being implemented.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 148,
+    "fields": {
+      "pergunta": 144,
+      "texto": "d) The system's ability to withstand denial-of-service attacks.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 149,
+    "fields": {
+      "prova": 4,
+      "texto": "What is Single Sign-On?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 150,
+    "fields": {
+      "pergunta": 149,
+      "texto": "a) When an application outsources (federates) it's identity service to a third-party platform",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 151,
+    "fields": {
+      "pergunta": 149,
+      "texto": "b) The ability to use an existing user id and password to sign in other applications, and not have to create/memorize a new one.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 152,
+    "fields": {
+      "pergunta": 149,
+      "texto": "c) When you sign in to an application, it remembers who you are the next time you go there.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 153,
+    "fields": {
+      "prova": 4,
+      "texto": "Which ways does the Azure Resource Manager model provide to deploy resources?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 154,
+    "fields": {
+      "prova": 4,
+      "texto": "Which Azure service is meant to be a security dashboard that contains all the security and threat protection in one place?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 155,
+    "fields": {
+      "pergunta": 154,
+      "texto": "a) Azure Portal Dashboard",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 156,
+    "fields": {
+      "pergunta": 154,
+      "texto": "b) Azure Monitor",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 157,
+    "fields": {
+      "pergunta": 154,
+      "texto": "c) Azure Key Vault",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 158,
+    "fields": {
+      "pergunta": 154,
+      "texto": "d) Microsoft Defender for Cloud",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 159,
+    "fields": {
+      "prova": 4,
+      "texto": "Who is responsible for the security of your Azure Storage account access keys?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 160,
+    "fields": {
+      "pergunta": 159,
+      "texto": "a) Azure is responsible for securing the access keys",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 161,
+    "fields": {
+      "pergunta": 159,
+      "texto": "b) I am responsible for securing the access keys",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 162,
+    "fields": {
+      "prova": 4,
+      "texto": "What is the default amount of credits that you are given when you first create an Azure Free account?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 163,
+    "fields": {
+      "pergunta": 162,
+      "texto": "a) Azure does not give you any free credits when you create a free account",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 164,
+    "fields": {
+      "pergunta": 162,
+      "texto": "b) The default is US$200",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 165,
+    "fields": {
+      "pergunta": 162,
+      "texto": "c) You can create 1 Linux VM, 1 Windows VM, and a number of other free services for the first year.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 166,
+    "fields": {
+      "pergunta": 162,
+      "texto": "d) You are given $50 per month, for one year towards Azure services",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 167,
+    "fields": {
+      "prova": 4,
+      "texto": "If you wanted to simply use Azure as an extension of your own datacenter, not primarily hosting anything there but using it for extra storage or taking advantage of some services, what hosting model is that called?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 168,
+    "fields": {
+      "pergunta": 167,
+      "texto": "a) Private cloud",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 169,
+    "fields": {
+      "pergunta": 167,
+      "texto": "b) Hybrid cloud",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 170,
+    "fields": {
+      "pergunta": 167,
+      "texto": "c) Public cloud",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 171,
+    "fields": {
+      "prova": 4,
+      "texto": "Which feature within Azure collects all of the logs from various resources into a central dashboard, where you can run queries, view graphs, and create alerts on certain events?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 172,
+    "fields": {
+      "pergunta": 171,
+      "texto": "a) Azure Monitor",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 173,
+    "fields": {
+      "pergunta": 171,
+      "texto": "b) Azure Portal Dashboard",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 174,
+    "fields": {
+      "pergunta": 171,
+      "texto": "c) Microsoft Defender for Cloud",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 175,
+    "fields": {
+      "pergunta": 171,
+      "texto": "d) Storage Account or Event Hub",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 176,
+    "fields": {
+      "prova": 4,
+      "texto": "You have decided to subscribe to Azure DDoS Protection at the IP Protection Tier. This provides advanced protection to defend against DDoS attacks. What type of DDoS attack does DDoS Protection NOT protect against?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 177,
+    "fields": {
+      "pergunta": 176,
+      "texto": "a) Transport (L4) level attacks",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 178,
+    "fields": {
+      "pergunta": 176,
+      "texto": "b) Application (L7) level attacks",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 179,
+    "fields": {
+      "pergunta": 176,
+      "texto": "c) Network (L3) level attacks",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 180,
+    "fields": {
+      "prova": 4,
+      "texto": "What type of container is used to collect log and metric data from various Azure Resources?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 181,
+    "fields": {
+      "pergunta": 180,
+      "texto": "a) Managed Storage",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 182,
+    "fields": {
+      "pergunta": 180,
+      "texto": "b) Log Analytics Workspace",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 183,
+    "fields": {
+      "pergunta": 180,
+      "texto": "c) Append Blob Storage",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 184,
+    "fields": {
+      "pergunta": 180,
+      "texto": "d) Azure Monitor account",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 185,
+    "fields": {
+      "prova": 4,
+      "texto": "Which Azure feature is specifically designed to help companies get their in-house developed code from the code repository, through automated unit testing, and onto Azure using a service called Pipelines?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 186,
+    "fields": {
+      "pergunta": 185,
+      "texto": "a) Virtual Machines",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 187,
+    "fields": {
+      "pergunta": 185,
+      "texto": "b) Azure Monitor",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 188,
+    "fields": {
+      "pergunta": 185,
+      "texto": "c) GitHub",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 189,
+    "fields": {
+      "pergunta": 185,
+      "texto": "d) Azure DevOps",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 190,
+    "fields": {
+      "prova": 4,
+      "texto": "In the context of Azure's Service Level Agreement (SLA) for virtual machines, which of the following deployment strategies would offer the highest level of availability?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 191,
+    "fields": {
+      "pergunta": 190,
+      "texto": "a) Deploying two or more virtual machines within an availability set.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 192,
+    "fields": {
+      "pergunta": 190,
+      "texto": "b) Deploying a single virtual machine.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 193,
+    "fields": {
+      "pergunta": 190,
+      "texto": "c) Deploying two or more virtual machines within the same data center.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 194,
+    "fields": {
+      "pergunta": 190,
+      "texto": "d) Deploying two or more virtual machines across different availability zones within the same region.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 195,
+    "fields": {
+      "prova": 4,
+      "texto": "Which of the following is something that Azure Cognitive Services API can currently do?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 196,
+    "fields": {
+      "pergunta": 195,
+      "texto": "a) Recognize text in an image",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 197,
+    "fields": {
+      "pergunta": 195,
+      "texto": "b) Speak text in an extremely realistic way",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 198,
+    "fields": {
+      "pergunta": 195,
+      "texto": "c) Translate text from one language to another",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 199,
+    "fields": {
+      "pergunta": 195,
+      "texto": "d) All of these! Azure can do it all!",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 200,
+    "fields": {
+      "prova": 4,
+      "texto": "In Microsoft Azure, what is the maximum number of virtual machines that can be included in a single Virtual Machine Scale Set, as per Azure's standard guidelines and capabilities?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 201,
+    "fields": {
+      "pergunta": 200,
+      "texto": "a) 500",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 202,
+    "fields": {
+      "pergunta": 200,
+      "texto": "b) 1000",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 203,
+    "fields": {
+      "pergunta": 200,
+      "texto": "c) Unlimited",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 204,
+    "fields": {
+      "pergunta": 200,
+      "texto": "d) 10000",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 205,
+    "fields": {
+      "prova": 4,
+      "texto": "In the context of cloud computing, a virtual machine (VM) is primarily associated with which type of cloud hosting model?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 206,
+    "fields": {
+      "pergunta": 205,
+      "texto": "a) Platform as a Service (PaaS)",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 207,
+    "fields": {
+      "pergunta": 205,
+      "texto": "b) Infrastructure as a Service (IaaS)",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 208,
+    "fields": {
+      "pergunta": 205,
+      "texto": "c) Software as a Service (SaaS)",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 209,
+    "fields": {
+      "prova": 4,
+      "texto": "What is a primary benefit of opting for a consumption-based pricing model over a time-based pricing model in cloud services?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 210,
+    "fields": {
+      "pergunta": 209,
+      "texto": "a) Significant cost savings when the resources aren't needed for constant use.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 211,
+    "fields": {
+      "pergunta": 209,
+      "texto": "b) It always being cheaper to pay for consumption rather than paying hourly.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 212,
+    "fields": {
+      "pergunta": 209,
+      "texto": "c) The ability to easily predict the future cost of the service.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 213,
+    "fields": {
+      "pergunta": 209,
+      "texto": "d) A simpler and easier-to-understand pricing model.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 214,
+    "fields": {
+      "prova": 4,
+      "texto": "True or false: You cannot have more than one Azure subscription per company",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 215,
+    "fields": {
+      "pergunta": 214,
+      "texto": "a) TRUE",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 216,
+    "fields": {
+      "pergunta": 214,
+      "texto": "b) FALSE",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 217,
+    "fields": {
+      "prova": 4,
+      "texto": "Which of the following characteristics is essential for a system to be considered highly available in a cloud computing environment?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 218,
+    "fields": {
+      "pergunta": 217,
+      "texto": "a) It's impossible to create a highly available system.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 219,
+    "fields": {
+      "pergunta": 217,
+      "texto": "b) The system must be designed for resilience, with no single points of failure.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 220,
+    "fields": {
+      "pergunta": 217,
+      "texto": "c) The system must operate on a minimum of two virtual machines.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 221,
+    "fields": {
+      "pergunta": 217,
+      "texto": "d) The system must maintain 100% availability at all times.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 222,
+    "fields": {
+      "prova": 4,
+      "texto": "Which of the following best describes the primary benefit of a Content Delivery Network (CDN) in a cloud computing context?",
+      "imagem": null
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 223,
+    "fields": {
+      "pergunta": 222,
+      "texto": "a) It mitigates server load for static, unchanging files like images, videos, and PDFs by distributing them across a network of servers.",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 224,
+    "fields": {
+      "pergunta": 222,
+      "texto": "b) For a nominal fee, Azure will manage your virtual machine, perform OS updates, and ensure optimal performance.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 225,
+    "fields": {
+      "pergunta": 222,
+      "texto": "c) It enables temporary session information storage for web visitors, such as their login ID or name.",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 226,
+    "fields": {
+      "pergunta": 222,
+      "texto": "d) It provides fast and inexpensive data retrieval for later use.",
+      "correta": false
+    }
+  }
+]
