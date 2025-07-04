@@ -69,10 +69,10 @@ a) NO
 b) YES
 b
 Pergunta 12
-a) Your organization has implemented an Azure Policy that restricts the type of Virtual Machine instances you can use. How can you create a VM that is blocked by the policy?
-b) Subscription Owners (Administrators) can create resources regardless of what the policy restricts
-c) Use an account that has Contributor or above permissions to the resource group
-d) The only way is to remove the policy, create the resource and add the policy back
+Your organization has implemented an Azure Policy that restricts the type of Virtual Machine instances you can use. How can you create a VM that is blocked by the policy?
+a) Subscription Owners (Administrators) can create resources regardless of what the policy restricts
+b) Use an account that has Contributor or above permissions to the resource group
+c) The only way is to remove the policy, create the resource and add the policy back
 d
 Pergunta 13
 When establishing a Site-to-Site VPN connection with Azure, what kind of network device needs to be present or installed in your company's on-premises network infrastructure?
@@ -216,16 +216,6 @@ a) When an application outsources (federates) it's identity service to a third-p
 b) The ability to use an existing user id and password to sign in other applications, and not have to create/memorize a new one.
 c) When you sign in to an application, it remembers who you are the next time you go there.
 b
-Pergunta 34
-Which ways does the Azure Resource Manager model provide to deploy resources?
-Seleção correta
-Powershell
-Seleção correta
-REST API / SDK
-Seleção correta
-Azure Portal
-Seleção correta
-CLI
 Pergunta 35
 Which Azure service is meant to be a security dashboard that contains all the security and threat protection in one place?
 a) Azure Portal Dashboard

@@ -3,7 +3,7 @@ import json
 def parse_questions(file_path):
     questions = []
     pk_counter = 1
-    prova_id = 4  # ID fixo da prova
+    prova_id = 1  # ID fixo da prova
 
     with open(file_path, 'r', encoding='utf-8') as file:
         lines = [line.strip() for line in file if line.strip()]  # remove linhas em branco
@@ -22,8 +22,7 @@ def parse_questions(file_path):
                 "pk": pk_counter,
                 "fields": {
                     "prova": prova_id,
-                    "texto": question_text,
-                    "imagem": None
+                    "texto": question_text
                 }
             })
             pk_counter += 1

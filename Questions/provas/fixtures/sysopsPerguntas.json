@@ -3,7 +3,7 @@
       "model": "provas.pergunta",
       "pk": 2,
       "fields": {
-          "prova": 4,
+          "prova": 2,
           "texto": "A SysOps administrator is troubleshooting an AWS CloudFormation template whereby multiple Amazon EC2 instances are being created. The template is working in us-east-1, but it is failing in us-west-2 with the error code:\nAMI [ami-12345678] does not exist\nHow should the Administrator ensure that the AWS CloudFormation template is working in every region?",
           "imagem": null
       }
@@ -48,7 +48,7 @@
       "model": "provas.pergunta",
       "pk": 3,
       "fields": {
-          "prova": 4,
+          "prova": 2,
           "texto": "A SysOps administrator is provisioning an Amazon Elastic File System (Amazon EFS) file system to provide shared storage across multiple Amazon EC2 instances. The instances all exist in the same VPC across multiple Availability Zones. There are two instances in each Availability Zone. The SysOps administrator must make the file system accessible to each instance with the lowest possible latency.\nWhich solution will meet these requirements?",
           "imagem": null
       }
@@ -93,7 +93,7 @@
       "model": "provas.pergunta",
       "pk": 4,
       "fields": {
-          "prova": 4,
+          "prova": 2,
           "texto": "A SysOps administrator has successfully deployed a VPC with an AWS CloudFormation template. The SysOps administrator wants to deploy the same template across multiple accounts that are managed through AWS Organizations.\nWhich solution will meet this requirement with the LEAST operational overhead?",
           "imagem": null
       }
