@@ -8,8 +8,7 @@
 <button class="btn btn-light" id="scroll-to-bottom">Final</button>
 <button class="btn btn-success" id="enviar-respostas">Enviar Respostas</button>
 <button class="btn btn-danger" id="limpar-respostas">Limpar Respostas</button>
-<img src="{{ MEDIA_URL }}/media/media/future.webp" alt="future" class="img-fluid future" style="max-height: 50px;"
-    id="future">
+<img src="{% get_media_prefix %}media/future.jpg" alt="future" class="img-fluid future" style="max-height: 50px;" id="future">
 {% endblock %}
 {% block content %}
 <div class="container">
