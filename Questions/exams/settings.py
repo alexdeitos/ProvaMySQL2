@@ -18,7 +18,6 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 #BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -141,10 +140,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Diretórios onde o Django irá procurar arquivos estáticos
+#STATICFILES_DIRS = [
+#    BASE_DIR / 'provas' / 'static',
+#]
 STATICFILES_DIRS = [
-    BASE_DIR / 'provas' / 'static',
+    BASE_DIR / 'provas' / 'static' / 'provas',
 ]
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
