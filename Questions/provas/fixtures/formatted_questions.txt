@@ -1,0 +1,2043 @@
+Pergunta 1
+An IT administrator has the requirement to control access to a specific app resource using multi-factor authentication. What Azure service satisfies this requirement?
+a) Azure Function
+b) Azure Authentication
+c) Microsoft Entra ID *
+d) Azure Authorization
+
+Pergunta 2
+Which major cloud provider offers the most international locations for customers to provision virtual machines and other servers?
+a) Amazon AWS
+b) Microsoft Azure *
+c) Google Cloud Platform
+
+Pergunta 3
+What is the name of the group of services inside Azure that hosts the Apache Hadoop big data analysis tools?
+a) HDInsight *
+b) Azure Data Factory
+c) Azure Kubernetes Services
+d) Azure Hadoop Services
+
+Pergunta 4
+In the context of Azure's high availability solutions, what is the primary purpose of Azure Availability Zones?
+a) They serve as a folder structure in Azure used for organizing resources such as databases, virtual machines, and virtual networks.
+b) They allow manual selection of data centers for virtual machine placement to achieve superior availability compared to other options. *
+c) They represent certain server racks within individual data centers, specifically designed by Azure for higher uptime.
+d) They are synonymous with an Azure region.
+
+Pergunta 5
+True or false: you can create your own policies if built-in Azure Policy is not sufficient to your needs
+a) TRUE *
+b) FALSE
+
+Pergunta 6
+What is Azure's preferred Identity/authentication service?
+a) Facebook Connect
+b) Microsoft Entra ID (formerly Azure Active Directory) *
+c) Live Connect
+d) Network Security Group
+
+Pergunta 7
+What is the name of Azure's hosted SQL database service?
+a) Azure SQL Database *
+b) SQL Server in a VM
+c) Cosmos DB
+d) Table Storage
+
+Pergunta 8
+You are planning to deploy a critical application on Azure and want to ensure high availability and reliability for your services. Which of the following statements about Azure Service Level Agreements (SLAs) is correct and should be considered when designing your solution?
+a) SLAs vary by service and can include guarantees for uptime, performance, and connectivity. *
+b) Azure provides a 100% SLA for all services.
+c) You do not need to consider SLAs when designing your solution, as Azure automatically ensures the highest availability.
+d) The SLA guarantees that the service will be available 99.9% of the time for all Azure services.
+
+Pergunta 9
+You are explaining the different cloud deployment models to a colleague. Which of the following statements correctly describes the difference between a public cloud and a private cloud?
+a) A public cloud is owned and operated by a single organization for exclusive use, while a private cloud is available to the general public or a large industry group and is owned by a cloud service provider.
+b) Both public and private clouds are available to the general public and are owned by a cloud service provider.
+c) Both public and private clouds are owned and operated by a single organization for exclusive use.
+d) A public cloud is available to the general public or a large industry group and is owned by a cloud service provider, while a private cloud is owned and operated by a single organization for exclusive use. *
+
+Pergunta 10
+True or False: Azure has the responsibility to manage the hardware in the Infrastructure as a Service model
+a) TRUE *
+b) FALSE
+
+Pergunta 11
+Can you give someone else access to your Azure subscription without giving them your user name and password?
+a) NO
+b) YES *
+
+Pergunta 12
+Your organization has implemented an Azure Policy that restricts the type of Virtual Machine instances you can use. How can you create a VM that is blocked by the policy?
+a) Subscription Owners (Administrators) can create resources regardless of what the policy restricts
+b) Use an account that has Contributor or above permissions to the resource group
+c) The only way is to remove the policy, create the resource and add the policy back *
+
+Pergunta 13
+When establishing a Site-to-Site VPN connection with Azure, what kind of network device needs to be present or installed in your company's on-premises network infrastructure?
+a) An Azure Virtual Network
+b) An Application Gateway
+c) A dedicated virtual machine
+d) A compatible VPN Gateway device *
+
+Pergunta 14
+Which of the following is a feature of the cool access tier for Azure Storage?
+a) Most expensive option when it comes to bandwidth cost to access your files
+b) Much cheaper to store your files than the hot access tier *
+c) Significant delays in accessing your data, up to several hours
+d) Cheapest option when it comes to bandwidth costs to access your files
+
+Pergunta 15
+You are exploring new features on Azure and come across a service that is in private preview mode. Which of the following statements about services in private preview mode is true?
+a) Access to services in private preview mode is limited and usually requires approval from Microsoft or an invitation. *
+b) Services in private preview mode are generally available (GA) and can be used in production environments.
+c) All Azure customers automatically have access to services in private preview mode.
+d) Services in private preview mode have the same level of support and SLA guarantees as generally available services.
+
+Pergunta 16
+What is the basic way of protecting an Azure Virtual Network subnet?
+a) Network Security Group *
+b) Azure DDos Standard protection
+c) Azure Firewall
+d) Application Gateway with WAF
+
+Pergunta 17
+In Microsoft Azure, which tool or service allows for the organization and management of multiple subscriptions within hierarchical structures?
+a) Resource Groups
+b) Microsoft Entra ID
+c) Management Groups *
+d) RBAC (Role-Based Access Control)
+
+Pergunta 18
+What is the MAIN management tool used for managing Azure resources with a graphical user interface?
+a) Azure Portal *
+b) Azure Storage Explorer
+c) PowerShell
+d) Remote Desktop Protocol (RDP)
+
+Pergunta 19
+Which tool within Azure helps you to track your compliance with various international standards and government laws?
+a) Purview Compliance Manager *
+b) Azure Government Services
+c) Service Trust Portal
+d) Microsoft Privacy Statement
+
+Pergunta 20
+In the context of cloud computing, how is the benefit of 'agility' best described?
+a) It refers to the system's ability to easily scale up when it reaches full capacity.
+b) It refers to the ability to quickly respond to and drive changes in the market. *
+c) It refers to the ability to rapidly provision new resources.
+d) It refers to the ability to swiftly recover from a large-scale regional failure.
+
+Pergunta 21
+Who is responsible for the security of the physical servers in an Azure data center?
+a) Azure is responsible for securing the physical data centers *
+b) I am responsible for securing the physical data centers
+
+Pergunta 22
+Within the landscape of cloud service models, how would Microsoft's Outlook 365 be best categorized?
+a) Platform as a Service (PaaS)
+b) Infrastructure as a Service (IaaS)
+c) Software as a Service (SaaS) *
+
+Pergunta 23
+What is a DDoS attack?
+a) An attempt to read the contents of a web page from another website, thereby stealing the user's private information
+b) An attempt to guess a user's password through brute force methods
+c) An attempt to send SQL commands to the server in a way that it will execute them against the database
+d) A denial of service attack that sends so much traffic to a network that it cannot respond fast enough; legitimate users become unable to use the service *
+
+Pergunta 24
+Logic apps, functions, and service fabric are all examples of what model of compute within Azure?
+a) SaaS model
+b) IaaS model
+c) App Services Model
+d) Serverless model *
+
+Pergunta 25
+Azure Services can go through several phases in a Service Lifecycle. What are the three phases called?
+a) Announced, Coming Soon, and Live
+b) Private Preview, Public Preview, and General Availability *
+c) Development phase, QA phase, and Live phase
+d) Preview Phase, General Availability Phase, and Unpublished
+
+Pergunta 26
+Which feature of Microsoft Entra ID (formerly Azure Active Directory) will require users to have their mobile phone in order to be able to log in?
+a) Advanced Threat Protection (ATP)
+b) Multi-Factor Authentication *
+c) Microsoft Defender for Cloud
+d) Azure Information Protection (AIP)
+
+Pergunta 27
+In the context of cloud computing and Azure services, how would you define 'compute resources'?
+a) They are resources that execute tasks requiring CPU cycles. *
+b) They encompass Virtual Machines, Storage Accounts, and Virtual Networks.
+c) They include all resources listed in the Azure Marketplace.
+d) They refer exclusively to Virtual Machines.
+
+Pergunta 28
+Which Azure Service contains pre-built machine learning models that you can use in your own code, using an API?
+a) Azure Functions
+b) App Services
+c) Azure AI Services (formerly Cognitive Services) *
+d) Azure Policy
+
+Pergunta 29
+What feature within Azure will make recommendations to you about reducing cost on your account?
+a) Azure Service Health
+b) Microsoft Defender for Cloud
+c) Azure Dashboard
+d) Azure Advisor *
+
+Pergunta 30
+Which of the following Azure features is most likely to deliver the most immediate savings when it comes to reducing Azure costs?
+a) Using Azure Policy to restrict the user of expensive VM SKUs
+b) Changing your storage accounts from globally redundant (GRS) to locally redundant (LRS)
+c) Using Azure Reserved Instances for most of your virtual machines *
+d) Auto shutdown of development and QA servers over night and on weekends
+
+Pergunta 31
+Which Azure website tool is available for you to estimate the future costs of your Azure products and services by adding products to a shopping basket and helping you calculate the costs?
+a) Azure Pricing Calculator *
+b) Microsoft Docs
+c) Azure Advisor
+
+Pergunta 32
+Which of the following characteristics of a cloud-based system primarily contributes to its elasticity?
+a) The system's ability to recover automatically after a crash.
+b) The system's ability to dynamically increase and decrease capacity based on real-time demand. *
+c) The system's ability to maintain availability while updates are being implemented.
+d) The system's ability to withstand denial-of-service attacks.
+
+Pergunta 33
+What is Single Sign-On?
+a) When an application outsources (federates) it's identity service to a third-party platform
+b) The ability to use an existing user id and password to sign in other applications, and not have to create/memorize a new one. *
+c) When you sign in to an application, it remembers who you are the next time you go there.
+
+Pergunta 34
+Which ways does the Azure Resource Manager model provide to deploy resources?
+a) Powershell
+b) REST API / SDK
+c) Azure Portal
+d) CLI *
+
+Pergunta 35
+Which Azure service is meant to be a security dashboard that contains all the security and threat protection in one place?
+a) Azure Portal Dashboard
+b) Azure Monitor
+c) Azure Key Vault
+d) Microsoft Defender for Cloud *
+
+Pergunta 36
+Who is responsible for the security of your Azure Storage account access keys?
+a) Azure is responsible for securing the access keys
+b) I am responsible for securing the access keys *
+
+Pergunta 37
+What is the default amount of credits that you are given when you first create an Azure Free account?
+a) Azure does not give you any free credits when you create a free account
+b) The default is US$200 *
+c) You can create 1 Linux VM, 1 Windows VM, and a number of other free services for the first year.
+d) You are given $50 per month, for one year towards Azure services
+
+Pergunta 38
+If you wanted to simply use Azure as an extension of your own datacenter, not primarily hosting anything there but using it for extra storage or taking advantage of some services, what hosting model is that called?
+a) Private cloud
+b) Hybrid cloud *
+c) Public cloud
+
+Pergunta 39
+Which feature within Azure collects all of the logs from various resources into a central dashboard, where you can run queries, view graphs, and create alerts on certain events?
+a) Azure Monitor *
+b) Azure Portal Dashboard
+c) Microsoft Defender for Cloud
+d) Storage Account or Event Hub
+
+Pergunta 40
+You have decided to subscribe to Azure DDoS Protection at the IP Protection Tier. This provides advanced protection to defend against DDoS attacks. What type of DDoS attack does DDoS Protection NOT protect against?
+a) Transport (L4) level attacks
+b) Application (L7) level attacks *
+c) Network (L3) level attacks
+
+Pergunta 41
+What type of container is used to collect log and metric data from various Azure Resources?
+a) Managed Storage
+b) Log Analytics Workspace *
+c) Append Blob Storage
+d) Azure Monitor account
+
+Pergunta 42
+Which Azure feature is specifically designed to help companies get their in-house developed code from the code repository, through automated unit testing, and onto Azure using a service called Pipelines?
+a) Virtual Machines
+b) Azure Monitor
+c) GitHub
+d) Azure DevOps *
+
+Pergunta 43
+In the context of Azure's Service Level Agreement (SLA) for virtual machines, which of the following deployment strategies would offer the highest level of availability?
+a) Deploying two or more virtual machines within an availability set.
+b) Deploying a single virtual machine.
+c) Deploying two or more virtual machines within the same data center.
+d) Deploying two or more virtual machines across different availability zones within the same region. *
+
+Pergunta 44
+Which of the following is something that Azure Cognitive Services API can currently do?
+a) Recognize text in an image
+b) Speak text in an extremely realistic way
+c) Translate text from one language to another
+d) All of these! Azure can do it all! *
+e) Create text from audio
+
+Pergunta 45
+In Microsoft Azure, what is the maximum number of virtual machines that can be included in a single Virtual Machine Scale Set, as per Azure's standard guidelines and capabilities?
+a) 500
+b) 1000 *
+c) Unlimited
+d) 10000
+
+Pergunta 46
+In the context of cloud computing, a virtual machine (VM) is primarily associated with which type of cloud hosting model?
+a) Platform as a Service (PaaS)
+b) Infrastructure as a Service (IaaS) *
+c) Software as a Service (SaaS)
+
+Pergunta 47
+What is a primary benefit of opting for a consumption-based pricing model over a time-based pricing model in cloud services?
+a) Significant cost savings when the resources aren't needed for constant use. *
+b) It always being cheaper to pay for consumption rather than paying hourly.
+c) The ability to easily predict the future cost of the service.
+d) A simpler and easier-to-understand pricing model.
+
+Pergunta 48
+True or false: You cannot have more than one Azure subscription per company
+a) TRUE
+b) FALSE *
+
+Pergunta 49
+Which of the following characteristics is essential for a system to be considered highly available in a cloud computing environment?
+a) It's impossible to create a highly available system.
+b) The system must be designed for resilience, with no single points of failure. *
+c) The system must operate on a minimum of two virtual machines.
+d) The system must maintain 100% availability at all times.
+
+Pergunta 50
+Which of the following best describes the primary benefit of a Content Delivery Network (CDN) in a cloud computing context?
+a) It mitigates server load for static, unchanging files like images, videos, and PDFs by distributing them across a network of servers. *
+b) For a nominal fee, Azure will manage your virtual machine, perform OS updates, and ensure optimal performance.
+c) It enables temporary session information storage for web visitors, such as their login ID or name.
+d) It provides fast and inexpensive data retrieval for later use.
+
+Pergunta 51
+Which of the following elements is considered part of the "perimeter" layer of security?
+a) Use a firewall *
+b) Keep operating systems up to date with patches
+c) Locks on the data center doors
+d) Separate servers into distinct subnets by role
+
+Pergunta 52
+Which tool within Azure is comprised of : Azure Status, Service Health and Resource Health?
+a) Azure Monitor
+b) Azure Service Health *
+c) Azure Dashboard
+d) Azure Advisor
+
+Pergunta 53
+What is the service level agreement for two or more Azure Virtual Machines that have been manually placed into different Availability Zones in the same region?
+a) 99.90%
+b) 99.99% *
+c) 100%
+d) 99.95%
+
+Pergunta 54
+Where do you go within the Azure Portal to find all of the third-party virtual machine and other offers?
+a) Azure mobile app
+b) Azure Marketplace *
+c) Bing
+d) Choose an image when creating a VM
+
+Pergunta 55
+Which Azure pricing option provides significant discounts for committing to a specific amount of resource usage for a 1-year or 3-year term?
+a) Reserved Instances *
+b) Free Tier
+c) Spot Pricing
+d) Pay-As-You-Go
+
+Pergunta 56
+What does it mean if a service is in General Availability (GA) mode?
+a) You have to apply to get selected in order to use that service
+b) Anyone can use the service for any reason *
+c) Anyone can use the service but it must not be for production use
+d) The service has now reached public preview, and Microsoft will provide support for it
+
+Pergunta 57
+What is the primary purpose of Azure Regions in Microsoft Azure?
+a) To automate the deployment of applications using Infrastructure as Code (IaC).
+b) To manage user access and permissions for Azure resources.
+c) To monitor and optimize the performance of virtual machines.
+d) To provide physical data centers in specific geographic locations for hosting Azure services. *
+
+Pergunta 58
+Why is a user id and password sometimes not enough to prove someone is who they say they are?
+a) Passwords are usually easy to forget
+b) Some people might choose the same user id and password
+c) User id and password can be used by anyone such as a co-worker, ex-employee or hacker half-way around the world *
+d) Passwords must be encrypted before being stored
+
+Pergunta 59
+Which of the following is a good example of a Hybrid cloud?
+a) A server runs in your own environment, but places files in the cloud so that it can extend the amount of storage it has access to. *
+b) Your code is a mobile app that runs on iOS and Android phones, but it uses a database in the cloud.
+c) Technology that allows you to grow living tissue on top of an exoskeleton, making Terminators impossible to spot among humans.
+d) Your users are inside your corporate network but your applications and data are in the cloud.
+
+Pergunta 60
+Application Gateway contains what additional optional security feature over a regular Load Balancer?
+a) Multi-Factor Authentication
+b) Web Application Firewall (or WAF) *
+c) Azure AD Advanced Information Protection
+d) Advanced DDoS Protection
+
+Pergunta 61
+Which of the following cloud computing models requires the highest level of involvement in maintaining the operating system and file system by the customer?
+a) FaaS
+b) SaaS
+c) PaaS
+d) IaaS *
+
+Pergunta 62
+Windows servers use "remote desktop protocol" (RDP) in order for administrators to get access to manage the server. Linux servers use SSH. What is the recommendation for ensuring the security of these protocols?
+a) Do not enable SSH access for Linux servers
+b) Do not allow public Internet access over the RDP and SSH ports directly to the server. Instead use a secure server like Bastion to control access to the servers behind. *
+c) Disable RDP access using the Windows Services control panel admin tool
+d) Ensure strong passwords on your Windows admin accounts
+
+Pergunta 63
+What is the concept of Availability?
+a) A system that can scale up and scale down depending on customer demand
+b) The percentage of time a system responds properly to requests, expressed as a percentage over time *
+c) A system that has a single point of failure
+d) A system must have 100% uptime to be considered available
+
+Pergunta 64
+Which Azure Storage service is best suited for storing unstructured data such as text or binary data?
+a) Azure File Storage
+b) Azure Table Storage
+c) Azure Queue Storage
+d) Azure Blob Storage *
+
+Pergunta 65
+You are learning to use the command line to manage your Azure resources. Which of the following commands would you use to log in to your Azure account using Azure CLI?
+a) az account connect
+b) az connect
+c) az account login
+d) az login *
+
+Pergunta 66
+What Azure resource allows you to evenly split traffic coming in and direct it to several identical virtual machines to do the work and respond to the request?
+a) Azure App Services
+b) Virtual Network
+c) Azure Logic Apps
+d) Load Balancer or Application Gateway *
+
+Pergunta 67
+What two types of DDoS protection services does Azure provide? Select two.
+a) DDoS Premium Protection
+b) DDoS IP Protection
+c) DDoS Advanced Protection
+d) DDoS Network Protection *
+
+Pergunta 68
+What types of files can a Content Delivery Network speed up the delivery of?
+a) JavaScript files
+b) Videos
+c) Images
+d) PDFs *
+
+Pergunta 69
+What is the concept of paired regions?
+a) Azure employees in those regions sometimes go on picnics together.
+b) When you deploy your code to one region of the world, it is automatically deployed to the paired region as an emergency backup.
+c) Each region of the world has one other region, usually in a completely separate country and geography, where it makes the most sense to place your backups. Like East US 2 is paired with South Korea.
+d) Each region in the world has at least one other region in which is shares an extremely high speed connection, and where there is coordinated action by Azure not to do anything that will bring them both down at the same time. *
+
+Pergunta 70
+True or false: Azure Cloud Shell allows access to the Bash and Powershell consoles in the Azure Portal
+a) FALSE
+b) TRUE *
+
+Pergunta 71
+Select all features part of Azure AD?
+a) Device Management
+b) Single sign-on
+c) Custom banned password list
+d) Log Alert Rule
+e) Smart lockout *
+
+Pergunta 72
+Which of the following is considered a downside to using Capital Expenditure (CapEx)?
+a) You are not guaranteed to make a profit
+b) It does not require a lot of up front money
+c) You can deduct expenses as they occur
+d) You must wait over a period of years to depreciate that investment on your taxes *
+
+Pergunta 73
+What does it mean if a service is in Public Preview mode?
+a) Anyone can use the service for any reason
+b) You have to apply to get selected in order to use that service
+c) Anyone can use the service but it must not be for production use *
+d) The service is generally available for use, and Microsoft will provide support for it
+
+Pergunta 74
+How many regions does Azure have in Brazil?
+a) 2
+b) 4
+c) 0
+d) 1 *
+
+Pergunta 75
+Why is Azure App Services considered Platform as a Service?
+a) Azure App Services is not PaaS, it's Software as a Service.
+b) You give Azure the code and configuration, and you have no access to the underlying hardware *
+c) You are responsible for keeping the operating system up to date with the latest patches
+d) You can decide on what type of virtual machine it runs - A-series, or D-series, or even H-series
+
+Pergunta 76
+Which of the following is not an example of Infrastructure as a Service?
+a) Virtual Network
+b) Virtual Machine Scale Sets
+c) Virtual Machine
+d) SQL Server in a VM
+e) Azure SQL Database *
+
+Pergunta 77
+What does ARM stand for in Azure?
+a) Account Resource Manager
+b) Azure Resource Manager *
+c) Availability, Reliability, Maintainability
+d) Advanced RISC Machine
+
+Pergunta 78
+What is the concept of being able to get your applications and data running in another environment quickly?
+a) Azure Devops
+b) Azure Blueprint
+c) Reproducible deployments
+d) Business Continuity / Disaster Recovery (BC/DR) *
+
+Pergunta 79
+In what way does Multi-Factor Authentication increase the security of a user account?
+a) It doesn't. Multi-Factor Authentication is more about access and authentication than account security.
+b) It requires the user to possess something like their phone to read an SMS, use a mobile app, or biometric identification. *
+c) It requires users to be approved before they can log in for the first time.
+d) It requires single sign-on functionality
+
+Pergunta 80
+Which Azure pricing model allows you to pay for compute resources by the second, with no long-term commitment?
+a) Spot Pricing
+b) Pay-As-You-Go *
+c) Reserved Instances
+d) Enterprise Agreement
+
+Pergunta 81
+What is the Azure SLA for two or more Virtual Machines in an Availability Set?
+a) 99.99%
+b) 99.90%
+c) 99.95% *
+d) 100%
+
+Pergunta 82
+What Azure product allows you to autoscale virtual machines from 1 to 1000 instances, and also provides load balancing services built in?
+a) Azure Virtual Machines
+b) Azure App Services
+c) Virtual Machine Scale Sets *
+d) Application Gateway
+
+Pergunta 83
+How do you get access to services in Private Preview mode?
+a) You must apply to use them. *
+b) You cannot use private preview services.
+c) You must agree to a terms of use first.
+d) They are available in the marketplace. You simply use them.
+
+Pergunta 84
+If you are a US federal, state, local, or tribal government entities and their solution providers, which Azure option should you be looking to register for?
+a) Azure Public Portal
+b) Azure Department of Defence
+c) Azure is not available for government officials
+d) Azure Government *
+
+Pergunta 85
+Which of the following is not a feature of Azure Functions?
+a) Can edit the code right in the Azure Portal using a code editor
+b) Can trigger the function based off of Azure events such as a new file being saved to a storage account blob container
+c) Designed for backend batch applications that are continuously running *
+d) Can possibly cost you nothing as there is a generous free tier
+
+Pergunta 86
+What is the minimum charge for having an Azure Account each month, even if you don't use any resources?
+a) $0 *
+b) Negotiated with your enterprise manager
+c) $200
+d) $1
+
+Pergunta 87
+What is the primary purpose of Microsoft Purview in Azure?
+a) To offer a unified data governance solution for managing on-premises, multi-cloud, and SaaS data. *
+b) To enable real-time data analytics and visualization.
+c) To automate the deployment of infrastructure as code (IaC).
+d) To provide virtual machine scalability and performance monitoring.
+
+Pergunta 88
+Besides Azure Service Health, where else can you find out any issues that affect the Azure global network that affect you?
+a) Azure Updates Blog
+b) Each Virtual Machine has a Resource Health blade *
+c) Azure will email you
+d) Install the Azure app on your phone
+
+Pergunta 89
+Which Azure service is the recommended Identity-as-a-Service offering inside Azure?
+a) Identity and Access Management (IAM)
+b) Microsoft Entra ID (formerly Azure Active Directory) *
+c) Azure Portal
+d) Azure Front Door
+
+Pergunta 90
+Select the way(s) to increase the security of a traditional user id and password system?
+a) Require users to change their passwords more frequently.
+b) Require longer and more complex passwords.
+c) Do not allow users to log into an application except using a company registered device.
+d) Use multi-factor authentication which requires an additional device (something you have) to verify identity. *
+
+Pergunta 91
+What is a benefit of economies of scale?
+a) The more you buy of something, the cheaper it is for you *
+b) Big companies don't need to make a profit on every sale
+c) Prices of cloud servers and services are always going down. It'll be cheaper next year than it is this year.
+d) Big companies don't need to make a profit on the first product they sell you, because they will make a profit on the second
+
+Pergunta 92
+Each person has their own user id and password to log into Azure. But how many subscriptions can a single account be associated with?
+a) 250 per region
+b) 10
+c) No limit *
+d) One
+
+Pergunta 93
+What database service is specifically designed to be extremely fast in responding to requests for small amounts of data (called low latency)?
+a) Cosmos DB *
+b) SQL Database
+c) SQL Server in a VM
+d) SQL Data Warehouse
+
+Pergunta 94
+Approximately how many regions does Azure have around the world?
+a) 25
+b) 60+ *
+c) 10
+d) 40
+
+Pergunta 95
+What would be a good reason to have multiple Azure subscriptions?
+a) There is one person/credit card paying for resources, but many people who have accounts in Azure, and you need to separate out resources between clients so that there is absolutely no chance of resources being exposed between them. *
+b) There is one person/credit card paying for resources, and only one person who logs into Azure to manage the resources, but you want to be able to know which resources are used for which client project.
+
+Pergunta 96
+Which free Azure security service checks all traffic travelling over a subnet against a set of rules before allowing it in, or out.
+a) Network Security Group *
+b) Azure Firewall
+c) Advanced Threat Protection (ARP)
+d) Azure DDoS Protection
+
+Pergunta 97
+What is the benefit of using a command line tool like Powershell or CLI as opposed to the Azure portal?
+a) Cheaper
+b) Automation *
+c) Quicker to deploy VMs
+
+Pergunta 98
+Within the context of privacy and compliance, what does the acronym ISO stand for, in English?
+a) International Organization for Standardization *
+b) Information Systems Officer
+c) Intelligence and Security Office
+d) Instead of
+
+Pergunta 99
+What is the concept of Big Data?
+a) A form of artificial intelligence (AI) that allows systems to automatically learn and improve from experience without being explicitly programmed.
+b) A small sensor or other device that constantly sends it's status and other data to the cloud
+c) A set of Azure services that allow you to use execute code in the cloud but don’t require (or even allow) you to manage the underlying server
+d) An extremely large set of data that you want to ingest and do analysis on; traditional software like SQL Server cannot handle Big Data as efficiently as specialized products *
+
+Pergunta 100
+Which of the following scenarios would Azure Policy be a recommended method for enforcement?
+a) Allow only one specific roles of users to have access to a resource group
+b) Add an additional prompt when creating a resource without a specific tag to ask the user if they are really sure they want to continue?
+c) Prevent certain Azure Virtual Machine instance types from being used in a resource group *
+d) Require a virtual machine to always update to the latest security patches
+
+Pergunta 101
+What advantage does an Application Gateway have over a Load Balancer?
+a) Application Gateway can be scaled so that two, three or more instances of the gateway can support your application.
+b) Application Gateway is more like an enterprise-grade product. You should not use a load balancer in production.
+c) Application gateway understands the HTTP protocol and can interpret the URL and make decisions based on the URL. *
+
+Pergunta 102
+What is the significance of the Azure region? Why is it important?
+a) Region is just a folder structure in which you organize resources, much like file folders on a computer.
+b) You must select a region when creating most resources, and the region is the area of the world where those resources will be physically located. *
+c) Once you select a region, you cannot create resources outside of that region. So selecting the right region is an important decision.
+d) Even though you have to choose a region when creating resources, there's generally no consequence of what you select. You can create a network in one region and then create virtual machines for that network in another region.
+
+Pergunta 103
+What does the letter R in RBAC stand for?
+a) Role *
+b) Review
+c) Rule
+d) Rights
+
+Pergunta 104
+TRUE OR FALSE: Azure Tenant is a dedicated and trusted instance of Microsoft Entra ID that's automatically created when your organization signs up for a Microsoft cloud service subscription.
+a) FALSE
+b) TRUE *
+
+Pergunta 105
+What is a policy initiative in Azure?
+a) Requiring all resources in Azure to use tags
+b) Assigning permissions to a role in Azure
+c) The ability to group policies together *
+d) A custom designed policy
+
+Pergunta 106
+What is the service level agreement for two or more Azure Virtual Machines that have been placed into the same Availability Set in the same region?
+a) 100%
+b) 99.90%
+c) 99.95% *
+d) 99.99%
+
+Pergunta 107
+What happens if Azure does not meet its own Service Level Agreement guarantee (SLA)?
+a) The service will be free that month
+b) You will be financially refunded a small amount of your monthly fee *
+c) It's not possible. Azure will always meet it's SLA?
+
+Pergunta 108
+True or false: If your feature is in the General Availability phase, then your feature will receive support from all Microsoft support channels.
+a) TRUE *
+b) FALSE
+
+Pergunta 109
+What is the name of the collective set of APIs that provide machine learning and artificial intelligence services to your own applications like voice recognition, image tagging, and chat bot?
+a) Azure Machine Learning Studio
+b) Azure AI Language services (formerly LUIS)
+c) Azure Batch
+d) Azure AI services (formerly Cognitive Services) *
+
+Pergunta 110
+If you wanted to get an alert every time a new virtual machine is created, where could you create that?
+a) Azure Monitor *
+b) Azure Dashboard
+c) Azure Policy
+d) Subscription settings
+
+Pergunta 111
+Why should you divide your application into multiple subnets as opposed to having all your web, application and database servers running on the same subnet?
+a) Each server type of your application requires its own subnet. It's not possible to mix web servers, database servers and application servers on the same subnet.
+b) Separating your application into multiple subnets allows you to have different NSG security rules for each subnet, which can make it harder for a hacker to get from one compromised server onto another. *
+c) There are only a limited number of IP addresses available per subnet, so you need multiple subnets over a certain number.
+
+Pergunta 112
+With Azure public cloud, anyone with a valid credit card can sign up and get services immediately
+a) TRUE *
+b) FALSE
+
+Pergunta 113
+Which of the following is a key benefit of using cloud services like Microsoft Azure?
+a) Fixed costs that do not vary based on usage.
+b) Limited scalability and flexibility for changing workloads.
+c) Increased responsibility for managing physical hardware and infrastructure.
+d) Reduced upfront capital expenditure (CapEx) by paying only for what you use. *
+
+Pergunta 114
+Which of the following are one of the advantages of running your cloud in a private cloud?
+a) Private cloud is significantly cheaper than the public cloud.
+b) Assurance that your code, data and applications are running on isolated hardware, and on an isolated network. *
+c) You own the hardware, so you can change private cloud hosting providers easily.
+
+Pergunta 115
+What are resource groups?
+a) A folder structure in Azure in which you organize resources like databases, virtual machines, virtual networks, or almost any resource *
+b) Within Azure security model, users are organized into groups, and those groups are granted permissions to resources
+c) Automatically assigned groups of resources that all have the same type (virtual machine, app service, etc)
+d) Based on the tag assigned to a resource by the deployment script, it is assigned to a group
+
+Pergunta 116
+Where can you go to see what standards Microsoft is in compliance with?
+a) Azure Privacy Page
+b) Trust Center *
+c) Azure Service Health
+d) Azure Security Center
+
+Pergunta 117
+How many minutes per month downtime is 99.99% availability?
+a) 1
+b) 40
+c) 100
+d) 4 *
+
+Pergunta 118
+What is the goal of a DDoS attack?
+a) To trick users into giving up personal information
+b) To overwhelm and exhaust application resources *
+c) To extract data from a database
+d) To crack the password from administrator accounts
+
+Pergunta 119
+How does Multi-Factor Authentication make a system more secure?
+a) It doesn't make it more secure
+b) It requires the user to have access to their verified phone in order to log in *
+c) It allows the user to log in without a password because they have already previously been validated using a browser cookie
+d) It is another password that a user has to memorize, making it more secure
+
+Pergunta 120
+Which of the following scenarios is best addressed by using Microsoft Entra ID?
+a) Monitoring the performance of Azure resources in real-time.
+b) Storing and analyzing large volumes of structured data.
+c) Providing a centralized identity management solution for hybrid cloud environments. *
+d) Automating the deployment of virtual machines using Infrastructure as Code (IaC).
+
+Pergunta 121
+What is the recommended way within Azure to store secrets such as private cryptographic keys?
+a) Azure Advanced Threat Protection (ATP)
+b) Within the application code
+c) In an Azure Storage account private blob container
+d) Azure Key Vault *
+
+Pergunta 122
+What operating systems does an Azure Virtual Machine support?
+a) Windows
+b) Windows and Linux *
+c) Windows, Linux and macOS
+d) macOS
+e) Linux
+
+Pergunta 123
+What are groups of subscriptions called?
+a) ARM Groups
+b) Management Groups *
+c) Azure Policy
+d) Subscription Groups
+
+Pergunta 124
+Which style of computing is easiest when migrating an existing hosted application from your own data center into the cloud?
+a) PaaS
+b) Serverless
+c) IaaS *
+d) FaaS
+
+Pergunta 125
+What software is used to synchronize your on premises AD with your Azure AD?
+a) Azure AD Domain Services
+b) AD Connect *
+c) Azure AD Federation Services
+d) LDAP
+
+Pergunta 126
+Which Azure management tool analyzes your usage of Azure and makes suggestions specifically targeted to help you optimize your usage of Azure regarding cost, security and performance?
+a) Azure Advisor *
+b) Azure Firewall
+c) Azure Service Health
+d) Azure Mobile App
+
+Pergunta 127
+What data format are ARM templates created in?
+a) YAML
+b) JSON *
+c) XML
+d) HTML
+
+Pergunta 128
+What two advantages does cloud computing elasticity give to you? Pick two.
+a) You can save money.
+b) You can do more regular backups and you won't lose as much when that backup gets restored
+c) You can serve users better during peak traffic periods by automatically adding more capacity. *
+d) Servers have become a commodity and Microsoft doesn't even need to even fix servers that fail within Azure.
+
+Pergunta 129
+How do you stop your Azure account from incurring costs above a certain level without your knowledge?
+a) Only use Azure Functions which have a significant free limit
+b) Implement the Azure spending limit in the Account Center *
+c) Switch to Azure Reserved Instances with Hybrid Benefit for VMs
+d) Set up a billing alert to send you an email when it reaches a certain level
+
+Pergunta 130
+Which database product offers "sub 5 millisecond" response times as a feature?
+a) Cosmos DB *
+b) SQL Server in a VM
+c) SQL Data Warehouse
+d) Azure SQL Database
+
+Pergunta 131
+Which feature within Azure alerts you to service issues that happen in Azure itself, not specifically related to your own resources?
+a) Azure Portal Dashboard
+b) Azure Monitor
+c) Azure Service Health *
+d) Azure Security Center
+
+Pergunta 132
+What does it mean that security is a "shared model" in Azure?
+a) Azure takes no responsibility for security.
+b) Azure takes care of security completely.
+c) You must keep your security keys private and ensure it doesn't get out.
+d) Both users and Azure have responsibilities for security. *
+
+Pergunta 133
+Which Azure compute service allows you to run containerized applications without managing the underlying infrastructure?
+a) Azure Virtual Machines
+b) Azure Container Instances *
+c) Azure Kubernetes Service (AKS)
+d) Azure App Service
+
+Pergunta 134
+If you have an Azure free account, with a $200 credit for the first month, what happens when you reach the $200 limit?
+a) Your credit card is automatically billed.
+b) All services are stopped and you must decide whether you want to convert to a paid account or not. *
+c) Your account is automatically closed.
+d) You cannot create any more resources until you add more credits to the account.
+
+Pergunta 135
+Which two features does Virtual Machine Scale Sets provide as part of the core product? Pick two.
+a) Firewall
+b) Load balancing between virtual machines
+c) Automatic installation of supporting apps and deployment of custom code
+d) Autoscaling of virtual machines *
+e) Content Delivery Network
+
+Pergunta 136
+Which Azure service, when enabled, will automatically block traffic to or from known malicious IP addresses and domains?
+a) Network Security Groups
+b) Azure Firewall *
+c) Load Balancer
+d) Azure Active Directory
+
+Pergunta 137
+What is the primary benefit of using Azure Virtual Desktop (AVD)?
+a) It enables users to access virtualized desktops and applications from anywhere, on any device. *
+b) It offers a serverless computing platform for running event-driven applications.
+c) It provides a fully managed database service for relational and non-relational data.
+d) It automates the deployment and management of containerized applications.
+
+Pergunta 138
+What is the primary purpose of Azure Sovereign Regions?
+a) To offer Azure services that comply with specific government regulations and data residency requirements. *
+b) To provide free Azure services for educational institutions and non-profits.
+c) To provide lower-cost Azure services for small and medium-sized businesses.
+d) To enable faster performance for global applications by reducing latency.
+
+Pergunta 139
+How many hours are available free when using the Azure B1S General Purpose Virtual Machines under a Azure free account in the first 12 months?
+a) 500 hrs
+b) 300 hrs
+c) 750 hrs *
+d) Indefinite amount of hrs
+
+Pergunta 140
+What is an Azure Subscription?
+a) It is the level at which services are billed. All resources created under a subscription are billed to that subscription. *
+b) Each user account is associated with a unique subscription. If you need more than one subscription, you need to create multiple user accounts.
+
+Pergunta 141
+What type of documents does the Microsoft Service Trust Portal provide?
+a) Specific recommendations about your usage of Azure and ways you can improve
+b) A list of standards that Microsoft follows, pen test results, security assessments, white papers, faqs, and other documents that can be used to show Microsoft's compliance efforts *
+c) A tool that helps you manage your compliance to various standards
+d) Documentation on the individual Azure services and solutions
+
+Pergunta 142
+Which of the following would be an example of an Internet of Things (IoT) device?
+a) A mobile application that is used to watch online video courses
+b) A web application that people use to perform their banking tasks
+c) A video game, installed on Windows clients around the world, that keep user scores in the cloud.
+d) A refrigerator that monitors how much milk you have left and sends you a text message when you are running low *
+
+Pergunta 143
+What is the core problem that you need to solve in order to have a high-availability application?
+a) You need to ensure the capacity of your server exceeds your highest number of expected concurrent users
+b) You should have a backup copy of your application on standby, ready to be started up when the main application fails.
+c) You need to avoid single points of failure *
+d) You need to ensure your server has a lot of RAM and a lot of CPUs
+
+Pergunta 144
+Which Azure networking service allows you to securely connect your on-premises network to Azure over the internet?
+a) Azure Load Balancer
+b) Azure Virtual Network (VNet)
+c) Azure VPN Gateway *
+d) Azure ExpressRoute
+
+Pergunta 145
+Which Azure service can be enabled to enable Multi-Factor Authentication for administrators but not require it for regular users?
+a) Privileged Identity Management *
+b) Azure AD B2B
+c) Azure Firewall
+d) Advanced Threat Protection
+
+Pergunta 146
+Which of the following services would NOT be considered Infrastructure as a Service?
+a) Azure Functions App *
+b) Virtual Network Interface Card (NIC)
+c) Virtual Machine
+d) Virtual Network
+
+Pergunta 147
+What does it mean if a service is in Private Preview mode?
+a) Anyone can use the service but it must not be for production use
+b) Anyone can use the service for any reason
+c) The service is generally available for use, and Microsoft will provide support for it
+d) You have to apply to get selected in order to use that service *
+
+Pergunta 148
+Deploying Azure App Services applications consists of what two components? Pick two.
+a) Managing operating system updates
+b) Database scripts
+c) Configuration
+d) Packaged code *
+
+Pergunta 149
+What is a key benefit of using Azure Cloud Shell?
+a) It allows you to run virtual machines directly in the browser.
+b) It automatically optimizes the cost of your Azure resources.
+c) It provides a pre-configured, browser-based shell for managing Azure resources without requiring local installations. *
+d) It provides a graphical user interface (GUI) for managing Azure services.
+
+Pergunta 150
+Which tool within the Azure Portal will make specific recommendations based on your actual usage for how you can improve your use of Azure?
+a) Azure Dashboard
+b) Azure Monitor
+c) Azure Advisor *
+d) Azure Service Health
+
+Pergunta 151
+Which of the following qualities is unique to Private Cloud?
+a) Anyone can sign up using a credit card
+b) A cloud infrastructure dedicated to a single organization, managed either by the organization itself or by a third-party provider *
+c) The virtual network is not accessible from the public Internet
+d) An application that uses a network security group, firewall, distributed denial of service protection, and other network security methods
+
+Pergunta 152
+Which of the following best describes the benefit ofelasticityin cloud services like Microsoft Azure?
+a) The ability to automatically scale resources up or down based on demand. *
+b) The elimination of all operational costs for managing resources.
+c) The requirement to pre-purchase resources for future use.
+d) The guarantee of 100% uptime for all services.
+
+Pergunta 153
+What is the primary purpose of Microsoft Entra ID?
+a) To secure network traffic and protect against cyber threats
+b) To store and manage large amounts of data
+c) To provide on-premises domain services in the cloud
+d) To manage user identities and access to applications and resources *
+
+Pergunta 154
+What type of scaling typically involves moving from a smaller machine to a larger (more powerful) machine?
+a) Scaling out
+b) Vertical scaling *
+c) Horizontal scaling
+
+Pergunta 155
+Which of the following benefits are provided by Azure ExpressRoute compared to a regular Site-to-Site VPN?
+a) Access to private Virtual Networks that do not have devices with a public IP address
+b) Data travels over a private network, not a public one
+c) Less expensive connection to Azure
+d) Faster connection to Azure *
+
+Pergunta 156
+Fill in the blank: A _________ is a geographical area on the planet that contains at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network.
+a) data center
+b) edge network
+c) region *
+d) availability zone
+
+Pergunta 157
+Which of the following best describes scalability in the cloud?
+a) The ability to maintain security across regions
+b) The ability to increase or decrease resources based on demand *
+c) The ability to run applications without an internet connection
+d) The ability to reduce costs by limiting storage
+
+Pergunta 158
+Fill in the blank: __________ stores data offline and offers the lowest storage costs
+a) Archive storage *
+b) Cool access
+c) Hot access
+d) Cold access
+
+Pergunta 159
+Which Azure service can be used to deploy and scale serverless containerized applications?
+a) Azure Functions
+b) Azure App Service
+c) Azure Kubernetes Service (AKS)
+d) Azure Container Instances *
+
+Pergunta 160
+Which of the following is a key difference between Azure B2B and Azure B2C?
+a) There is no significant difference between the two services.
+b) B2B is for cloud-based applications, while B2C is for on-premises applications.
+c) B2B is for internal users, while B2C is for external users.
+d) B2B is for business-to-business collaboration, while B2C is for business-to-customer interactions. *
+
+Pergunta 161
+Which tool lets you centralize your file shares in Azure Files and keep the flexibility, performance, and compatibility of a Windows file server?
+a) Azure Storage Explorer
+b) AzCopy
+c) Azure File Sync *
+
+Pergunta 162
+What is theminimumnumber of Availability Zones required to create a highly available application in Azure?
+a) 3
+b) 2 *
+c) 4
+d) 1
+
+Pergunta 163
+Which of the following is a key principle of the Zero Trust security model?
+a) Trust all users and devices by default once they are inside the network perimeter.
+b) Rely solely on network firewalls to secure resources.
+c) Allow unrestricted access to resources for all authenticated users.
+d) Verify explicitly and enforce least-privilege access for all users and devices. *
+
+Pergunta 164
+Which of the following is a passwordless authentication method supported by Azure?
+a) Only security keys
+b) Biometric authentication and security keys *
+c) Four-digit PIN
+d) Only biometric authentication (e.g., fingerprint, facial recognition)
+
+Pergunta 165
+What is the primary difference between pay-as-you-go and reserved instance pricing models in the cloud?
+a) Pay-as-you-go requires upfront payment, while reserved instances are billed hourly.
+b) Reserved instances offer higher performance than pay-as-you-go instances.
+c) Pay-as-you-go is only available for public cloud models, while reserved instances are for private cloud models.
+d) Reserved instances offer discounted rates for long-term commitments, while pay-as-you-go is billed based on usage. *
+
+Pergunta 166
+What is the primary purpose of an Azure resource group?
+a) To manage user accounts and access control.
+b) To act as a central hub or dashboard for all Azure services.
+c) To provide a logical container for Azure subscriptions.
+d) To group related Azure resources together for management and deployment. *
+
+Pergunta 167
+Which of the following statements about Azure resource groups is true?
+a) A resource group can contain resources from multiple Azure regions. *
+b) A resource group can contain resources from multiple Azure subscription.
+c) A resource group can only contain one type of resource, such as virtual machines or storage accounts.
+d) Deleting a resource group will not delete the resources contained within it.
+
+Pergunta 168
+What entities can management groups contain?
+a) Subscriptions
+b) Resources
+c) Resource groups
+d) Management groups *
+
+Pergunta 169
+Which of the following is a benefit of using sovereign regions in Azure?
+a) Reduced compliance risks *
+b) Greater flexibility
+c) Increased performance
+d) Lower costs
+
+Pergunta 170
+Which compute type offers the greatest flexibility and control over the underlying hardware, allowing you to customize the environment to your specific needs?
+a) Container
+b) Function
+c) Virtual Machine *
+d) Serverless
+
+Pergunta 171
+What is the primary benefit of using Microsoft Entra Conditional Access?
+a) Reduced reliance on passwords.
+b) Simplified user authentication.
+c) Improved user experience.
+d) Enhanced security by limiting access to authorized users and devices. *
+
+Pergunta 172
+Which Azure Storage access tier isoptimized (including for cost)for data accessed infrequently and must be stored for at least 30 days?
+a) Premium storage
+b) Hot access tier
+c) Cool access tier *
+d) Archive access tier
+
+Pergunta 173
+What is the benefit of using Azure Virtual Desktop compared to traditional on-premises desktop virtualization solutions?
+a) Lower costs
+b) Improved scalability
+c) All answers are correct *
+d) Increased security
+
+Pergunta 174
+What is the primary advantage of using Azure's built-in security features compared to managing security on-premises?
+a) Increased complexity
+b) Lower costs
+c) Decreased flexibility
+d) Reduced expertise required *
+
+Pergunta 175
+How does data transfer between Azure regions impact costs?
+a) It's always free, regardless of the distance
+b) It's charged based on the amount of data transferred and the distance *
+c) It's charged based on the destination region only
+d) It's charged based on the source region only
+
+Pergunta 176
+What is AzCopy primarily used for in Azure?
+a) Monitoring the performance of Azure resources.
+b) Automating the deployment of virtual machines.
+c) Managing user identities and access permissions.
+d) Copying data to and from Azure Storage efficiently. *
+
+Pergunta 177
+Which of the following is the most likely scenario in which to choose Infrastructure as a Service (IaaS) options in cloud computing?
+a) Lift-and-shift migration *
+b) Someone looking to reduce administrative overhead
+c) Someone looking to run an app for free in the cloud
+d) Brand new development
+
+Pergunta 178
+Fill in the blank: __________ refers to the policies, processes, and controls that organizations implement to ensure that their cloud computing initiatives align with their overall business objectives and risk management strategies.
+a) Reliability
+b) Security
+c) Governance *
+d) Manageability
+
+Pergunta 179
+What is the primary benefit of using PaaS compared to IaaS?
+a) Lower costs
+b) Greater flexibility
+c) Reduced development time *
+d) Increased control over the infrastructure
+
+Pergunta 180
+What is the primary purpose of Azure RBAC?
+a) To protect against unauthorized access to Azure subscriptions.
+b) To grant users the appropriate level of access to Azure resources. *
+c) To manage network security groups.
+d) To enforce multi-factor authentication.
+
+Pergunta 181
+Which storage option should you choose if you need the absolute highest performance (regardless of the cost) for intense workloads like SAP HANA or transaction-heavy applications?
+a) Ultra Disks *
+b) Premium SSDs
+c) Standard SSDs
+d) Standard HDDs
+
+Pergunta 182
+What is the primary purpose of tags in Azure?
+a) To automate resource provisioning
+b) To categorize and organize resources for better management *
+c) To monitor resource performance
+d) To assign security permissions to resources
+
+Pergunta 183
+Which feature of Azure Storage makes it durable?
+a) Security
+b) Redundancy *
+c) Accessibility
+d) Scalability
+
+Pergunta 184
+Fill in the blank: __________ is a mechanism that allows you to connect two virtual networks within Azure.
+a) Azure Expressroute
+b) Azure Application Gateway
+c) Azure peering *
+d) Azure Load Balancer
+
+Pergunta 185
+Why are Azure datacenters located in various regions around the world?
+a) To ensure redundancy and high availability.
+b) To comply with local regulations.
+c) To reduce latency for users.
+d) All answers are correct. *
+
+Pergunta 186
+Which of the following is NOT a core capability of Microsoft Purview?
+a) Data migration and integration *
+b) Data discovery and classification
+c) Data loss prevention
+d) Data sensitivity labeling
+
+Pergunta 187
+What is a key benefit of the consumption-based model in cloud computing?
+a) Pay-as-you-go pricing *
+b) Fixed monthly costs
+c) Upfront hardware purchases
+d) Long-term contracts
+
+Pergunta 188
+In which storage redundancy option does Azure give you a secondary endpoint for read-only access?
+a) ZRS
+b) GRS
+c) LRS
+d) RA-GRS *
+
+Pergunta 189
+What is the key characteristic of serverless computing that distinguishes it from traditional infrastructure?
+a) Fixed pricing structure
+b) Automatic scaling based on demand *
+c) Requires manual server management
+d) Limited scalability options
+
+Pergunta 190
+You have a virtual machine that you need to have a public endpoint - accessible from the Internet. Which of the following resources do you need to have in order to achieve your goal?
+a) Azure Firewall
+b) VPN Gateway
+c) IIS web server
+d) Public IP Address *
+
+Pergunta 191
+Which of the following is NOT a key aspect of predictability in Azure?
+a) Consistent performance
+b) Cost optimization
+c) Scalability
+d) Fault tolerance *
+
+Pergunta 192
+According to the shared responsibility model, who is responsible for keeping theguestoperating system (Windows or Linux) updated on an Azure Virtual Machine?
+a) It's actually automatically taken care of, and no one needs to do anything
+b) The customer, such as you *
+c) The cloud provider, in this case Microsoft Azure
+
+Pergunta 193
+What is the primary purpose of an availability set in Azure?
+a) To group virtual machines for easier management
+b) To ensure data redundancy and durability
+c) To protect against single points of failure *
+d) To provide load balancing for web applications
+
+Pergunta 194
+Which of the following is NOT a core component of Azure's reliability strategy?
+a) Fault tolerance
+b) Availability
+c) Redundancy
+d) Performance *
+
+Pergunta 195
+Fill in the blank: Cloud computing is a model of delivering IT services such as computing, networking and storage over the Internet on a _____________ basis.
+a) case-by-case
+b) pay-as-you-go *
+c) pay up-front as a capital expense
+d) long-term contract
+
+Pergunta 196
+What is the primary benefit of high availability in cloud computing?
+a) Reduces scalability
+b) Minimizes downtime and ensures continuous service *
+c) Requires manual intervention
+d) Increases cost
+
+Pergunta 197
+A small startup with limited IT resources and a need for flexible scalability would be best suited for which cloud model?
+a) Community Cloud
+b) Private Cloud
+c) Public Cloud *
+d) Hybrid Cloud
+
+Pergunta 198
+Which of the following is NOT a characteristic of Infrastructure as a Service (IaaS)?
+a) On-demand provisioning
+b) Pay-as-you-go pricing
+c) Managed operating system *
+d) Hardware virtualization
+
+Pergunta 199
+What is the primary purpose of a virtual machine scale set in Azure?
+a) To ensure data redundancy and durability
+b) To automatically scale virtual machines based on demand *
+c) To provide load balancing for web applications
+d) To group virtual machines for easier management
+
+Pergunta 200
+Which Azure App Service hosting option would you choose if you wanted isolated hardware and network, ensuring they are not used by any other Azure customers?
+a) App Service Environment *
+b) Virtual Machine
+c) Bare Metal Hosting
+d) App Service Plan
+
+Pergunta 201
+Who typically owns the IT infrastructure in the cloud computing model?
+a) The vendor such as Microsoft Azure or Amazon AWS *
+b) The client such as you
+
+Pergunta 202
+Which is the lowest-cost storage redundancy option?
+a) ZRS
+b) GRS
+c) LRS *
+d) GZRS
+
+Pergunta 203
+Queue storage can be used when two programs need to communicate. Which type of communication is this best suited for?
+a) Real-time communication
+b) Broadcast communication (one-to-many)
+c) Synchronous communication
+d) Asynchronous communication *
+
+Pergunta 204
+Why is it beneficial to organize Azure resources into resource groups?
+a) To enhance security.
+b) To improve performance.
+c) To reduce costs.
+d) To simplify management and deployment. *
+
+Pergunta 205
+What is the primary purpose of Azure Data Box?
+a) To transfer large amounts of data to and from Azure *
+b) To create and manage Azure virtual machines
+c) To monitor Azure resource usage
+d) To build and deploy web applications in Azure
+
+Pergunta 206
+Can subscriptions be nested?
+a) No *
+b) Yes
+
+Pergunta 207
+How does a defense-in-depth model improve overall security?
+a) By eliminating the need for user training.
+b) By simplifying the security infrastructure.
+c) By reducing the need for security updates.
+d) By making it more difficult for attackers to breach multiple layers of security. *
+
+Pergunta 208
+Which of the following is an example of an IaaS offering from Azure?
+a) Azure App Service
+b) Azure Virtual Machines *
+c) Azure SQL Database
+d) Azure Functions
+
+Pergunta 209
+How does the consumption-based model help businesses manage their IT costs?
+a) By limiting resource usage
+b) By increasing long-term commitments
+c) By aligning costs with actual usage *
+d) By requiring upfront investments
+
+Pergunta 210
+How does high availability help businesses avoid financial losses?
+a) By reducing operational costs
+b) By preventing data loss
+c) By increasing downtime
+d) By ensuring uninterrupted revenue generation *
+
+Pergunta 211
+Which of the following statements about Azure Management Groups is true?
+a) Management Groups can be used to apply policies and access controls across multiple subscriptions within the same tenant. *
+b) Management Groups are limited to a maximum of 10 subscriptions per group.
+c) A subscription can belong to multiple Management Groups simultaneously.
+d) Management Groups can contain subscriptions from multiple Azure tenants.
+
+Pergunta 212
+What is a fault domain?
+a) The place where tectonic plates meet far below the surface of the Earth
+b) A report available through Azure Service Health
+c) A method to resolve human-readable names into IP addresses
+d) A physical grouping of servers within an Azure data center. *
+
+Pergunta 213
+What is an Azure resource?
+a) A software component that provides a service.
+b) A logical entity that represents a cloud resource. *
+c) A subscription to Azure services.
+d) A physical device in an Azure datacenter.
+
+Pergunta 214
+What is the primary purpose of Microsoft Entra Conditional Access?
+a) To protect against phishing attacks.
+b) To provide multi-factor authentication for all users.
+c) To enforce strong password policies.
+d) To implement granular access controls based on specific conditions. *
+
+Pergunta 215
+What is the principle of least privilege in the context of Azure RBAC?
+a) Granting users the minimum amount of access necessary to perform their job duties. *
+b) Disabling user accounts when they are not in use.
+c) Granting users the maximum amount of access necessary to perform their job duties.
+d) Assigning the "Owner" role to all users.
+
+Pergunta 216
+What is the maximum amount of data that can be stored in a single Azure Storage account?
+a) 5 Petabytes *
+b) There is no limit
+c) 5 Gigabytes
+d) 5 Terabytes
+
+Pergunta 217
+In which storage redundancy option does Azure keep six copies of your files across two regions?
+a) ZRS
+b) LRS
+c) GRS *
+
+Pergunta 218
+Which connectivity option of Azure can provide connectivity from your on-premises corporate network into Azure over a private line, not travelling over the public Internet?
+a) Azure ExpressRoute *
+b) Point-to-site VPN
+c) Azure Global Peering
+d) Site-to-site VPN
+
+Pergunta 219
+True or false: Azure peering can connect two networks even though they belong to different subscriptions or customer accounts.
+a) TRUE *
+b) FALSE
+
+Pergunta 220
+What does cost predictability mean in the context of Azure?
+a) The ability to avoid unexpected charges.
+b) The ability to accurately forecast future costs. *
+c) The ability to allocate costs to specific resources.
+d) The ability to reduce costs over time.
+
+Pergunta 221
+Which of the following is a built-in role in Azure RBAC?
+a) Owner
+b) Reader
+c) User
+d) Contributor *
+
+Pergunta 222
+What is the primary benefit of using containers for deploying applications to Azure?
+a) Improved portability and consistency *
+b) Increased storage capacity
+c) Improved network performance
+d) Enhanced security
+
+Pergunta 223
+Which of the following is a key feature of Azure Virtual Machine Scale Sets?
+a) They allow you to manually create and manage individual virtual machines.
+b) They are limited to a maximum of 10 virtual machines per scale set.
+c) They automatically scale the number of VM instances based on demand or a schedule. *
+d) They provide a graphical user interface (GUI) for managing virtual machines.
+
+Pergunta 224
+Which of the following are required in order to create an Azure Virtual Machine
+a) A virtual network
+b) A name for the VM
+c) A subscription to Azure
+d) A resource group *
+
+Pergunta 225
+Unexpectedly, a celebrity posts a glowing review of your product to their social media channels. Your website received a huge spike in traffic and orders, and handles it well. Because you use a cloud platform to host your website, it automatically added additional resources as required and turned them off when no longer required. This property of your application is known as __________.
+a) Scalability *
+b) Manageability
+c) High availability
+d) Predictability
+
+Pergunta 226
+Which of the following is a key benefit of using Microsoft Entra Domain Services?
+a) It simplifies the management of on-premises Active Directory
+b) It provides a managed domain service in the cloud without the need to manage on-premises domain controllers *
+c) It is only suitable for small-scale deployments
+d) It is a replacement for Azure Active Directory
+
+Pergunta 227
+A large financial institution with strict compliance requirements and a need to maintain control over sensitive data would be best suited for which cloud model?
+a) Private Cloud *
+b) Community Cloud
+c) Public Cloud
+d) Hybrid Cloud
+
+Pergunta 228
+Which of the following is an example of a PaaS offering from Azure?
+a) Azure App Service *
+b) Azure Virtual Machines
+c) Microsoft Entra ID (formerly Azure Active Directory)
+d) Azure Storage (General Purpose V2)
+
+Pergunta 229
+There is a well-defined division of responsibilities when it comes to applications and data in the cloud. The cloud vendor is typically responsible for the physical and network security of the cloud. Who is typically responsible for the security and protection ofcustomer datain the cloud?
+a) The cloud provider, such as Microsoft Azure or Amazon AWS
+b) The cloud provider and the customer are both equally responsible
+c) The customer, such as you *
+d) It's really difficult to say anyone is responsible for it
+
+Pergunta 230
+What does redundancy mean in the context of Azure?
+a) Using a single instance of a resource to avoid failures.
+b) Having multiple copies of a resource to ensure availability. *
+c) Implementing failover to a secondary data center in case of a disaster.
+d) Monitoring system health to detect and prevent issues.
+
+Pergunta 231
+Which compute type is designed to package and deploy applications along with their dependencies, ensuring consistent behavior across different environments?
+a) Virtual Machine
+b) Serverless
+c) Function
+d) Container *
+
+Pergunta 232
+What is the primary purpose of Availability Zones in Azure?
+a) To provide access to Azure services in specific geographic locations
+b) To offer discounts for customers in certain regions
+c) To ensure data residency compliance
+d) To provide redundancy and fault tolerance *
+
+Pergunta 233
+Many years ago, your company licensed some software that requires access to the Windows Registry to run. There is currently no option to run the app without the ability to write to the Registry. Which of the following is the only option for running this app in the cloud?
+a) IaaS *
+b) PaaS
+c) SaaS
+d) Serverless
+
+Pergunta 234
+What is the maximum number of web apps a single App Service Plan (Premium v3) can support?
+a) 10
+b) 100
+c) 1
+d) Unlimited *
+
+Pergunta 235
+Which Azure Storage access tier isoptimized (including for cost)for data rarely accessed and must be stored for at least 180 days, with flexible latency requirements?
+a) Hot access
+b) Premium storage
+c) Archive access *
+d) Cool access
+
+Pergunta 236
+Which of the following can be considered a benefit of using the cloud regarding security?
+a) Regular updates and patches
+b) Centralized management and monitoring
+c) Ability to disable security measures such as encryption for specific applications or uses
+d) Adheres to industry-standard compliance frameworks *
+
+Pergunta 237
+Your company runs most of its data and applications on-premises and only uses the cloud when it needs to temporarily scale for more resources. For instance, it has 18 virtualized servers running in its own datacenter and can scale up to another 18 virtual machines in Azure if needed. What is this usage of the cloud called?
+a) Public Cloud
+b) Autoscaling
+c) Private Cloud
+d) Hybrid Cloud *
+
+Pergunta 238
+What is a key benefit of using Azure Budgets?
+a) Setting spending limits and alerts *
+b) Enforcing security policies
+c) Automating resource provisioning
+d) Optimizing virtual machine performance
+
+Pergunta 239
+Which Azure service can be used to create a highly available application across multiple Availability Zones?
+a) Azure App Service
+b) Azure Storage
+c) Azure Virtual Machines
+d) All answers are correct *
+
+Pergunta 240
+Which of the following is an example of a serverless computing service?
+a) Azure Functions *
+b) Storage Accounts
+c) App Services
+d) Virtual Machines
+
+Pergunta 241
+Your company regularly audits the usage of cloud computing resources to ensure they are in compliance with regulatory requirements and corporate standards. What is practice this an example of?
+a) Governance *
+b) Reactive Approach
+c) Scalability
+d) Reliability
+
+Pergunta 242
+What is the primary purpose of Azure B2B collaboration?
+a) To enable customers to purchase products and services directly from your organization's website.
+b) To allow guest users from external organizations to access your organization's resources. *
+c) To provide identity and access management for internal users.
+d) To provide identity and access management for cloud-based applications.
+
+Pergunta 243
+Fill in the blank: _________ is a cloud-based file sharing service that allows you to access your files from anywhere using standard SMB or NFS protocols.
+a) General Purpose V2
+b) Azure File Storage *
+c) Azure Table Storage
+d) Azure Blob Storage
+
+Pergunta 244
+What is the primary purpose of single sign-on (SSO)?
+a) To allow users to log in to multiple applications with a single set of credentials. *
+b) To add an extra layer of security to user accounts.
+c) To prevent unauthorized access to cloud resources.
+d) To enforce strong password policies.
+
+Pergunta 245
+How does Azure Policy help manage Azure resources?
+a) By automatically scaling resources based on demand
+b) By optimizing resource utilization and cost
+c) By providing real-time alerts for security threats
+d) By defining rules that govern resource configuration and usage *
+
+Pergunta 246
+Which cloud pricing model is often used for applications with predictable workloads and long-term requirements?
+a) Spot instances
+b) Reserved instances *
+c) Pay-as-you-go
+d) Serverless computing
+
+Pergunta 247
+What type of scaling typically involves adding more resources to a pool of existing resources?
+a) Vertical scaling
+b) Horizontal scaling *
+c) Scaling up
+
+Pergunta 248
+By design, when an entire Azure region fails as it may during a natural disaster in that region, where do some Azure services automatically fail over to?
+a) Another region, which is usually located in another geography
+b) There are no Azure services that fail over if its region were to fail
+c) Its region pair, which is at least 300 miles away in the same geography *
+d) Most regions fail over to US East
+
+Pergunta 249
+How can tags be used to optimize costs in Azure?
+a) By automatically shutting down underutilized resources
+b) By categorizing resources based on their cost and usage *
+c) By automatically applying discounts to tagged resources
+d) By identifying resources that can be migrated to a lower-cost tier
+
+Pergunta 250
+One of the benefits of cloud computing is that you can create a set of virtual machines that can automatically scale to add more resources or reduce resources based on need. This is an example of what type of manageability benefit?
+a) Management in the cloud
+b) Management of the cloud *
+
+Pergunta 251
+Which of the following is the highest level of organization within the Azure hierarchy?
+a) Resource group
+b) Management group *
+c) Resource
+d) Subscription
+
+Pergunta 252
+Which Azure resource type allows you to centrally manage, configure, and update a large number of VMs?
+a) Azure Kubernetes Services
+b) Virtual Machine Scale Sets *
+c) Azure App Services
+d) Azure Functions
+
+Pergunta 253
+A resource can be said to "belong to" one and only one resource group. What does a resource group belong to?
+a) Microsoft Entra ID
+b) Other resource groups
+c) Subscription *
+d) Management Group
+
+Pergunta 254
+Which of the following is the primary purpose of sovereign regions in Azure?
+a) To provide higher performance for customers in specific countries
+b) To ensure data residency compliance *
+c) To offer discounts for customers in certain regions
+d) To provide access to Azure services in specific geographic locations
+
+Pergunta 255
+Fill in the blank: An Azure __________ is a logical division of a virtual network.
+a) IP address
+b) firewall
+c) network security group (NSG)
+d) subnet *
+
+Pergunta 256
+What is the primary purpose of Azure Virtual Desktop?
+a) To provide a platform for hosting web applications
+b) To deliver virtualized Windows desktops to users *
+c) To provide a virtualized environment for running Windows Server workloads
+d) To create and manage virtual machines in Azure
+
+Pergunta 257
+Which Azure storage type is specifically designed to be block-level storage volumes managed by Azure for use with VMs?
+a) Azure File Storage
+b) General Purpose V2
+c) Azure Disks *
+d) Azure Blob Storage
+
+Pergunta 258
+You intend to deploy your application to a Virtual Machine Scale Set (VMSS), and allow it to automatically scale your app to multiple VMs based on demand. How is traffic distributed to machines inside a VMSS pool?
+a) You must include an additional service such as Load Balancing or Application Gateway *
+b) Azure Virtual Machine Scale Sets service includes load balancing
+
+Pergunta 259
+In which cloud environment does the cloud provider manage the operating system, meaning you do not have the ability to determine the exact version of Windows or Linux you are using?
+a) PaaS *
+b) Virtual Machine Scale Sets
+c) Virtual Machines
+d) IaaS
+
+Pergunta 260
+What is the purpose of the "Owner" role in Azure RBAC?
+a) To manage Azure resources including delegating user permissions *
+b) To monitor Azure resources for security threats
+c) To view Azure resources
+d) To manage Azure resources but not be able to delegate user permissions
+
+Pergunta 261
+What is the primary purpose of Azure B2C?
+a) To provide identity and access management for internal users.
+b) To allow employees to access company resources from personal devices.
+c) To manage identity and access for external partners and vendors.
+d) To enable your organization to provide identity and access management for your customers. *
+
+Pergunta 262
+Which feature of Azure Virtual Machines allows you to choose which data center to physically deploy a VM to?
+a) Spot instances
+b) Region
+c) Availability zones *
+d) Availability sets
+
+Pergunta 263
+What is the main advantage of using spot instances in the cloud?
+a) They are ideal for applications with strict performance requirements.
+b) They offer the highest performance.
+c) They provide significant cost savings. *
+d) They are always available.
+
+Pergunta 264
+What is the core principle of Zero Trust security?
+a) Never trust, always verify. *
+b) Assume trust until proven otherwise.
+c) Trust but verify.
+d) Security through obscurity.
+
+Pergunta 265
+How does high availability in cloud computing minimize downtime?
+a) By automatically replicating resources across multiple regions or zones *
+b) By providing backup power systems
+c) By reducing the cost of infrastructure
+d) By limiting resource usage during peak times
+
+Pergunta 266
+One of the benefits of cloud computing is that you can use a command-line script to create or destroy virtual machines in a programmatic way. This is an example of what type of manageability benefit?
+a) Management of the cloud
+b) Management in the cloud *
+
+Pergunta 267
+Fill in the blank: __________ is a physical device that allows you to transfer large amounts of data to and from Azure. It's particularly useful for transferring data that is too large or too slow to transfer over the internet.
+a) Azure Data Box *
+b) Steve, the underpaid intern who works in IT
+c) Azure Migrate
+d) Data Migration Assistant
+
+Pergunta 268
+Which type of scaling in cloud computing allows for practically unlimited growth by adding more instances of resources?
+a) Scaling out (horizontal scaling) *
+b) Scaling up (vertical scaling)
+
+Pergunta 269
+Which of the following best describes the concept of governance in Azure?
+a) Providing real-time monitoring and alerts for Azure services.
+b) Establishing policies and processes to manage and control Azure resources effectively. *
+c) Automatically scaling resources up or down based on workload demands.
+d) Ensuring that all resources are deployed in a single geographic region.
+
+Pergunta 270
+Fill in the blank: _______________ is a malicious attempt to disrupt or prevent a cloud service from functioning as intended by overwhelming it with excessive traffic or requests.
+a) Malware
+b) A Denial of Service attack *
+c) A SQL Injection attack
+d) Phishing
+
+Pergunta 271
+If you need to store more than 5PB in an Azure Storage account, what is the best way to do that?
+a) Create a second storage account and do data partitioning *
+b) Open a ticket with Azure and ask for a higher limit
+c) You will have to create another Azure Storage account in another region
+d) The maximum you can store in Azure is 5PB and there is no way around it
+
+Pergunta 272
+Multiple virtual machines in the same availability set are deployed across multiple update domains. What do update domains help you protect against?
+a) Planned downtime *
+b) Unplanned downtime
+
+Pergunta 273
+What is the primary purpose of multi-factor authentication (MFA)?
+a) To add an extra layer of security to user accounts by requiring multiple forms of verification. *
+b) To eliminate the need for passwords.
+c) To protect against phishing attacks.
+d) To simplify the login process for users.
+
+Pergunta 274
+Which cloud model is often used by government agencies or organizations with strict compliance requirements?
+a) Public Cloud
+b) Community Cloud
+c) Hybrid Cloud
+d) Private Cloud *
+
+Pergunta 275
+Which Azure Storage option is the lowest-cost NoSQL storage option for structured, non-relational data?
+a) Table Storage *
+b) Blob Storage
+c) Queue Storage
+d) Cosmos DB
+
+Pergunta 276
+Can management groups be nested?
+a) Yes *
+b) No
+
+Pergunta 277
+What is the role of fault tolerance in Azure's reliability strategy?
+a) To optimize system performance.
+b) To prevent failures from occurring.
+c) To minimize the impact of individual component failures. *
+d) To ensure rapid recovery from major outages.
+
+Pergunta 278
+Which cloud model typically utilizes the consumption-based pricing model?
+a) On-Premises
+b) Hybrid Cloud
+c) Private Cloud
+d) Public Cloud *
+
+Pergunta 279
+Which of the following is NOT a key feature of Microsoft Defender for Cloud?
+a) Password management *
+b) Vulnerability assessment
+c) Security posture management
+d) Threat detection and response
+
+Pergunta 280
+What is the primary difference between PaaS and IaaS?
+a) The level of control over the infrastructure *
+b) The cost of the service
+c) The scalability of the service
+d) The security of the service
+
+Pergunta 281
+Fill in the blank: The ___________ model is a framework that outlines the division of responsibilities between a cloud provider and its customers.
+a) Serverless
+b) Shared responsibility *
+c) Pay-as-you-go
+d) GDPR
+
+Pergunta 282
+In which storage redundancy option does Azure keep three copies of your files across all three zones of a single region?
+a) GZRS
+b) LRS
+c) GRS
+d) ZRS *
+
+Pergunta 283
+Microsoft Entra Domain Services (MDS) is a managed domain service that can be used to:
+a) Provide a completely separate identity system from AD DS.
+b) Only support cloud-based applications.
+c) Replace Active Directory Domain Services (AD DS) entirely.
+d) Extend AD DS to the cloud. *
+
+Pergunta 284
+What is the primary purpose of Microsoft Purview in Azure?
+a) To automate the deployment and configuration of Azure resources
+b) To provide advanced security features for Azure resources
+c) To unify data governance and compliance across various data sources *
+d) To monitor and optimize the performance of Azure resources
+
+Pergunta 285
+Which of the following statements about Azure Availability Zones is true?
+a) Availability Zones are used to replicate data across multiple Azure tenants.
+b) Availability Zones are physically separate locations within the same Azure region. *
+c) Availability Zones are limited to a maximum of two zones per region.
+d) Availability Zones are only available in non-production environments.
+
+Pergunta 286
+How can Azure Reserved Instances help achieve cost predictability?
+a) By enabling automatic scaling.
+b) By offering pay-as-you-go pricing.
+c) By providing discounts for long-term commitments. *
+d) By providing free trials for new services.
+
+Pergunta 287
+How can Azure Cost Management help identify cost-saving opportunities?
+a) By automatically shutting down idle virtual machines
+b) By recommending the cheapest Azure services
+c) By analyzing resource utilization and identifying underutilized resources *
+d) By providing real-time cost forecasts
+
+Pergunta 288
+Which device is required to be deployed into an Azure Virtual Network before you can connect to it using a VPN?
+a) Virtual Network Peering
+b) Azure Application Gateway
+c) Azure VPN Gateway *
+d) Azure Firewall
+
+Pergunta 289
+Which Azure service is used to host Azure App Services?
+a) App Service Plan *
+b) Virtual Machine
+c) Dedicated Host
+d) Resource Group
+
+Pergunta 290
+Which is the lowest-cost storage option in Azure?
+a) Standard HDDs *
+b) Premium SSDs
+c) Ultra Disks
+d) Standard SSDs
+
+Pergunta 291
+Which phrase best describes the property ofscalability?
+a) The ability of a system to handle increased workload by adding resources dynamically. *
+b) The ability of a system to remain operational and accessible for a high percentage of time.
+c) The ability to forecast and plan for system performance and resource needs.
+d) The ease of managing and maintaining a system.
+
+Pergunta 292
+What is the primary purpose of the AzCopy tool in Azure?
+a) To transfer data to and from Azure storage *
+b) To monitor Azure resource usage
+c) To create and manage Azure storage accounts
+d) To manage Azure virtual machines
+
+Pergunta 293
+A healthcare organization with a mix of sensitive patient data and non-sensitive administrative data would be best suited for which cloud model?
+a) Hybrid Cloud *
+b) Private Cloud
+c) Public Cloud
+d) Community Cloud
+
+Pergunta 294
+What is a major benefit of using serverless computing for applications with unpredictable workloads?
+a) Increased complexity
+b) Fixed pricing structure
+c) Manual infrastructure management
+d) Reduced operational costs *
+
+Pergunta 295
+Which of the following is NOT an example of an Azure resource?
+a) An Azure SQL database
+b) A storage account
+c) An Azure subscription *
+d) A virtual network
+
+Pergunta 296
+Which of the following is a characteristic of cloud computing?
+a) Organizations are responsible for managing the physical infrastructure of the cloud.
+b) Computing resources are available on-demand and can be rapidly provisioned. *
+c) Resources are only accessible within an organization's private network.
+d) Users must manually scale resources up or down based on demand.
+
+Pergunta 297
+Which of the following is NOT a common use case for Azure Policy?
+a) Requiring resource tagging for cost allocation
+b) Enforcing network security standards
+c) Denying access to resources to a specific individual *
+d) Preventing the creation of resources in specific regions
+
+Pergunta 298
+Which of the following is an example of an Infrastructure-as-a-Service (IaaS) offering in Azure?
+a) Azure Virtual Machines *
+b) Azure SQL Database
+c) Microsoft Entra ID (formerly Azure Active Directory)
+d) Azure Logic Apps
+
+Pergunta 299
+If two networks are peered in different regions, which network does the data between them travel over?
+a) Public internet
+b) Microsoft global network *
+
+Pergunta 300
+Which of the following is NOT a condition that can be used in a Conditional Access policy?
+a) Device type *
+b) User risk level
+c) Application type
+d) User location
+
