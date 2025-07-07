@@ -1,0 +1,264 @@
+Pergunta 1
+You are developing a new CloudFormation stack and writing some very complex cfn-init code. The code fails and you would like to debug why. When reading the documentation, you see all the logs are in the file/var/cfn/cfn-init-output.logand will give you more information as to why the instance provisioning is failing. But you realize that you can't gain access to this file as the CloudFormation stack always terminates the EC2 instance when the creation fails.What can you do to access these logs files, while not changing the way your EC2 instance works and ensuring you can debug your instance over 24 hours?
+a) Install the CloudWatch logs agent, create a new IAM role and assign it to the EC2 instance, and send the logs directly to CloudWatch Logs
+b) Increase the Wait Timeout to 2 hours
+c) Set OnFailure=DO_NOTHING *
+d) Enable VPC Flow Logs and intercept the cfn-init log file
+
+Pergunta 2
+A startup uses Amazon S3 buckets for storing their customer data. The company has defined different retention periods for different objects present in their Amazon S3 buckets, based on the compliance requirements. But, the retention rules do not seem to work as expected.Which of the following points are important to remember when configuring retention periods for objects in Amazon S3 buckets (Select two)?
+a) When you use bucket default settings, you specify aRetain Until Datefor the object version
+b) Different versions of a single object can have different retention modes and periods
+c) The bucket default settings will override any explicit retention mode or period you request on an object version
+d) When you apply a retention period to an object version explicitly, you specify aRetain Until Datefor the object version *
+e) You cannot place a retention period on an object version through a bucket default setting
+
+Pergunta 3
+A large IT company uses several AWS accounts for the different lines of business. Quite often, the systems administrator is faced with the problem of sharing Customer Master Keys (CMKs) across multiple AWS accounts for accessing AWS resources spread across these accounts.How will you implement a solution to address this issue?
+a) Use AWS KMS service-linked roles to share access across AWS accounts
+b) The key policy for the CMK must give the external account (or users and roles in the external account) permission to use the CMK. IAM policies in the external account must delegate the key policy permissions to its users and roles *
+c) AWS Owned CMK can be used across AWS accounts. Configure an AWS Owned CMK and use it across accounts that need to share the key material
+d) Declare a key policy for the CMK to give the external account permission to use the CMK. This key policy should be embedded with the first request of every transaction
+
+Pergunta 4
+A systems administrator is configuring Amazon EC2 status check alarm to publish a notification to an SNS topic when the instance fails either the instance check or system status check.Which CloudWatch metric is the right choice for this configuration?
+a) StatusCheckFailed_Instance
+b) StatusCheckFailed_System
+c) StatusCheckFailed *
+d) CombinedStatusCheckFailed
+
+Pergunta 5
+You are deploying an application and use the cfn-init and cfn-signal script to ensure the application is properly deployed before signaling to CloudFormation the success of your stack deployment. Right now, every time you deploy, CloudFormation completes successfully, even though the instance is still executing the cfn-init script.As a SysOps Administrator, which of the following would you identify as the root cause behind the issue?
+a) You did not disable Rollbacks
+b) You forgot to include a deletion policy
+c) You forgot to include the cfn-signal command in your user data
+d) You forgot the Wait Condition *
+
+Pergunta 6
+You are provisioning an internal full LAMP stack using CloudFormation, and the EC2 instance gets configured automatically using the cfn helper scripts, such as cfn-init and cfn-signal. The stack creation fails as CloudFormation fails to receive a signal from your EC2 instance.What are the possible reasons for this? (Select two)
+a) The subnet where the application is deployed does not have a network route to the CloudFormation service through a NAT Gateway or Internet Gateway
+b) The EC2 instance does not have a proper IAM role allowing to signal the success to CloudFormation
+c) The cfn-signal script does not get executed before the timeout of the wait condition *
+d) AWS is experiencing an Insufficient Capacity for the instance type you requested
+e) The cfn-init script failed
+
+Pergunta 7
+A media company runs its business on Amazon EC2 instances backed by Amazon S3 storage. The company is apprehensive about the consistent increase in costs incurred from S3 buckets. The company wants to make some decisions regarding data retention, storage, and deletion based on S3 usage and cost reports. As a SysOps Administrator, you have been hired to develop a solution to track the costs incurred by each S3 bucket in the AWS account.How will you configure this requirement?
+a) Configure AWS Budgets to see the cost against each S3 bucket in the AWS account
+b) Add a common tag to each bucket. Activate the tag as a cost allocation tag. Use the AWS Cost Explorer to create a cost report for the tag *
+c) Use AWS Trusted Advisor's rich set of best practice checks to configure cost utilization for individual S3 buckets. Trusted Advisor also provides recommendations based on the findings derived from analyzing your AWS cloud architecture
+d) Use AWS Simple Monthly Calculator to check the cost against each S3 bucket in your AWS account
+
+Pergunta 8
+You distribute a monthly raw data extract of your public forum's discussions that is about 10TB each month. Currently, the archive is distributed through an EFS drive, that is mounted on all your EC2 instances. Customers retrieve the file through the load balancer you have. This solution is costing you a lot of money and forces you to tremendously scale on the 1st of each month as people all try to retrieve the file at the same time.What can you do to improve the situation?
+a) Store the files in S3 and distribute them using a CloudFront distribution instead *
+b) Store the files on instance stores instead, so you don't need to use EFS anymore
+c) Enable enhanced networking between EC2 and ALB
+d) Enable static file caching on the ALB
+
+Pergunta 9
+How can you enforce encryption on all the files uploaded into your example S3 bucket?
+a) Using the "Default Encryption" setting in AWS S3 *
+b) Use the following S3 bucket policy:{ "Statement":[ { "Action": "s3:*", "Effect":"Deny", "Principal": "*", "Resource":"arn:aws:s3:::bucketname/*", "Condition":{ "Bool": { "aws:SecureTransport": false } } } ] }
+c) Use an encrypted CloudFront distribution in front of your S3 bucket
+d) Use the following S3 bucket policy:{ "Statement":[ { "Action": "s3:*", "Effect":"Deny", "Principal": "*", "Resource":"arn:aws:s3:::bucketname/*", "Condition":{ "Bool": { "aws:SecureTransport": true } } } ] }
+
+Pergunta 10
+You would like to replace your on-premise NFS v3 drive with something that will leverage the huge capacity of Amazon S3. You would like to ensure files that are commonly used are locally cached on-premises.What should you use?
+a) EFS
+b) Volume Gateway
+c) EBS Drives
+d) File Gateway *
+
+Pergunta 11
+A data analytics company runs its technology operations on AWS Cloud using different VPC configurations for each of its applications. A systems administrator wants to configure the Network Access Control List (ACL) and Security Group (SG) of VPC1 to allow access for AWS resources in VPC2.Which is the best way of configuring this requirement?
+a) By default, Security Groups allow outbound traffic. Hence, only the inbound traffic configuration of the security groups have to be changed to allow requests from resources in VPC2 to access instances in VPC1. If the subnet is not associated with any Network ACL, you will not need any configuration changes
+b) Network ACLs and Security Groups share a parent-child relationship. If resources in VPC2 are given inbound and outbound permissions on Network ACLs of VPC1, the resources will get necessary permissions on the associated security groups too
+c) The Security Groups of instances on VPC1 should be configured to allow inbound traffic from resources in VPC2. By default, Network ACLs allow all inbound and outbound traffic. So, a default Network ACLs on VPC1 will not need any configuration changes *
+d) Based on the inbound and outbound traffic configurations on Network ACL of VPC1, you can create a similar deny rules on Security Groups of the instances in VPC1 to deny all traffic, other than the one originating from resources in VPC2
+
+Pergunta 12
+You have a production Postgres RDS database and a custom rule in AWS Config has been set up and shows that some connections established to your database are not encrypted.How can you ensure all connections to RDS are encrypted?
+a) Patch the database with the SSL/TLS Postgres Addon
+b) Edit the security group rules
+c) Enable SSL connections from the RDS Console
+d) Review the DB parameter groups *
+
+Pergunta 13
+A company wants to migrate a part of its on-premises infrastructure to AWS Cloud. As a starting point, the company is looking at moving their daily workflow files to AWS Cloud, such that the files are accessible from the on-premises systems as well as AWS Cloud. To reduce the management overhead, the company wants a fully managed service.Which service/tool is the right choice for this requirement?
+a) File Gateway of AWS Storage Gateway *
+b) Amazon Simple Storage Service (Amazon S3)
+c) Amazon Elastic Block Store (Amazon EBS)
+d) Volume Gateway of AWS Storage Gateway
+
+Pergunta 14
+A retail company wants to get out of the business of owning and maintaining its own IT infrastructure. As part of this digital transformation, the company wants to archive about 5PB of data in its on-premises data center to durable long term storage.As a SysOps Administrator, what is your recommendation to migrate this data in the MOST cost-optimal way?
+a) Setup AWS direct connect between the on-premises data center and AWS Cloud. Use this connection to transfer the data into AWS Glacier
+b) Transfer the on-premises data into multiple Snowball Edge Storage Optimized devices. Copy the Snowball Edge data into AWS Glacier
+c) T ransfer the on-premises data into multiple Snowball Edge Storage Optimized devices. Copy the Snowball Edge data into Amazon S3 and create a lifecycle policy to transition the data into AWS Glacier *
+d) Setup Site-to-Site VPN connection between the on-premises data center and AWS Cloud. Use this connection to transfer the data into AWS Glacier
+
+Pergunta 15
+A retail company has complex AWS VPC architecture that is getting difficult to maintain. The company has decided to configure VPC flow logs to track the network traffic to analyze various traffic flow scenarios. The systems administration team has configured VPC flow logs for one of the VPCs, but it's not able to see any logs. After initial analysis, the team has been able to track the error. It saysAccess errorand the administrator of the team wants to change the IAM Role defined in the flow log definition.What is the correct way of configuration a solution for this issue so that the VPC flow logs can be operational?
+a) The error indicates an internal error has occurred in the flow logs service. Raise a service request with AWS
+b) The flow log is still in the process of being created. It sometimes takes almost 10 minutes to start the logs
+c) The error indicates that the IAM role does not have a trust relationship with the flow logs service. Change the trust relationship from flow log configuration
+d) The error indicates IAM role is not correctly configured. After you've created a flow log, you cannot change its configuration. Instead, you need to delete the flow log and create a new one with the required configuration *
+
+Pergunta 16
+You just released a new mobile game and users have the chance to interact with each other. In order to publish a profile picture, your company has made the architectural decision to have users directly upload their images into a designated S3 bucket.How can you provide write access to the mobile application users effectively?
+a) Create one IAM user and publish the access keys as part of the mobile application
+b) Federate the users with Cognito so they can assume a role to access S3 *
+c) Federate the users with SAML so they can use Single Sign-On (SSO) to access S3
+d) Create an AWS Lambda function that will create an IAM User for each new user, and store their API keys in the mobile app database
+
+Pergunta 17
+Security and Compliance is a Shared Responsibility between AWS and the customer. As part of this Shared Responsibility, the customer is also responsible for securing the resources that he has procured under his AWS account.Which of the following is the responsibility of the customer?
+a) For Amazon EC2 service, managing guest operating system (including updates and security patches), application software and Security Groups is the responsibility of the customer *
+b) AWS is responsible for training their customers and their employees as part of Customer Specific training
+c) For Amazon S3 service, managing the operating system and platform is customer responsibility
+d) AWS is responsible for patching and fixing flaws within the infrastructure, for patching the guest Operating Systems and applications of the customers
+
+Pergunta 18
+A Systems Administrator is configuring an Application Load Balancer (ALB) that fronts Amazon EC2 instances.Which of the following options would you identify as correct for configuring the ALB? (Select two)
+a) A target can be registered with only one target group at any given time
+b) Before you start using your Application Load Balancer, you must add one or more listeners
+c) The targets of a target group in an ALB should all belong to the same Availability Zone
+d) You configure target groups of an ALB by attaching them to the listeners *
+e) When you create a listener, you define actions and conditions for the default rule
+
+Pergunta 19
+A company initially used a manual process to create and manage different IAM roles needed for the organization. As the company expanded and lines of business grew, different AWS accounts were created to manage the AWS resources as well as the users. The manual process has resulted in errors with IAM roles getting created with insufficient permissions. The company is looking at automating the process of creating and managing the necessary IAM roles for multiple AWS accounts. The company already uses AWS Organizations to manage multiple AWS accounts.As a SysOps Administrator, can you suggest an effective way to automate this process?
+a) Use AWS Directory Service with AWS Organizations to automatically associate necessary IAM roles with the Microsoft Active Directory users
+b) Create CloudFormation templates and reuse them to create necessary IAM roles in each of the AWS accounts
+c) Use AWS Resource Access Manager that integrates with AWS Organizations to deploy and manage shared resources across AWS accounts
+d) Use CloudFormation StackSets with AWS Organizations to deploy and manage IAM roles to multiple AWS accounts simultaneously *
+
+Pergunta 20
+Your home-cooking website stores its recipes and comments from users in a Multi-AZ RDS database, which is located in a private subnet. As of yesterday, it seems that your users are unable to access the website and see an error message "512 - Cannot connect to the database".What could be the reason why the website cannot connect to the database anymore? (Select three)
+a) The primary database's private IP has changed
+b) DB Security Group inbound rules have changed
+c) Network ACL outbound rules have changed
+d) Network ACL inbound rules have changed *
+e) Security Group outbound rules have changed
+f) A read replica has been created recently
+
+Pergunta 21
+As a SysOps Administrator, you have been asked to fix the network performance issues for a fleet of Amazon EC2 instances of a company.Which of the following use-cases represents the right fit for using enhanced networking?
+a) To reach speeds up to 2,500 Gbps between EC2 instances
+b) To configure multi-attach for an EBS volume that can be attached to a maximum of 16 EC2 instances in a single Availability Zone
+c) To configure Direct Connect to reach speeds up to 25 Gbps between EC2 instances
+d) To support throughput near or exceeding 20K packets per second (PPS) on the VIF driver *
+
+Pergunta 22
+You are in S3 and have deleted all the files in it. As you can see, the bucket is empty:You have tried to delete the bucket afterward and it fails with an error saying the bucket is not empty.What's the issue?
+a) S3 is eventually consistent. Wait two minutes and retry, it will work then
+b) S3 versioning is enabled and delete markers are still present in the bucket *
+c) An S3 bucket policy is set up and it prevents bucket deletion
+d) Some files are in Glacier
+
+Pergunta 23
+You host a forum for law questions and per your country's law, you must store all the archives of conversations (about 1 TB) every week for 7 years. These archives must not be tampered with in any way, and you must prove you have set enough controls around your data protection.What should you do?
+a) Store the archives in S3 and set up a bucket policy, enable versioning and MFA-Delete
+b) Store the archives in Glacier and set up a Vault Lock Policy for WORM access *
+c) Store the archives in AWS Artifact and enable compliance monitoring
+d) Store the archives in EBS and use Linux file system protection on the files
+
+Pergunta 24
+A SysOps administrator has deployed multiple applications on a fleet of Amazon EC2 instances.What is the right way to configure scheduled events for these EC2 instances?
+a) Scheduled events are managed by AWS, you cannot configure scheduled events for your instances *
+b) Use CloudWatch Agent to configure scheduled events on Amazon EC2 instances
+c) Use CloudWatch Alarm to configure scheduled events on Amazon EC2 instances
+d) Use Amazon EventBridge to configure scheduled events on Amazon EC2 instances
+
+Pergunta 25
+Your data center generates tens of terabytes of data daily and has a cumulative historic data volume of 5PB. The data center is running short of storage as well as bandwidth infrastructure to store or transfer this data. Later you would like to analyze this data using Redshift or Athena, however, first you must clean it using a proprietary process running on EC2.What's the optimal way of moving this data to the cloud?
+a) Use AWS Data Migration
+b) Use Snowball Edge *
+c) Use Volume Gateway
+d) Use S3 transfer acceleration
+
+Pergunta 26
+You suspect some of your employees try to access files in S3 that they don't have access to.How can you verify this is indeed the case without them noticing?
+a) Restrict their IAM policies and look at CloudTrail logs
+b) Enable S3 Access Logs and analyze them using Athena *
+c) Use a bucket policy
+d) Use AWS Config to define compliance rules on these users
+
+Pergunta 27
+Your application is deployed using Elastic Beanstalk. Since the application has a complex runtime as well as multiple OS dependencies, every upgrade for the application takes a long time. You cannot sacrifice application availability.What should you do to improve the application upgrade time? (Select two)
+a) Create a new beanstalk environment for each application and apply blue/green deployment patterns
+b) Create a Golden AMI with your application *
+c) Upgrade the EC2 instance type
+d) Use all at once deployment pattern
+e) Use rolling with additional batch
+
+Pergunta 28
+A junior developer is tasked with creating necessary configurations for AWS CloudFormation that is extensively used in a project. After declaring the necessary stack policy, the developer realized that the users still do not have access to stack resources. The stack policy created by the developer looks like so:{ "Statement" : [ { "Effect" : "Allow", "Action" : "Update:*", "Principal": "*", "Resource" : "*" }, { "Effect" : "Deny", "Action" : "Update:*", "Principal": "*", "Resource" : "LogicalResourceId/ProductionDatabase" } ] }Why are the users unable to access the stack resources even after giving access permissions to all?
+a) Stack policies do not allow wildcard character value (*) for thePrincipalelement of the policy
+b) Stack policies are associated with a particular IAM role or an IAM user. Hence, they only work for the users you have explicitly attached the policy to
+c) A stack policy applies only during stack updates, it doesn't provide access controls. The developer needs to provide access through IAM policies *
+d) The stack policy is invalid and hence the users are not granted any permissions. The developer needs to fix the syntactical errors in the policy
+
+Pergunta 29
+The Chief Technology Officer (CTO) of a healthcare company realized that he does not have access to an Amazon S3 bucket present in the company's own AWS account. The CTO is the root user for the AWS account and has created other AWS users using the root user account.What is the reason for this behavior and how can you fix this?
+a) Root user has access to all the resources in his AWS account. Contact AWS support to resolve the access issue
+b) If an IAM user, with full access to IAM and Amazon S3, assigns a bucket policy to an Amazon S3 bucket and doesn't specify the AWS account root user as a principal, the root user is denied access to that bucket *
+c) An Amazon S3 bucket policy that specifies a wildcard (*) in the principal element, sometimes is declared void by AWS to avoid the risk of complete public exposure. Such S3 buckets policies are in invalid status and have random behavior
+d) Root user always has access to all the resources of the account. The Amazon S3 bucket could be from another AWS account and the S3 bucket has been shared with the root user and hence appears in his list of S3 buckets
+
+Pergunta 30
+An automobile company manages its AWS resource creation and maintenance process through AWS CloudFormation. The company has successfully used CloudFormation so far, and wishes to continue using the service. However, while moving to CloudFormation, the company only moved critical resources and left out the other resources to be managed manually. To leverage the ease of creation and maintenance that CloudFormation offers, the company wants to move rest of the resources to CloudFormation.Which of the following options is the recommended way to configure this requirement?
+a) You can bring an existing resource into AWS CloudFormation management usingresource import *
+b) Drift detection is the mechanism by which you add resources to the stack of Cloudformation resources already created
+c) You can useMappingspart of CloudFormation template to input the needed resources
+d) UseParameterssection of CloudFormation template to input the required resources
+
+Pergunta 31
+As a SysOps Administrator, you have been tasked to generate a report on all API calls made for Elastic Load Balancer from the AWS Management Console.Which feature/service will you use to fetch this data?
+a) Load Balancer Request tracing
+b) Load Balancer Access logs
+c) CloudTrail logs *
+d) CloudWatch metrics
+
+Pergunta 32
+You have tape backup processes and you would like to start migrating to the cloud to leverage the S3 storage capacity while keeping the same processes and iSCSI-compatible backup software you purchased a 10-year license for.What do you recommend your company should be using?
+a) File Gateway
+b) Volume Gateway
+c) Tape Gateway *
+d) Snowball
+
+Pergunta 33
+An analytics company generates reports for various client applications, some of which have critical data. As per the company's compliance guidelines, data has to be encrypted during data exchange, for all channels of communication. An Amazon S3 bucket is configured as a website endpoint and this is now being added as a custom origin for CloudFront.How will you secure this channel, as per the company's requirements?
+a) Communication between CloudFront and Amazon S3 is always on HTTP protocol since the network used for communication is internal to AWS and is inherently secure
+b) CloudFront always forwards requests to S3 by using the protocol that viewers used to submit the requests. So, we only need to configure CloudFront to mandate the use of HTTPS for users
+c) Configure CloudFront to mandate viewers to use HTTPS to request objects from S3. However, CloudFront and S3 will use HTTP to communicate with each other *
+d) Configure CloudFront that mandates viewers to use HTTPS to request objects from S3. Configure S3 bucket to support HTTPS communication only. This will force CloudFront to use HTTPS for communication between CloudFront and S3
+
+Pergunta 34
+An e-commerce company is running its server infrastructure on Amazon EC2 instance store-backed instances. For better performance, the company has decided to move their applications to another Amazon EC2 instance store-backed instance with a different instance type.How will you configure a solution for this requirement?
+a) Create an image of your instance, and then launch a new instance from this image with the instance type that you need. Any public IP address associated with the instance can be moved with the instance for uninterrupted access of services
+b) You can't resize an instance store-backed instance. Instead, you choose a new compatible instance and move your application to the new instance
+c) You can't resize an instance store-backed instance. Instead, configure an EBS volume to be the root device for the instance and migrate using the EBS volume
+d) Create an image of your instance, and then launch a new instance from this image with the instance type that you need. Take any Elastic IP address that you've associated with your original instance and associate it with the new instance for uninterrupted service to your application *
+
+Pergunta 35
+An organization that started as a single AWS account, gradually moved to a multi-account setup. The organization also has multiple AWS environments in each account, that were being managed at the account level. Backups are a big part of this management task. The organization is looking at moving to a centralized backup management process that consolidates and automates Cross-Region backup tasks across AWS accounts.Which of the solutions below is the right choice for this requirement?
+a) Use Amazon EventBridge to create a workflow for scheduled backup of all AWS resources under an account. Amazon S3 lifecycle policies, Amazon EC2 instance backups, and Amazon RDS backups can be used to create the events for the EventBridge. The same workflow can be scheduled to work on production and non-production environments, based on the tags created
+b) Use Amazon Data Lifecycle Manager to manage creation, deletion, and managing of all the AWS resources under an account. Tag all the resources that need to be backed up and use lifecycle policies to customize the backup management to cater to the needs of the organization
+c) Create a backup plan in AWS Backup. Assign tags to resources based on the environment ( Production, Development, Testing). Create one backup policy for production environments and one backup policy for non-production environments. Schedule the backup plan based on the organization's backup policies *
+d) Configure AWS Systems Manager Maintenance Windows to schedule backup tasks as per company's policies. Tag the resources to help identify them by the AWS environment they run in. Amazon CloudWatch dashboards hosted by Systems Manager to get an overall view of the status of all resources under the AWS account
+
+Pergunta 36
+A SysOps Administrator was asked to enable versioning on an Amazon S3 bucket after a few objects were accidentally deleted by the development team.Which of the following represent valid scenarios when a developer deletes an object in the versioning-enabled bucket? (Select two)
+a) A delete marker has a key, version ID and Access Control List (ACL) associated with it
+b) GET requests do not retrieve delete marker objects
+c) A delete marker is set on the deleted object, but the actual object is not deleted *
+d) The delete marker has the same data associated with it, as the actual object
+e) GET requests can retrieve delete marker objects
+
+Pergunta 37
+As a SysOps Administrator, you have been asked to calculate the total network usage for all the EC2 instances of a company and determine which instance used the most bandwidth within a date range.Which Amazon CloudWatch metric(s) will help you get the needed data?
+a) DataTransfer-Out-Bytes
+b) 
+

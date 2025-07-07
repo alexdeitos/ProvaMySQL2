@@ -27,7 +27,7 @@ def parse_questions(file_path):
             question_number = int(line.split('#')[1].strip())
             question_lines = []
             i += 1
-            while i < len(lines) and not re.match(r'^[A-E]\.', lines[i]):  # Updated to A-E for 5 options
+            while i < len(lines) and not re.match(r'^[A-E]\.', lines[i]):
                 question_lines.append(lines[i])
                 i += 1
             question_text = ' '.join(question_lines).strip()
@@ -45,11 +45,12 @@ def parse_questions(file_path):
             })
             pk_counter += 1
 
-            # Collect answers (multi-line support)
+            # Collect all answers (multi-line support, flexible A-E)
             answers = []
             correct_answer_letters = set()
 
-            while i < len(lines) and re.match(r'^[A-E]\.', lines[i]):  # Updated to A-E
+            # Collect all answer options
+            while i < len(lines) and re.match(r'^[A-E]\.', lines[i]):
                 answer_lines = [lines[i]]
                 i += 1
                 while i < len(lines) and not re.match(r'^[A-E]\.|Correct Answer:', lines[i]):

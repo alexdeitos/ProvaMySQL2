@@ -1,0 +1,1666 @@
+[
+  {
+    "model": "provas.pergunta",
+    "pk": 1597,
+    "fields": {
+      "prova": 2,
+      "texto": "You are developing a new CloudFormation stack and writing some very complex cfn-init code. The code fails and you would like to debug why. When reading the documentation, you see all the logs are in the file/var/cfn/cfn-init-output.logand will give you more information as to why the instance provisioning is failing. But you realize that you can't gain access to this file as the CloudFormation stack always terminates the EC2 instance when the creation fails.What can you do to access these logs files, while not changing the way your EC2 instance works and ensuring you can debug your instance over 24 hours?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1598,
+    "fields": {
+      "pergunta": 1597,
+      "texto": "a) Install the CloudWatch logs agent, create a new IAM role and assign it to the EC2 instance, and send the logs directly to CloudWatch Logs",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1599,
+    "fields": {
+      "pergunta": 1597,
+      "texto": "b) Increase the Wait Timeout to 2 hours",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1600,
+    "fields": {
+      "pergunta": 1597,
+      "texto": "c) Set OnFailure=DO_NOTHING",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1601,
+    "fields": {
+      "pergunta": 1597,
+      "texto": "d) Enable VPC Flow Logs and intercept the cfn-init log file",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1602,
+    "fields": {
+      "prova": 2,
+      "texto": "A startup uses Amazon S3 buckets for storing their customer data. The company has defined different retention periods for different objects present in their Amazon S3 buckets, based on the compliance requirements. But, the retention rules do not seem to work as expected.Which of the following points are important to remember when configuring retention periods for objects in Amazon S3 buckets (Select two)?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1603,
+    "fields": {
+      "pergunta": 1602,
+      "texto": "a) When you use bucket default settings, you specify aRetain Until Datefor the object version",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1604,
+    "fields": {
+      "pergunta": 1602,
+      "texto": "b) Different versions of a single object can have different retention modes and periods",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1605,
+    "fields": {
+      "pergunta": 1602,
+      "texto": "c) The bucket default settings will override any explicit retention mode or period you request on an object version",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1606,
+    "fields": {
+      "pergunta": 1602,
+      "texto": "d) When you apply a retention period to an object version explicitly, you specify aRetain Until Datefor the object version",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1607,
+    "fields": {
+      "pergunta": 1602,
+      "texto": "e) You cannot place a retention period on an object version through a bucket default setting",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1608,
+    "fields": {
+      "prova": 2,
+      "texto": "A large IT company uses several AWS accounts for the different lines of business. Quite often, the systems administrator is faced with the problem of sharing Customer Master Keys (CMKs) across multiple AWS accounts for accessing AWS resources spread across these accounts.How will you implement a solution to address this issue?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1609,
+    "fields": {
+      "pergunta": 1608,
+      "texto": "a) Use AWS KMS service-linked roles to share access across AWS accounts",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1610,
+    "fields": {
+      "pergunta": 1608,
+      "texto": "b) The key policy for the CMK must give the external account (or users and roles in the external account) permission to use the CMK. IAM policies in the external account must delegate the key policy permissions to its users and roles",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1611,
+    "fields": {
+      "pergunta": 1608,
+      "texto": "c) AWS Owned CMK can be used across AWS accounts. Configure an AWS Owned CMK and use it across accounts that need to share the key material",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1612,
+    "fields": {
+      "pergunta": 1608,
+      "texto": "d) Declare a key policy for the CMK to give the external account permission to use the CMK. This key policy should be embedded with the first request of every transaction",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1613,
+    "fields": {
+      "prova": 2,
+      "texto": "A systems administrator is configuring Amazon EC2 status check alarm to publish a notification to an SNS topic when the instance fails either the instance check or system status check.Which CloudWatch metric is the right choice for this configuration?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1614,
+    "fields": {
+      "pergunta": 1613,
+      "texto": "a) StatusCheckFailed_Instance",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1615,
+    "fields": {
+      "pergunta": 1613,
+      "texto": "b) StatusCheckFailed_System",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1616,
+    "fields": {
+      "pergunta": 1613,
+      "texto": "c) StatusCheckFailed",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1617,
+    "fields": {
+      "pergunta": 1613,
+      "texto": "d) CombinedStatusCheckFailed",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1618,
+    "fields": {
+      "prova": 2,
+      "texto": "You are deploying an application and use the cfn-init and cfn-signal script to ensure the application is properly deployed before signaling to CloudFormation the success of your stack deployment. Right now, every time you deploy, CloudFormation completes successfully, even though the instance is still executing the cfn-init script.As a SysOps Administrator, which of the following would you identify as the root cause behind the issue?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1619,
+    "fields": {
+      "pergunta": 1618,
+      "texto": "a) You did not disable Rollbacks",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1620,
+    "fields": {
+      "pergunta": 1618,
+      "texto": "b) You forgot to include a deletion policy",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1621,
+    "fields": {
+      "pergunta": 1618,
+      "texto": "c) You forgot to include the cfn-signal command in your user data",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1622,
+    "fields": {
+      "pergunta": 1618,
+      "texto": "d) You forgot the Wait Condition",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1623,
+    "fields": {
+      "prova": 2,
+      "texto": "You are provisioning an internal full LAMP stack using CloudFormation, and the EC2 instance gets configured automatically using the cfn helper scripts, such as cfn-init and cfn-signal. The stack creation fails as CloudFormation fails to receive a signal from your EC2 instance.What are the possible reasons for this? (Select two)"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1624,
+    "fields": {
+      "pergunta": 1623,
+      "texto": "a) The subnet where the application is deployed does not have a network route to the CloudFormation service through a NAT Gateway or Internet Gateway",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1625,
+    "fields": {
+      "pergunta": 1623,
+      "texto": "b) The EC2 instance does not have a proper IAM role allowing to signal the success to CloudFormation",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1626,
+    "fields": {
+      "pergunta": 1623,
+      "texto": "c) The cfn-signal script does not get executed before the timeout of the wait condition",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1627,
+    "fields": {
+      "pergunta": 1623,
+      "texto": "d) AWS is experiencing an Insufficient Capacity for the instance type you requested",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1628,
+    "fields": {
+      "pergunta": 1623,
+      "texto": "e) The cfn-init script failed",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1629,
+    "fields": {
+      "prova": 2,
+      "texto": "A media company runs its business on Amazon EC2 instances backed by Amazon S3 storage. The company is apprehensive about the consistent increase in costs incurred from S3 buckets. The company wants to make some decisions regarding data retention, storage, and deletion based on S3 usage and cost reports. As a SysOps Administrator, you have been hired to develop a solution to track the costs incurred by each S3 bucket in the AWS account.How will you configure this requirement?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1630,
+    "fields": {
+      "pergunta": 1629,
+      "texto": "a) Configure AWS Budgets to see the cost against each S3 bucket in the AWS account",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1631,
+    "fields": {
+      "pergunta": 1629,
+      "texto": "b) Add a common tag to each bucket. Activate the tag as a cost allocation tag. Use the AWS Cost Explorer to create a cost report for the tag",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1632,
+    "fields": {
+      "pergunta": 1629,
+      "texto": "c) Use AWS Trusted Advisor's rich set of best practice checks to configure cost utilization for individual S3 buckets. Trusted Advisor also provides recommendations based on the findings derived from analyzing your AWS cloud architecture",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1633,
+    "fields": {
+      "pergunta": 1629,
+      "texto": "d) Use AWS Simple Monthly Calculator to check the cost against each S3 bucket in your AWS account",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1634,
+    "fields": {
+      "prova": 2,
+      "texto": "You distribute a monthly raw data extract of your public forum's discussions that is about 10TB each month. Currently, the archive is distributed through an EFS drive, that is mounted on all your EC2 instances. Customers retrieve the file through the load balancer you have. This solution is costing you a lot of money and forces you to tremendously scale on the 1st of each month as people all try to retrieve the file at the same time.What can you do to improve the situation?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1635,
+    "fields": {
+      "pergunta": 1634,
+      "texto": "a) Store the files in S3 and distribute them using a CloudFront distribution instead",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1636,
+    "fields": {
+      "pergunta": 1634,
+      "texto": "b) Store the files on instance stores instead, so you don't need to use EFS anymore",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1637,
+    "fields": {
+      "pergunta": 1634,
+      "texto": "c) Enable enhanced networking between EC2 and ALB",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1638,
+    "fields": {
+      "pergunta": 1634,
+      "texto": "d) Enable static file caching on the ALB",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1639,
+    "fields": {
+      "prova": 2,
+      "texto": "How can you enforce encryption on all the files uploaded into your example S3 bucket?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1640,
+    "fields": {
+      "pergunta": 1639,
+      "texto": "a) Using the \"Default Encryption\" setting in AWS S3",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1641,
+    "fields": {
+      "pergunta": 1639,
+      "texto": "b) Use the following S3 bucket policy:{ \"Statement\":[ { \"Action\": \"s3:*\", \"Effect\":\"Deny\", \"Principal\": \"*\", \"Resource\":\"arn:aws:s3:::bucketname/*\", \"Condition\":{ \"Bool\": { \"aws:SecureTransport\": false } } } ] }",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1642,
+    "fields": {
+      "pergunta": 1639,
+      "texto": "c) Use an encrypted CloudFront distribution in front of your S3 bucket",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1643,
+    "fields": {
+      "pergunta": 1639,
+      "texto": "d) Use the following S3 bucket policy:{ \"Statement\":[ { \"Action\": \"s3:*\", \"Effect\":\"Deny\", \"Principal\": \"*\", \"Resource\":\"arn:aws:s3:::bucketname/*\", \"Condition\":{ \"Bool\": { \"aws:SecureTransport\": true } } } ] }",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1644,
+    "fields": {
+      "prova": 2,
+      "texto": "You would like to replace your on-premise NFS v3 drive with something that will leverage the huge capacity of Amazon S3. You would like to ensure files that are commonly used are locally cached on-premises.What should you use?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1645,
+    "fields": {
+      "pergunta": 1644,
+      "texto": "a) EFS",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1646,
+    "fields": {
+      "pergunta": 1644,
+      "texto": "b) Volume Gateway",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1647,
+    "fields": {
+      "pergunta": 1644,
+      "texto": "c) EBS Drives",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1648,
+    "fields": {
+      "pergunta": 1644,
+      "texto": "d) File Gateway",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1649,
+    "fields": {
+      "prova": 2,
+      "texto": "A data analytics company runs its technology operations on AWS Cloud using different VPC configurations for each of its applications. A systems administrator wants to configure the Network Access Control List (ACL) and Security Group (SG) of VPC1 to allow access for AWS resources in VPC2.Which is the best way of configuring this requirement?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1650,
+    "fields": {
+      "pergunta": 1649,
+      "texto": "a) By default, Security Groups allow outbound traffic. Hence, only the inbound traffic configuration of the security groups have to be changed to allow requests from resources in VPC2 to access instances in VPC1. If the subnet is not associated with any Network ACL, you will not need any configuration changes",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1651,
+    "fields": {
+      "pergunta": 1649,
+      "texto": "b) Network ACLs and Security Groups share a parent-child relationship. If resources in VPC2 are given inbound and outbound permissions on Network ACLs of VPC1, the resources will get necessary permissions on the associated security groups too",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1652,
+    "fields": {
+      "pergunta": 1649,
+      "texto": "c) The Security Groups of instances on VPC1 should be configured to allow inbound traffic from resources in VPC2. By default, Network ACLs allow all inbound and outbound traffic. So, a default Network ACLs on VPC1 will not need any configuration changes",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1653,
+    "fields": {
+      "pergunta": 1649,
+      "texto": "d) Based on the inbound and outbound traffic configurations on Network ACL of VPC1, you can create a similar deny rules on Security Groups of the instances in VPC1 to deny all traffic, other than the one originating from resources in VPC2",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1654,
+    "fields": {
+      "prova": 2,
+      "texto": "You have a production Postgres RDS database and a custom rule in AWS Config has been set up and shows that some connections established to your database are not encrypted.How can you ensure all connections to RDS are encrypted?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1655,
+    "fields": {
+      "pergunta": 1654,
+      "texto": "a) Patch the database with the SSL/TLS Postgres Addon",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1656,
+    "fields": {
+      "pergunta": 1654,
+      "texto": "b) Edit the security group rules",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1657,
+    "fields": {
+      "pergunta": 1654,
+      "texto": "c) Enable SSL connections from the RDS Console",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1658,
+    "fields": {
+      "pergunta": 1654,
+      "texto": "d) Review the DB parameter groups",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1659,
+    "fields": {
+      "prova": 2,
+      "texto": "A company wants to migrate a part of its on-premises infrastructure to AWS Cloud. As a starting point, the company is looking at moving their daily workflow files to AWS Cloud, such that the files are accessible from the on-premises systems as well as AWS Cloud. To reduce the management overhead, the company wants a fully managed service.Which service/tool is the right choice for this requirement?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1660,
+    "fields": {
+      "pergunta": 1659,
+      "texto": "a) File Gateway of AWS Storage Gateway",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1661,
+    "fields": {
+      "pergunta": 1659,
+      "texto": "b) Amazon Simple Storage Service (Amazon S3)",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1662,
+    "fields": {
+      "pergunta": 1659,
+      "texto": "c) Amazon Elastic Block Store (Amazon EBS)",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1663,
+    "fields": {
+      "pergunta": 1659,
+      "texto": "d) Volume Gateway of AWS Storage Gateway",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1664,
+    "fields": {
+      "prova": 2,
+      "texto": "A retail company wants to get out of the business of owning and maintaining its own IT infrastructure. As part of this digital transformation, the company wants to archive about 5PB of data in its on-premises data center to durable long term storage.As a SysOps Administrator, what is your recommendation to migrate this data in the MOST cost-optimal way?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1665,
+    "fields": {
+      "pergunta": 1664,
+      "texto": "a) Setup AWS direct connect between the on-premises data center and AWS Cloud. Use this connection to transfer the data into AWS Glacier",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1666,
+    "fields": {
+      "pergunta": 1664,
+      "texto": "b) Transfer the on-premises data into multiple Snowball Edge Storage Optimized devices. Copy the Snowball Edge data into AWS Glacier",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1667,
+    "fields": {
+      "pergunta": 1664,
+      "texto": "c) T ransfer the on-premises data into multiple Snowball Edge Storage Optimized devices. Copy the Snowball Edge data into Amazon S3 and create a lifecycle policy to transition the data into AWS Glacier",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1668,
+    "fields": {
+      "pergunta": 1664,
+      "texto": "d) Setup Site-to-Site VPN connection between the on-premises data center and AWS Cloud. Use this connection to transfer the data into AWS Glacier",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1669,
+    "fields": {
+      "prova": 2,
+      "texto": "A retail company has complex AWS VPC architecture that is getting difficult to maintain. The company has decided to configure VPC flow logs to track the network traffic to analyze various traffic flow scenarios. The systems administration team has configured VPC flow logs for one of the VPCs, but it's not able to see any logs. After initial analysis, the team has been able to track the error. It saysAccess errorand the administrator of the team wants to change the IAM Role defined in the flow log definition.What is the correct way of configuration a solution for this issue so that the VPC flow logs can be operational?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1670,
+    "fields": {
+      "pergunta": 1669,
+      "texto": "a) The error indicates an internal error has occurred in the flow logs service. Raise a service request with AWS",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1671,
+    "fields": {
+      "pergunta": 1669,
+      "texto": "b) The flow log is still in the process of being created. It sometimes takes almost 10 minutes to start the logs",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1672,
+    "fields": {
+      "pergunta": 1669,
+      "texto": "c) The error indicates that the IAM role does not have a trust relationship with the flow logs service. Change the trust relationship from flow log configuration",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1673,
+    "fields": {
+      "pergunta": 1669,
+      "texto": "d) The error indicates IAM role is not correctly configured. After you've created a flow log, you cannot change its configuration. Instead, you need to delete the flow log and create a new one with the required configuration",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1674,
+    "fields": {
+      "prova": 2,
+      "texto": "You just released a new mobile game and users have the chance to interact with each other. In order to publish a profile picture, your company has made the architectural decision to have users directly upload their images into a designated S3 bucket.How can you provide write access to the mobile application users effectively?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1675,
+    "fields": {
+      "pergunta": 1674,
+      "texto": "a) Create one IAM user and publish the access keys as part of the mobile application",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1676,
+    "fields": {
+      "pergunta": 1674,
+      "texto": "b) Federate the users with Cognito so they can assume a role to access S3",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1677,
+    "fields": {
+      "pergunta": 1674,
+      "texto": "c) Federate the users with SAML so they can use Single Sign-On (SSO) to access S3",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1678,
+    "fields": {
+      "pergunta": 1674,
+      "texto": "d) Create an AWS Lambda function that will create an IAM User for each new user, and store their API keys in the mobile app database",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1679,
+    "fields": {
+      "prova": 2,
+      "texto": "Security and Compliance is a Shared Responsibility between AWS and the customer. As part of this Shared Responsibility, the customer is also responsible for securing the resources that he has procured under his AWS account.Which of the following is the responsibility of the customer?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1680,
+    "fields": {
+      "pergunta": 1679,
+      "texto": "a) For Amazon EC2 service, managing guest operating system (including updates and security patches), application software and Security Groups is the responsibility of the customer",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1681,
+    "fields": {
+      "pergunta": 1679,
+      "texto": "b) AWS is responsible for training their customers and their employees as part of Customer Specific training",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1682,
+    "fields": {
+      "pergunta": 1679,
+      "texto": "c) For Amazon S3 service, managing the operating system and platform is customer responsibility",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1683,
+    "fields": {
+      "pergunta": 1679,
+      "texto": "d) AWS is responsible for patching and fixing flaws within the infrastructure, for patching the guest Operating Systems and applications of the customers",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1684,
+    "fields": {
+      "prova": 2,
+      "texto": "A Systems Administrator is configuring an Application Load Balancer (ALB) that fronts Amazon EC2 instances.Which of the following options would you identify as correct for configuring the ALB? (Select two)"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1685,
+    "fields": {
+      "pergunta": 1684,
+      "texto": "a) A target can be registered with only one target group at any given time",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1686,
+    "fields": {
+      "pergunta": 1684,
+      "texto": "b) Before you start using your Application Load Balancer, you must add one or more listeners",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1687,
+    "fields": {
+      "pergunta": 1684,
+      "texto": "c) The targets of a target group in an ALB should all belong to the same Availability Zone",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1688,
+    "fields": {
+      "pergunta": 1684,
+      "texto": "d) You configure target groups of an ALB by attaching them to the listeners",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1689,
+    "fields": {
+      "pergunta": 1684,
+      "texto": "e) When you create a listener, you define actions and conditions for the default rule",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1690,
+    "fields": {
+      "prova": 2,
+      "texto": "A company initially used a manual process to create and manage different IAM roles needed for the organization. As the company expanded and lines of business grew, different AWS accounts were created to manage the AWS resources as well as the users. The manual process has resulted in errors with IAM roles getting created with insufficient permissions. The company is looking at automating the process of creating and managing the necessary IAM roles for multiple AWS accounts. The company already uses AWS Organizations to manage multiple AWS accounts.As a SysOps Administrator, can you suggest an effective way to automate this process?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1691,
+    "fields": {
+      "pergunta": 1690,
+      "texto": "a) Use AWS Directory Service with AWS Organizations to automatically associate necessary IAM roles with the Microsoft Active Directory users",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1692,
+    "fields": {
+      "pergunta": 1690,
+      "texto": "b) Create CloudFormation templates and reuse them to create necessary IAM roles in each of the AWS accounts",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1693,
+    "fields": {
+      "pergunta": 1690,
+      "texto": "c) Use AWS Resource Access Manager that integrates with AWS Organizations to deploy and manage shared resources across AWS accounts",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1694,
+    "fields": {
+      "pergunta": 1690,
+      "texto": "d) Use CloudFormation StackSets with AWS Organizations to deploy and manage IAM roles to multiple AWS accounts simultaneously",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1695,
+    "fields": {
+      "prova": 2,
+      "texto": "Your home-cooking website stores its recipes and comments from users in a Multi-AZ RDS database, which is located in a private subnet. As of yesterday, it seems that your users are unable to access the website and see an error message \"512 - Cannot connect to the database\".What could be the reason why the website cannot connect to the database anymore? (Select three)"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1696,
+    "fields": {
+      "pergunta": 1695,
+      "texto": "a) The primary database's private IP has changed",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1697,
+    "fields": {
+      "pergunta": 1695,
+      "texto": "b) DB Security Group inbound rules have changed",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1698,
+    "fields": {
+      "pergunta": 1695,
+      "texto": "c) Network ACL outbound rules have changed",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1699,
+    "fields": {
+      "pergunta": 1695,
+      "texto": "d) Network ACL inbound rules have changed",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1700,
+    "fields": {
+      "pergunta": 1695,
+      "texto": "e) Security Group outbound rules have changed",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1701,
+    "fields": {
+      "prova": 2,
+      "texto": "As a SysOps Administrator, you have been asked to fix the network performance issues for a fleet of Amazon EC2 instances of a company.Which of the following use-cases represents the right fit for using enhanced networking?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1702,
+    "fields": {
+      "pergunta": 1701,
+      "texto": "a) To reach speeds up to 2,500 Gbps between EC2 instances",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1703,
+    "fields": {
+      "pergunta": 1701,
+      "texto": "b) To configure multi-attach for an EBS volume that can be attached to a maximum of 16 EC2 instances in a single Availability Zone",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1704,
+    "fields": {
+      "pergunta": 1701,
+      "texto": "c) To configure Direct Connect to reach speeds up to 25 Gbps between EC2 instances",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1705,
+    "fields": {
+      "pergunta": 1701,
+      "texto": "d) To support throughput near or exceeding 20K packets per second (PPS) on the VIF driver",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1706,
+    "fields": {
+      "prova": 2,
+      "texto": "You are in S3 and have deleted all the files in it. As you can see, the bucket is empty:You have tried to delete the bucket afterward and it fails with an error saying the bucket is not empty.What's the issue?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1707,
+    "fields": {
+      "pergunta": 1706,
+      "texto": "a) S3 is eventually consistent. Wait two minutes and retry, it will work then",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1708,
+    "fields": {
+      "pergunta": 1706,
+      "texto": "b) S3 versioning is enabled and delete markers are still present in the bucket",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1709,
+    "fields": {
+      "pergunta": 1706,
+      "texto": "c) An S3 bucket policy is set up and it prevents bucket deletion",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1710,
+    "fields": {
+      "pergunta": 1706,
+      "texto": "d) Some files are in Glacier",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1711,
+    "fields": {
+      "prova": 2,
+      "texto": "You host a forum for law questions and per your country's law, you must store all the archives of conversations (about 1 TB) every week for 7 years. These archives must not be tampered with in any way, and you must prove you have set enough controls around your data protection.What should you do?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1712,
+    "fields": {
+      "pergunta": 1711,
+      "texto": "a) Store the archives in S3 and set up a bucket policy, enable versioning and MFA-Delete",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1713,
+    "fields": {
+      "pergunta": 1711,
+      "texto": "b) Store the archives in Glacier and set up a Vault Lock Policy for WORM access",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1714,
+    "fields": {
+      "pergunta": 1711,
+      "texto": "c) Store the archives in AWS Artifact and enable compliance monitoring",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1715,
+    "fields": {
+      "pergunta": 1711,
+      "texto": "d) Store the archives in EBS and use Linux file system protection on the files",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1716,
+    "fields": {
+      "prova": 2,
+      "texto": "A SysOps administrator has deployed multiple applications on a fleet of Amazon EC2 instances.What is the right way to configure scheduled events for these EC2 instances?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1717,
+    "fields": {
+      "pergunta": 1716,
+      "texto": "a) Scheduled events are managed by AWS, you cannot configure scheduled events for your instances",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1718,
+    "fields": {
+      "pergunta": 1716,
+      "texto": "b) Use CloudWatch Agent to configure scheduled events on Amazon EC2 instances",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1719,
+    "fields": {
+      "pergunta": 1716,
+      "texto": "c) Use CloudWatch Alarm to configure scheduled events on Amazon EC2 instances",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1720,
+    "fields": {
+      "pergunta": 1716,
+      "texto": "d) Use Amazon EventBridge to configure scheduled events on Amazon EC2 instances",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1721,
+    "fields": {
+      "prova": 2,
+      "texto": "Your data center generates tens of terabytes of data daily and has a cumulative historic data volume of 5PB. The data center is running short of storage as well as bandwidth infrastructure to store or transfer this data. Later you would like to analyze this data using Redshift or Athena, however, first you must clean it using a proprietary process running on EC2.What's the optimal way of moving this data to the cloud?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1722,
+    "fields": {
+      "pergunta": 1721,
+      "texto": "a) Use AWS Data Migration",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1723,
+    "fields": {
+      "pergunta": 1721,
+      "texto": "b) Use Snowball Edge",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1724,
+    "fields": {
+      "pergunta": 1721,
+      "texto": "c) Use Volume Gateway",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1725,
+    "fields": {
+      "pergunta": 1721,
+      "texto": "d) Use S3 transfer acceleration",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1726,
+    "fields": {
+      "prova": 2,
+      "texto": "You suspect some of your employees try to access files in S3 that they don't have access to.How can you verify this is indeed the case without them noticing?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1727,
+    "fields": {
+      "pergunta": 1726,
+      "texto": "a) Restrict their IAM policies and look at CloudTrail logs",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1728,
+    "fields": {
+      "pergunta": 1726,
+      "texto": "b) Enable S3 Access Logs and analyze them using Athena",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1729,
+    "fields": {
+      "pergunta": 1726,
+      "texto": "c) Use a bucket policy",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1730,
+    "fields": {
+      "pergunta": 1726,
+      "texto": "d) Use AWS Config to define compliance rules on these users",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1731,
+    "fields": {
+      "prova": 2,
+      "texto": "Your application is deployed using Elastic Beanstalk. Since the application has a complex runtime as well as multiple OS dependencies, every upgrade for the application takes a long time. You cannot sacrifice application availability.What should you do to improve the application upgrade time? (Select two)"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1732,
+    "fields": {
+      "pergunta": 1731,
+      "texto": "a) Create a new beanstalk environment for each application and apply blue/green deployment patterns",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1733,
+    "fields": {
+      "pergunta": 1731,
+      "texto": "b) Create a Golden AMI with your application",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1734,
+    "fields": {
+      "pergunta": 1731,
+      "texto": "c) Upgrade the EC2 instance type",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1735,
+    "fields": {
+      "pergunta": 1731,
+      "texto": "d) Use all at once deployment pattern",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1736,
+    "fields": {
+      "pergunta": 1731,
+      "texto": "e) Use rolling with additional batch",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1737,
+    "fields": {
+      "prova": 2,
+      "texto": "A junior developer is tasked with creating necessary configurations for AWS CloudFormation that is extensively used in a project. After declaring the necessary stack policy, the developer realized that the users still do not have access to stack resources. The stack policy created by the developer looks like so:{ \"Statement\" : [ { \"Effect\" : \"Allow\", \"Action\" : \"Update:*\", \"Principal\": \"*\", \"Resource\" : \"*\" }, { \"Effect\" : \"Deny\", \"Action\" : \"Update:*\", \"Principal\": \"*\", \"Resource\" : \"LogicalResourceId/ProductionDatabase\" } ] }Why are the users unable to access the stack resources even after giving access permissions to all?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1738,
+    "fields": {
+      "pergunta": 1737,
+      "texto": "a) Stack policies do not allow wildcard character value (*) for thePrincipalelement of the policy",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1739,
+    "fields": {
+      "pergunta": 1737,
+      "texto": "b) Stack policies are associated with a particular IAM role or an IAM user. Hence, they only work for the users you have explicitly attached the policy to",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1740,
+    "fields": {
+      "pergunta": 1737,
+      "texto": "c) A stack policy applies only during stack updates, it doesn't provide access controls. The developer needs to provide access through IAM policies",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1741,
+    "fields": {
+      "pergunta": 1737,
+      "texto": "d) The stack policy is invalid and hence the users are not granted any permissions. The developer needs to fix the syntactical errors in the policy",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1742,
+    "fields": {
+      "prova": 2,
+      "texto": "The Chief Technology Officer (CTO) of a healthcare company realized that he does not have access to an Amazon S3 bucket present in the company's own AWS account. The CTO is the root user for the AWS account and has created other AWS users using the root user account.What is the reason for this behavior and how can you fix this?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1743,
+    "fields": {
+      "pergunta": 1742,
+      "texto": "a) Root user has access to all the resources in his AWS account. Contact AWS support to resolve the access issue",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1744,
+    "fields": {
+      "pergunta": 1742,
+      "texto": "b) If an IAM user, with full access to IAM and Amazon S3, assigns a bucket policy to an Amazon S3 bucket and doesn't specify the AWS account root user as a principal, the root user is denied access to that bucket",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1745,
+    "fields": {
+      "pergunta": 1742,
+      "texto": "c) An Amazon S3 bucket policy that specifies a wildcard (*) in the principal element, sometimes is declared void by AWS to avoid the risk of complete public exposure. Such S3 buckets policies are in invalid status and have random behavior",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1746,
+    "fields": {
+      "pergunta": 1742,
+      "texto": "d) Root user always has access to all the resources of the account. The Amazon S3 bucket could be from another AWS account and the S3 bucket has been shared with the root user and hence appears in his list of S3 buckets",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1747,
+    "fields": {
+      "prova": 2,
+      "texto": "An automobile company manages its AWS resource creation and maintenance process through AWS CloudFormation. The company has successfully used CloudFormation so far, and wishes to continue using the service. However, while moving to CloudFormation, the company only moved critical resources and left out the other resources to be managed manually. To leverage the ease of creation and maintenance that CloudFormation offers, the company wants to move rest of the resources to CloudFormation.Which of the following options is the recommended way to configure this requirement?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1748,
+    "fields": {
+      "pergunta": 1747,
+      "texto": "a) You can bring an existing resource into AWS CloudFormation management usingresource import",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1749,
+    "fields": {
+      "pergunta": 1747,
+      "texto": "b) Drift detection is the mechanism by which you add resources to the stack of Cloudformation resources already created",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1750,
+    "fields": {
+      "pergunta": 1747,
+      "texto": "c) You can useMappingspart of CloudFormation template to input the needed resources",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1751,
+    "fields": {
+      "pergunta": 1747,
+      "texto": "d) UseParameterssection of CloudFormation template to input the required resources",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1752,
+    "fields": {
+      "prova": 2,
+      "texto": "As a SysOps Administrator, you have been tasked to generate a report on all API calls made for Elastic Load Balancer from the AWS Management Console.Which feature/service will you use to fetch this data?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1753,
+    "fields": {
+      "pergunta": 1752,
+      "texto": "a) Load Balancer Request tracing",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1754,
+    "fields": {
+      "pergunta": 1752,
+      "texto": "b) Load Balancer Access logs",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1755,
+    "fields": {
+      "pergunta": 1752,
+      "texto": "c) CloudTrail logs",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1756,
+    "fields": {
+      "pergunta": 1752,
+      "texto": "d) CloudWatch metrics",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1757,
+    "fields": {
+      "prova": 2,
+      "texto": "You have tape backup processes and you would like to start migrating to the cloud to leverage the S3 storage capacity while keeping the same processes and iSCSI-compatible backup software you purchased a 10-year license for.What do you recommend your company should be using?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1758,
+    "fields": {
+      "pergunta": 1757,
+      "texto": "a) File Gateway",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1759,
+    "fields": {
+      "pergunta": 1757,
+      "texto": "b) Volume Gateway",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1760,
+    "fields": {
+      "pergunta": 1757,
+      "texto": "c) Tape Gateway",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1761,
+    "fields": {
+      "pergunta": 1757,
+      "texto": "d) Snowball",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1762,
+    "fields": {
+      "prova": 2,
+      "texto": "An analytics company generates reports for various client applications, some of which have critical data. As per the company's compliance guidelines, data has to be encrypted during data exchange, for all channels of communication. An Amazon S3 bucket is configured as a website endpoint and this is now being added as a custom origin for CloudFront.How will you secure this channel, as per the company's requirements?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1763,
+    "fields": {
+      "pergunta": 1762,
+      "texto": "a) Communication between CloudFront and Amazon S3 is always on HTTP protocol since the network used for communication is internal to AWS and is inherently secure",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1764,
+    "fields": {
+      "pergunta": 1762,
+      "texto": "b) CloudFront always forwards requests to S3 by using the protocol that viewers used to submit the requests. So, we only need to configure CloudFront to mandate the use of HTTPS for users",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1765,
+    "fields": {
+      "pergunta": 1762,
+      "texto": "c) Configure CloudFront to mandate viewers to use HTTPS to request objects from S3. However, CloudFront and S3 will use HTTP to communicate with each other",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1766,
+    "fields": {
+      "pergunta": 1762,
+      "texto": "d) Configure CloudFront that mandates viewers to use HTTPS to request objects from S3. Configure S3 bucket to support HTTPS communication only. This will force CloudFront to use HTTPS for communication between CloudFront and S3",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1767,
+    "fields": {
+      "prova": 2,
+      "texto": "An e-commerce company is running its server infrastructure on Amazon EC2 instance store-backed instances. For better performance, the company has decided to move their applications to another Amazon EC2 instance store-backed instance with a different instance type.How will you configure a solution for this requirement?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1768,
+    "fields": {
+      "pergunta": 1767,
+      "texto": "a) Create an image of your instance, and then launch a new instance from this image with the instance type that you need. Any public IP address associated with the instance can be moved with the instance for uninterrupted access of services",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1769,
+    "fields": {
+      "pergunta": 1767,
+      "texto": "b) You can't resize an instance store-backed instance. Instead, you choose a new compatible instance and move your application to the new instance",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1770,
+    "fields": {
+      "pergunta": 1767,
+      "texto": "c) You can't resize an instance store-backed instance. Instead, configure an EBS volume to be the root device for the instance and migrate using the EBS volume",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1771,
+    "fields": {
+      "pergunta": 1767,
+      "texto": "d) Create an image of your instance, and then launch a new instance from this image with the instance type that you need. Take any Elastic IP address that you've associated with your original instance and associate it with the new instance for uninterrupted service to your application",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1772,
+    "fields": {
+      "prova": 2,
+      "texto": "An organization that started as a single AWS account, gradually moved to a multi-account setup. The organization also has multiple AWS environments in each account, that were being managed at the account level. Backups are a big part of this management task. The organization is looking at moving to a centralized backup management process that consolidates and automates Cross-Region backup tasks across AWS accounts.Which of the solutions below is the right choice for this requirement?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1773,
+    "fields": {
+      "pergunta": 1772,
+      "texto": "a) Use Amazon EventBridge to create a workflow for scheduled backup of all AWS resources under an account. Amazon S3 lifecycle policies, Amazon EC2 instance backups, and Amazon RDS backups can be used to create the events for the EventBridge. The same workflow can be scheduled to work on production and non-production environments, based on the tags created",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1774,
+    "fields": {
+      "pergunta": 1772,
+      "texto": "b) Use Amazon Data Lifecycle Manager to manage creation, deletion, and managing of all the AWS resources under an account. Tag all the resources that need to be backed up and use lifecycle policies to customize the backup management to cater to the needs of the organization",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1775,
+    "fields": {
+      "pergunta": 1772,
+      "texto": "c) Create a backup plan in AWS Backup. Assign tags to resources based on the environment ( Production, Development, Testing). Create one backup policy for production environments and one backup policy for non-production environments. Schedule the backup plan based on the organization's backup policies",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1776,
+    "fields": {
+      "pergunta": 1772,
+      "texto": "d) Configure AWS Systems Manager Maintenance Windows to schedule backup tasks as per company's policies. Tag the resources to help identify them by the AWS environment they run in. Amazon CloudWatch dashboards hosted by Systems Manager to get an overall view of the status of all resources under the AWS account",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1777,
+    "fields": {
+      "prova": 2,
+      "texto": "A SysOps Administrator was asked to enable versioning on an Amazon S3 bucket after a few objects were accidentally deleted by the development team.Which of the following represent valid scenarios when a developer deletes an object in the versioning-enabled bucket? (Select two)"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1778,
+    "fields": {
+      "pergunta": 1777,
+      "texto": "a) A delete marker has a key, version ID and Access Control List (ACL) associated with it",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1779,
+    "fields": {
+      "pergunta": 1777,
+      "texto": "b) GET requests do not retrieve delete marker objects",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1780,
+    "fields": {
+      "pergunta": 1777,
+      "texto": "c) A delete marker is set on the deleted object, but the actual object is not deleted",
+      "correta": true
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1781,
+    "fields": {
+      "pergunta": 1777,
+      "texto": "d) The delete marker has the same data associated with it, as the actual object",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1782,
+    "fields": {
+      "pergunta": 1777,
+      "texto": "e) GET requests can retrieve delete marker objects",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.pergunta",
+    "pk": 1783,
+    "fields": {
+      "prova": 2,
+      "texto": "As a SysOps Administrator, you have been asked to calculate the total network usage for all the EC2 instances of a company and determine which instance used the most bandwidth within a date range.Which Amazon CloudWatch metric(s) will help you get the needed data?"
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1784,
+    "fields": {
+      "pergunta": 1783,
+      "texto": "a) DataTransfer-Out-Bytes",
+      "correta": false
+    }
+  },
+  {
+    "model": "provas.resposta",
+    "pk": 1785,
+    "fields": {
+      "pergunta": 1783,
+      "texto": "b)",
+      "correta": false
+    }
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "model": "provas.prova",
+    "pk": 2,
+    "fields": {
+      "nome": "AWS SysOps"
+    }
+  }
+]
