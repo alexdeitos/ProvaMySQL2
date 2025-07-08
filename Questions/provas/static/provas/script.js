@@ -1,81 +1,96 @@
 document.addEventListener('DOMContentLoaded', function () {
     const enviarRespostasBtn = document.getElementById('enviar-respostas');
+    const marcarRespostasBtn = document.getElementById('marcar-respostas');
     enviarRespostasBtn.addEventListener('click', validarRespostas);
+    marcarRespostasBtn.addEventListener('click', validarRespostas);
 
     function validarRespostas() {
-        perguntasNaoRespondidas = 0;
-        perguntasCorretas = 0;
-        perguntasIncorretas = 0;
-
+        let perguntasCorretas = 0;
         const totalPerguntas = document.querySelectorAll('.pergunta').length;
-        const respostasMarcadas = document.querySelectorAll('input[type="checkbox"]:checked');
+        const perguntas = document.querySelectorAll('.pergunta');
 
-        respostasMarcadas.forEach(resposta => {
-            const perguntaId = resposta.name;
-            const respostaLabel = document.getElementById(`resposta-label-${perguntaId}-${resposta.value}`);
+        perguntas.forEach(pergunta => {
+            const checkboxes = pergunta.querySelectorAll('input[type="checkbox"]');
+            let acertos = 0;
+            let totalCorretas = 0;
 
-            if (resposta.getAttribute('data-correta')) {
-                respostaLabel.style.color = 'blue'; // Marca a resposta como correta (azul)
-                perguntasCorretas++;
+            checkboxes.forEach(cb => {
+                if (cb.checked && cb.getAttribute('data-correta')) acertos++;
+                if (cb.getAttribute('data-correta')) totalCorretas++;
+            });
+
+            if (acertos === totalCorretas) perguntasCorretas++; // Conta só se todas corretas foram marcadas
+        });
+
+        alert(`Você acertou ${perguntasCorretas} de ${totalPerguntas} perguntas`);
+    }
+
+    const perguntas = document.querySelectorAll('.pergunta');
+    let perguntaAtual = 0;
+
+    // Função para mostrar a pergunta atual
+    function mostrarPerguntaAtual() {
+        perguntas.forEach((pergunta, index) => {
+            if (index === perguntaAtual) {
+                pergunta.style.display = 'block';
             } else {
-                respostaLabel.style.color = 'red'; // Marca a resposta como incorreta (vermelha)
-                perguntasIncorretas++;
-                const respostasDaPergunta = document.querySelectorAll(`input[name="${perguntaId}"]`);
-                respostasDaPergunta.forEach(respostaCorreta => {
-                    if (respostaCorreta.getAttribute('data-correta')) {
-                        const respostaCorretaLabel = document.getElementById(`resposta-label-${perguntaId}-${respostaCorreta.value}`);
-                        respostaCorretaLabel.style.color = 'blue'; // Marca a resposta correta como azul
-                    }
-                });
+                pergunta.style.display = 'none';
             }
         });
 
-        perguntasNaoRespondidas = totalPerguntas - respostasMarcadas.length;
-        const mensagem = `Você respondeu corretamente ${perguntasCorretas} pergunta(s).\n`
-            + `Você respondeu incorretamente ${perguntasIncorretas} pergunta(s).\n`
-            + `Você não respondeu ${perguntasNaoRespondidas} pergunta(s).`;
-        alert(mensagem);
-
-        // Marca as respostas corretas após o usuário ter visto o alerta
-        marcarRespostasCorretas();
+        // Habilitar ou desabilitar o botão "Pergunta Anterior" com base na pergunta atual
+        const perguntaAnteriorBtn = document.getElementById('pergunta-anterior');
+        perguntaAnteriorBtn.disabled = perguntaAtual === 0; // Desabilita o botão na primeira pergunta
     }
 
-    const btnMarcarRespostas = document.getElementById('marcar-respostas');
+    // Mostrar a primeira pergunta ao carregar a página
+    mostrarPerguntaAtual();
 
-    btnMarcarRespostas.addEventListener('click', function () {
-        marcarRespostas(); // Chama a função para marcar as respostas
+    // Ouvinte de evento para o botão "Próxima Pergunta"
+    const proximaPerguntaBtn = document.getElementById('proxima-pergunta');
+    proximaPerguntaBtn.addEventListener('click', () => {
+        perguntaAtual = (perguntaAtual + 1) % perguntas.length;
+        mostrarPerguntaAtual();
+    });
+
+    // Ouvinte de evento para o botão "Pergunta Anterior"
+    const perguntaAnteriorBtn = document.getElementById('pergunta-anterior');
+    perguntaAnteriorBtn.addEventListener('click', () => {
+        if (perguntaAtual > 0) {
+            perguntaAtual--;
+        }
+        mostrarPerguntaAtual();
     });
 
     function marcarRespostas() {
-        // Loop sobre todas as perguntas
         document.querySelectorAll('.pergunta').forEach(function (pergunta) {
-            // Loop sobre todas as respostas da pergunta
             pergunta.querySelectorAll('.resposta').forEach(function (resposta) {
                 var checkbox = resposta.querySelector('input[type="checkbox"]');
                 var respostaLabel = resposta.querySelector('.resposta-label');
 
-                // Remover classes anteriores
                 resposta.classList.remove('resposta-correta', 'resposta-incorreta');
-
-                // Verifica se a resposta está correta
 
                 if (checkbox.getAttribute('data-correta') === 'true') {
                     resposta.classList.add('resposta-correta');
                 } else {
                     resposta.classList.add('resposta-incorreta');
                 }
-
             });
         });
     }
+
+    btnMarcarRespostas.addEventListener('click', function () {
+        marcarRespostas();
+    });
+
     // UPDATE PAGINA AO CLICAR NA IMAGEM DO ALIEN
     const futureImage = document.getElementById('future');
     futureImage.addEventListener('click', () => {
-        updatePageFuture(); // Chamando a função para validar as respostas
+        updatePageFuture();
     });
 
     function updatePageFuture() {
-        window.location.reload(); // Recarrega a página quando a imagem é clicada
+        window.location.reload();
     }
 
     const limparRespostasBtn = document.getElementById('limpar-respostas');

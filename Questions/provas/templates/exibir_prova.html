@@ -8,8 +8,7 @@
 <button class="btn btn-light" id="scroll-to-bottom">Final</button>
 <button class="btn btn-success" id="enviar-respostas">Enviar Respostas</button>
 <button class="btn btn-danger" id="limpar-respostas">Limpar Respostas</button>
-<img src="{{ MEDIA_URL }}/media/media/future.webp" alt="future" class="img-fluid future" style="max-height: 50px;"
-    id="future">
+<img src="{% get_media_prefix %}media/future.jpg" alt="future" class="img-fluid future" style="max-height: 50px;" id="future">
 {% endblock %}
 {% block content %}
 <div class="container">
@@ -47,12 +46,36 @@
         <button class="btn btn-primary" id="proxima-pergunta">Próxima Pergunta</button>
         <button class="btn btn-success" id="marcar-respostas">Validar Respostas</button>
         <button class="btn btn-danger" id="limpar-respostas1">Limpar Respostas</button>
-        <!-- Botão para excluir a pergunta -->
-
     </div>
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
+        const enviarRespostasBtn = document.getElementById('enviar-respostas');
+        const marcarRespostasBtn = document.getElementById('marcar-respostas');
+        enviarRespostasBtn.addEventListener('click', validarRespostas);
+        marcarRespostasBtn.addEventListener('click', validarRespostas);
+
+        function validarRespostas() {
+            let perguntasCorretas = 0;
+            const totalPerguntas = document.querySelectorAll('.pergunta').length;
+            const perguntas = document.querySelectorAll('.pergunta');
+
+            perguntas.forEach(pergunta => {
+                const checkboxes = pergunta.querySelectorAll('input[type="checkbox"]');
+                let acertos = 0;
+                let totalCorretas = 0;
+
+                checkboxes.forEach(cb => {
+                    if (cb.checked && cb.getAttribute('data-correta')) acertos++;
+                    if (cb.getAttribute('data-correta')) totalCorretas++;
+                });
+
+                if (acertos === totalCorretas) perguntasCorretas++; // Conta só se todas corretas foram marcadas
+            });
+
+            alert(`Você acertou ${perguntasCorretas} de ${totalPerguntas} perguntas`);
+        }
+
         const perguntas = document.querySelectorAll('.pergunta');
         let perguntaAtual = 0;
 
@@ -85,10 +108,58 @@
         const perguntaAnteriorBtn = document.getElementById('pergunta-anterior');
         perguntaAnteriorBtn.addEventListener('click', () => {
             if (perguntaAtual > 0) {
-                perguntaAtual--; // Decrementa o índice da pergunta atual
+                perguntaAtual--;
             }
             mostrarPerguntaAtual();
         });
+
+        function marcarRespostas() {
+            document.querySelectorAll('.pergunta').forEach(function (pergunta) {
+                pergunta.querySelectorAll('.resposta').forEach(function (resposta) {
+                    var checkbox = resposta.querySelector('input[type="checkbox"]');
+                    var respostaLabel = resposta.querySelector('.resposta-label');
+
+                    resposta.classList.remove('resposta-correta', 'resposta-incorreta');
+
+                    if (checkbox.getAttribute('data-correta') === 'true') {
+                        resposta.classList.add('resposta-correta');
+                    } else {
+                        resposta.classList.add('resposta-incorreta');
+                    }
+                });
+            });
+        }
+
+        btnMarcarRespostas.addEventListener('click', function () {
+            marcarRespostas();
+        });
+
+        // UPDATE PAGINA AO CLICAR NA IMAGEM DO ALIEN
+        const futureImage = document.getElementById('future');
+        futureImage.addEventListener('click', () => {
+            updatePageFuture();
+        });
+
+        function updatePageFuture() {
+            window.location.reload();
+        }
+
+        const limparRespostasBtn = document.getElementById('limpar-respostas');
+        const limparRespostasBtn1 = document.getElementById('limpar-respostas1');
+        limparRespostasBtn.addEventListener('click', limparRespostas);
+        limparRespostasBtn1.addEventListener('click', limparRespostas);
+
+        function limparRespostas() {
+            const respostas = document.querySelectorAll('.resposta');
+            respostas.forEach(resposta => {
+                resposta.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+                resposta.classList.remove('resposta-correta', 'resposta-incorreta');
+                const respostaLabel = resposta.querySelector('.resposta-label');
+                respostaLabel.style.color = '';
+            });
+        }
     });
 </script>
 {% endblock %}
