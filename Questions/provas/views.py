@@ -25,16 +25,30 @@ def exibir_prova(request, prova_id):
     perguntas = Pergunta.objects.filter(prova=prova)
     return render(request, 'exibir_prova.html', {'prova': prova, 'perguntas': perguntas})
 """
+#def exibir_prova(request, prova_id):
+#    prova = Prova.objects.get(id=prova_id)
+#    perguntas = prova.pergunta_set.all().order_by('?')  # Ordena as perguntas de forma aleatória
+#
+#    context = {
+#        'prova': prova,
+#        'perguntas': perguntas,
+#    }
+#
+#    return render(request, 'exibir_prova.html', context)
+
 def exibir_prova(request, prova_id):
-    prova = Prova.objects.get(id=prova_id)
-    perguntas = prova.pergunta_set.all().order_by('?')  # Ordena as perguntas de forma aleatória
+    try:
+        prova = Prova.objects.get(id=prova_id)
+        perguntas = prova.pergunta_set.all().order_by('?')[:60]  # Seleciona até 60 perguntas aleatoriamente
 
-    context = {
-        'prova': prova,
-        'perguntas': perguntas,
-    }
+        context = {
+            'prova': prova,
+            'perguntas': perguntas,
+        }
+        return render(request, 'exibir_prova.html', context)
+    except Prova.DoesNotExist:
+        return render(request, 'erro.html', {'mensagem': 'Prova não encontrada.'}, status=404)
 
-    return render(request, 'exibir_prova.html', context)
 
 def resultados_prova(request):
     corretas = request.GET.get('corretas')
