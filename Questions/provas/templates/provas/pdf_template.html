@@ -1,0 +1,42 @@
+{% load static %}
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% Pacotes para formatação
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\begin{document}
+
+\title{Resultado da Prova}
+\author{}
+\date{}
+\maketitle
+
+\section*{Pontuação}
+Você acertou \textbf{{{ pontuacao }}} de \textbf{{{ total_perguntas }}} perguntas.
+
+\section*{Perguntas e Respostas}
+
+\begin{enumerate}
+{% for pergunta in perguntas %}
+    \item \textbf{{ pergunta.texto }}
+    {% if not pergunta.acertou %}
+        (Esta você errou)
+    {% endif %}
+    \begin{itemize}
+    {% for resposta in pergunta.respostas %}
+        \item[\ifthenelse{\equal{{{ resposta.correta }}}}{true}{\color{green}\checkmark}{}] {{ resposta.texto }}
+        {% if resposta.marcada and not resposta.correta %}
+            (Marcada incorretamente)
+        {% endif %}
+    {% endfor %}
+    \end{itemize}
+{% endfor %}
+\end{enumerate}
+
+\end{document}
