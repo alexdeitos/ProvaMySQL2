@@ -19,6 +19,9 @@ def index(request):
 
     return render(request, 'index.html', {'form': form})
 
+def az900(request):
+    return render(request, 'AZ900.HTML', {})
+
 """
 def exibir_prova(request, prova_id):
     prova = Prova.objects.get(id=prova_id)
