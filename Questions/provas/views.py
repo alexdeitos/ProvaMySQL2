@@ -42,7 +42,7 @@ def exibir_prova(request, prova_id):
 def exibir_prova(request, prova_id):
     try:
         prova = Prova.objects.get(id=prova_id)
-        perguntas = prova.pergunta_set.all().order_by('?')[:60]  # Seleciona até 60 perguntas aleatoriamente
+        perguntas = prova.pergunta_set.all().order_by('?')[:10]  # Seleciona até 60 perguntas aleatoriamente
 
         context = {
             'prova': prova,
