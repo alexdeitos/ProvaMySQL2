@@ -1,0 +1,5 @@
+Which statement accurately describes the difference between public peering and private peering in OCI FasConnect?
+a)Public peering and private peering cannot be configurate simultaneously in a single OCI FasConnect setup.
+b)Public peering is used to connect on-premises networks to private OCI resources, while private peering is used to connect to Oracle public-facing services such as Object Storage.
+c)Private peering allows direct access to resources within a Virtual Cloud Network(VCN) using private IP addresses, while public peering provides access to Oracle public-facing services, bypassing the Internet.
+d)both public and private peering require the use of the Oracle services Network to connect to Oracle Cloud resources.

@@ -6,7 +6,6 @@
 \geometry{margin=1in}
 \usepackage{enumitem}
 \usepackage{xcolor}
-\usepackage{ifthen}
 
 \begin{document}
 
@@ -16,26 +15,32 @@
 \maketitle
 
 \section*{Pontuação}
-Você acertou \textbf{{{ pontuacao }}} de \textbf{{{ total_perguntas }}} perguntas.
+Você acertou \textbf{\{{ pontuacao \}} de \textbf{\{{ total_perguntas \}} perguntas.
 
 \section*{Perguntas e Respostas}
 
 \begin{enumerate}
 {% for pergunta in perguntas %}
-    \item \textbf{{{ pergunta.texto }}}
+    \item \textbf{\{{ pergunta.texto|escape_latex \}}
     {% if not pergunta.acertou %}
         (Esta você errou)
     {% endif %}
     \begin{itemize}
     {% for resposta in pergunta.respostas %}
-        \item[\ifthenelse{\equal{{{ resposta.correta|lower }}}{\true}}{\color{green}\checkmark}{}] {{{ resposta.texto }}}
+        \item[{%
+            {% if resposta.correta and resposta.marcada %}\color{green}\checkmark{%
+            {% elif resposta.marcada and not resposta.correta %}\color{red}\x{%
+            {% else %}\relax{%
+            %}{% endif %}
+        }] \{{ resposta.texto|escape_latex \}}
         {% if resposta.marcada and not resposta.correta %}
             (Marcada incorretamente)
         {% endif %}
     {% endfor %}
     \end{itemize}
+{% empty %}
+    \item Nenhuma pergunta disponível.
 {% endfor %}
 \end{enumerate}
 
 \end{document}
-

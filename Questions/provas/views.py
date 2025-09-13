@@ -176,59 +176,54 @@ def excluir_pergunta(request, pergunta_id):
         pergunta.delete()
         return redirect('exibir_prova', prova_id=pergunta.prova.id)
 
+from django.utils.text import slugify  # For safe file naming if needed
+from django.template.defaultfilters import slugify  # If using custom filters
+
 @csrf_exempt
 def exportar_pdf(request):
     if request.method == 'POST':
         try:
             data = json.loads(request.body)
-            perguntas = data['perguntas']
-            pontuacao = data['pontuacao']
+            perguntas = data.get('perguntas', [])
+            pontuacao = data.get('pontuacao', 0)
             total_perguntas = len(perguntas)
 
-            # Renderiza o conteúdo LaTeX
+            logger.debug("Received data: perguntas=%d, pontuacao=%d", len(perguntas), pontuacao)
+
             latex_content = render_to_string('provas/pdf_template.tex', {
                 'perguntas': perguntas,
                 'pontuacao': pontuacao,
                 'total_perguntas': total_perguntas
             })
 
-            # Salva e loga o conteúdo LaTeX
             with open('temp.tex', 'w', encoding='utf-8') as f:
                 f.write(latex_content)
-            logger.debug("temp.tex content: %s", latex_content)
+            logger.debug("temp.tex content: %s", latex_content[:500])  # Log first 500 chars
 
-            # Verifica se o arquivo foi criado
-            if not os.path.exists('temp.tex'):
-                logger.error("temp.tex was not created")
-                return HttpResponse("Arquivo temp.tex não criado", status=500)
-
-            # Gera o PDF usando latexmk com captura de saída
             try:
-                result = subprocess.run(['latexmk', '-pdf', 'temp.tex'], capture_output=True, text=True, check=True)
-                logger.debug("LaTeX compilation output: %s", result.stdout)
-                logger.debug("LaTeX compilation errors: %s", result.stderr)
+                result = subprocess.run(['pdflatex', '-interaction=nonstopmode', 'temp.tex'], 
+                                      capture_output=True, text=True, check=True, cwd=os.getcwd())
+                logger.debug("pdflatex output: %s", result.stdout)
+                if result.stderr:
+                    logger.error("pdflatex errors: %s", result.stderr)
             except subprocess.CalledProcessError as e:
-                logger.error("LaTeX compilation failed: %s", e.stderr)
-                return HttpResponse("Erro ao compilar o PDF: " + e.stderr, status=500)
+                logger.error("pdflatex failed: %s", e.stderr)
+                return HttpResponse("Erro ao compilar LaTeX: " + e.stderr, status=500)
 
-            # Lê o PDF gerado
-            try:
+            if os.path.exists('temp.pdf'):
                 with open('temp.pdf', 'rb') as f:
                     pdf_content = f.read()
-            except FileNotFoundError:
-                logger.error("temp.pdf not found after compilation")
-                return HttpResponse("Arquivo PDF não encontrado", status=500)
+                os.remove('temp.tex')
+                os.remove('temp.pdf')
+                response = HttpResponse(pdf_content, content_type='application/pdf')
+                response['Content-Disposition'] = 'attachment; filename="respostas_prova.pdf"'
+                return response
+            else:
+                logger.error("temp.pdf not found")
+                return HttpResponse("PDF não gerado", status=500)
 
-            # Remove arquivos temporários
-            subprocess.run(['latexmk', '-c'], check=True)
-            os.remove('temp.tex')
-            os.remove('temp.pdf')
-
-            response = HttpResponse(pdf_content, content_type='application/pdf')
-            response['Content-Disposition'] = 'attachment; filename="respostas_prova.pdf"'
-            return response
         except json.JSONDecodeError as e:
-            logger.error("Invalid JSON data: %s", e)
+            logger.error("Invalid JSON: %s", e)
             return HttpResponse("Dados JSON inválidos", status=400)
         except Exception as e:
             logger.error("Unexpected error: %s", e)
